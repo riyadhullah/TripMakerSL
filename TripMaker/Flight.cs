@@ -16,7 +16,5 @@ namespace TripMaker
         {
             InitializeComponent();
         }
-
-        //riyadhUllah
     }
 }

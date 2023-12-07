@@ -30,9 +30,6 @@ namespace TripMaker
                 pnlPackages.Visible = false;
                 pnlWallet.Visible = false;
                 pnlAbout.Visible = false;
-
-                bus1.Hide();
-                flight1.Hide();
             }
             else if (btn.Text == "Bus")
             {
@@ -43,9 +40,6 @@ namespace TripMaker
                 pnlPackages.Visible = false;
                 pnlWallet.Visible = false;
                 pnlAbout.Visible = false;
-
-                bus1.Show();
-                flight1.Hide();
             }
             else if (btn.Text == "Flight")
             {
@@ -56,10 +50,6 @@ namespace TripMaker
                 pnlPackages.Visible = false;
                 pnlWallet.Visible = false;
                 pnlAbout.Visible = false;
-
-                bus1.Hide();
-                flight1.Show();
-
             }
             else if (btn.Text == "Hotel")
             {
