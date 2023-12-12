@@ -46,8 +46,9 @@ namespace TripMaker
             this.pnlHome = new System.Windows.Forms.Panel();
             this.btnBus = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.bus1 = new TripMaker.Bus();
+            this.signup1 = new TripMaker.Signup();
             this.flight1 = new TripMaker.Flight();
+            this.bus1 = new TripMaker.Bus();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -260,19 +261,28 @@ namespace TripMaker
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.red_panel_changed);
             // 
-            // bus1
+            // signup1
             // 
-            this.bus1.Location = new System.Drawing.Point(268, 138);
-            this.bus1.Name = "bus1";
-            this.bus1.Size = new System.Drawing.Size(935, 662);
-            this.bus1.TabIndex = 3;
+            this.signup1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.signup1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.signup1.Location = new System.Drawing.Point(259, 112);
+            this.signup1.Name = "signup1";
+            this.signup1.Size = new System.Drawing.Size(940, 688);
+            this.signup1.TabIndex = 5;
             // 
             // flight1
             // 
-            this.flight1.Location = new System.Drawing.Point(271, 138);
+            this.flight1.Location = new System.Drawing.Point(363, 147);
             this.flight1.Name = "flight1";
             this.flight1.Size = new System.Drawing.Size(935, 662);
             this.flight1.TabIndex = 4;
+            // 
+            // bus1
+            // 
+            this.bus1.Location = new System.Drawing.Point(388, 126);
+            this.bus1.Name = "bus1";
+            this.bus1.Size = new System.Drawing.Size(935, 662);
+            this.bus1.TabIndex = 3;
             // 
             // Form1
             // 
@@ -280,6 +290,7 @@ namespace TripMaker
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.Controls.Add(this.signup1);
             this.Controls.Add(this.flight1);
             this.Controls.Add(this.bus1);
             this.Controls.Add(this.panel1);
@@ -313,6 +324,7 @@ namespace TripMaker
         private System.Windows.Forms.Button btnAbout;
         private Bus bus1;
         private Flight flight1;
+        private Signup signup1;
     }
 }
 
