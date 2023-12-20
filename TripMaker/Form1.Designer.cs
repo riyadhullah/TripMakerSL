@@ -46,14 +46,12 @@ namespace TripMaker
             this.pnlHome = new System.Windows.Forms.Panel();
             this.btnBus = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-
-            this.signup = new TripMaker.Signup();
-            this.flight1 = new TripMaker.Flight();
-            this.bus1 = new TripMaker.Bus();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnSignup = new System.Windows.Forms.Button();
             this.login = new TripMaker.Login();
-
+            this.signup = new TripMaker.Signup();
+            this.flight1 = new TripMaker.Flight();
+            this.bus1 = new TripMaker.Bus();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -266,34 +264,6 @@ namespace TripMaker
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btn_function);
             // 
-
-            // signup
-            // 
-            this.signup.BackColor = System.Drawing.Color.White;
-            this.signup.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.signup.Location = new System.Drawing.Point(271, 138);
-            this.signup.Name = "signup";
-            this.signup.Size = new System.Drawing.Size(935, 662);
-            this.signup.TabIndex = 5;
-            this.signup.Visible = false;
-            // 
-
-            // flight1
-            // 
-            this.flight1.Location = new System.Drawing.Point(268, 138);
-            this.flight1.Name = "flight1";
-            this.flight1.Size = new System.Drawing.Size(935, 662);
-            this.flight1.TabIndex = 4;
-            this.flight1.Visible = false;
-            // 
-            // bus1
-            // 
-            this.bus1.Location = new System.Drawing.Point(268, 138);
-            this.bus1.Name = "bus1";
-            this.bus1.Size = new System.Drawing.Size(935, 662);
-            this.bus1.TabIndex = 3;
-            this.bus1.Visible = false;
-            // 
             // btnLogin
             // 
             this.btnLogin.FlatAppearance.BorderSize = 0;
@@ -330,14 +300,31 @@ namespace TripMaker
             this.login.TabIndex = 8;
             this.login.Visible = false;
             // 
-            // signup1
+            // signup
             // 
             this.signup.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.signup.ForeColor = System.Drawing.SystemColors.ControlText;
             this.signup.Location = new System.Drawing.Point(268, 126);
-            this.signup.Name = "signup1";
+            this.signup.Name = "signup";
             this.signup.Size = new System.Drawing.Size(935, 662);
             this.signup.TabIndex = 5;
+            this.signup.Visible = false;
+            // 
+            // flight1
+            // 
+            this.flight1.Location = new System.Drawing.Point(268, 138);
+            this.flight1.Name = "flight1";
+            this.flight1.Size = new System.Drawing.Size(935, 662);
+            this.flight1.TabIndex = 4;
+            this.flight1.Visible = false;
+            // 
+            // bus1
+            // 
+            this.bus1.Location = new System.Drawing.Point(268, 138);
+            this.bus1.Name = "bus1";
+            this.bus1.Size = new System.Drawing.Size(935, 662);
+            this.bus1.TabIndex = 3;
+            this.bus1.Visible = false;
             // 
             // Form1
             // 
