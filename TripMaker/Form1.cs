@@ -96,6 +96,9 @@ namespace TripMaker
 
         }
 
+        private void signup1_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
