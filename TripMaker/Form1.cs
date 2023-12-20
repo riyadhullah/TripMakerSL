@@ -17,7 +17,7 @@ namespace TripMaker
             InitializeComponent();
         }
 
-        private void red_panel_changed(object sender, EventArgs e)
+        private void btn_function(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
 
@@ -30,6 +30,11 @@ namespace TripMaker
                 pnlPackages.Visible = false;
                 pnlWallet.Visible = false;
                 pnlAbout.Visible = false;
+
+                signup.Visible = false;
+                bus1.Visible = false;
+                flight1.Visible = false;
+                login.Visible = false;
             }
             else if (btn.Text == "Bus")
             {
@@ -40,6 +45,11 @@ namespace TripMaker
                 pnlPackages.Visible = false;
                 pnlWallet.Visible = false;
                 pnlAbout.Visible = false;
+
+                bus1.Visible = true;
+                flight1.Visible = false;
+                signup.Visible = false;
+                login.Visible = false;
             }
             else if (btn.Text == "Flight")
             {
@@ -50,6 +60,11 @@ namespace TripMaker
                 pnlPackages.Visible = false;
                 pnlWallet.Visible = false;
                 pnlAbout.Visible = false;
+
+                flight1.Visible = true;
+                bus1.Visible = false;
+                signup.Visible = false;
+                login.Visible = false;
             }
             else if (btn.Text == "Hotel")
             {
@@ -60,6 +75,11 @@ namespace TripMaker
                 pnlPackages.Visible = false;
                 pnlWallet.Visible = false;
                 pnlAbout.Visible = false;
+
+                signup.Visible = false;
+                bus1.Visible = false;
+                flight1.Visible = false;
+                login.Visible = false;
             }
             else if (btn.Text == "Packages")
             {
@@ -70,6 +90,11 @@ namespace TripMaker
                 pnlPackages.Visible = true;
                 pnlWallet.Visible = false;
                 pnlAbout.Visible = false;
+
+                signup.Visible = false;
+                bus1.Visible = false;
+                flight1.Visible = false;
+                login.Visible = false;
             }
             else if (btn.Text == "Wallet")
             {
@@ -80,8 +105,13 @@ namespace TripMaker
                 pnlPackages.Visible = false;
                 pnlWallet.Visible = true;
                 pnlAbout.Visible = false;
+
+                signup.Visible = false;
+                bus1.Visible = false;
+                flight1.Visible = false;
+                login.Visible = false;
             }
-            else
+            else if (btn.Text == "About")
             {
                 pnlHome.Visible = false;
                 pnlBus.Visible = false;
@@ -90,15 +120,28 @@ namespace TripMaker
                 pnlPackages.Visible = false;
                 pnlWallet.Visible = false;
                 pnlAbout.Visible = true;
+
+                signup.Visible = false;
+                bus1.Visible = false;
+                flight1.Visible = false;
+                login.Visible = false;
+            }
+            else if(btn.Text == "Signup")
+            {
+                signup.Visible = true;
+                bus1.Visible = false;
+                flight1.Visible = false;
+                login.Visible = false;
+            }
+            else if (btn.Text == "Login")
+            {
+                signup.Visible = false;
+                bus1.Visible = false;
+                flight1.Visible = false;
+                login.Visible = true;
             }
 
-            //siam
-
         }
 
-        private void signup1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

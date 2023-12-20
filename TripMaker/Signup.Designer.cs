@@ -43,6 +43,7 @@ namespace TripMaker
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +53,7 @@ namespace TripMaker
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+
             this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -101,12 +103,15 @@ namespace TripMaker
             this.button2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.AliceBlue;
+
             this.button2.Location = new System.Drawing.Point(354, 563);
+
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 33);
             this.button2.TabIndex = 20;
             this.button2.Text = "Sign Up";
             this.button2.UseVisualStyleBackColor = false;
+
             // 
             // button1
             // 
@@ -187,6 +192,7 @@ namespace TripMaker
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(246, 28);
             this.textBox3.TabIndex = 12;
+
             // 
             // textBox2
             // 
@@ -197,10 +203,12 @@ namespace TripMaker
             this.textBox2.Size = new System.Drawing.Size(246, 28);
             this.textBox2.TabIndex = 11;
             // 
+
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(219, 95);
+
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(246, 28);
@@ -210,12 +218,16 @@ namespace TripMaker
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.label10.ForeColor = System.Drawing.Color.DodgerBlue;
+
+
             this.label10.Location = new System.Drawing.Point(227, 14);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(116, 34);
             this.label10.TabIndex = 9;
             this.label10.Text = "Sign Up";
+
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label8
@@ -290,11 +302,13 @@ namespace TripMaker
             this.label7.TabIndex = 27;
             this.label7.Text = " UserName :";
             this.label7.Click += new System.EventHandler(this.label7_Click);
+
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.label9.Location = new System.Drawing.Point(122, 98);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 21);
@@ -310,22 +324,26 @@ namespace TripMaker
             this.label11.Size = new System.Drawing.Size(98, 21);
             this.label11.TabIndex = 29;
             this.label11.Text = "Password :";
-            // 
+
             // label1
             // 
             this.label1.AutoSize = true;
+
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(106, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(384, 23);
             this.label1.TabIndex = 30;
             this.label1.Text = "Discover Your Next Adventure with Us!";
+
             // 
             // Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;

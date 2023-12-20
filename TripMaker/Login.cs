@@ -17,23 +17,18 @@ namespace TripMaker
             InitializeComponent();
         }
 
-        private void pass_show_hide(object sender, EventArgs e)
+        private void btnOpen_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-
-            if (btn.Text == ".")
-            { 
-                btnClose.Visible = true;
-                btnOpen.Visible = false;
-                //btnClose.Show();
-                //btnOpen.Hide();
-            }
-            else
-            {
-                //btnClose.Hide();
-                //btnOpen.Show();
-            }
+            txtPassword.UseSystemPasswordChar = true;
+            btnClose.Visible = true;
+            btnOpen.Visible = false;
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = false;
+            btnClose.Visible = false;
+            btnOpen.Visible = true;
+        }
     }
 }
