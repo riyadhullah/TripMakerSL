@@ -119,5 +119,11 @@
   <ItemGroup>
     <None Include="photo\airline.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="photo\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="photo\close.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
