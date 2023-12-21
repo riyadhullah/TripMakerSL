@@ -52,6 +52,7 @@
     <Compile Include="Bus.Designer.cs">
       <DependentUpon>Bus.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataAccess.cs" />
     <Compile Include="Flight.cs">
       <SubType>UserControl</SubType>
     </Compile>

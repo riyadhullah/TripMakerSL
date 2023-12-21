@@ -30,6 +30,10 @@ namespace TripMaker
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnopencp = new System.Windows.Forms.Button();
+            this.btnopenps = new System.Windows.Forms.Button();
+            this.btnclosecp = new System.Windows.Forms.Button();
+            this.btncloseps = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -52,11 +56,7 @@ namespace TripMaker
             this.txtName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.lblpdnm = new System.Windows.Forms.Label();
-            this.btnclosecp = new System.Windows.Forms.Button();
-            this.btncloseps = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnopenps = new System.Windows.Forms.Button();
-            this.btnopencp = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,6 +93,54 @@ namespace TripMaker
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(518, 625);
             this.panel2.TabIndex = 1;
+            // 
+            // btnopencp
+            // 
+            this.btnopencp.BackColor = System.Drawing.SystemColors.Window;
+            this.btnopencp.BackgroundImage = global::TripMaker.Properties.Resources.eye;
+            this.btnopencp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnopencp.Location = new System.Drawing.Point(425, 383);
+            this.btnopencp.Name = "btnopencp";
+            this.btnopencp.Size = new System.Drawing.Size(40, 28);
+            this.btnopencp.TabIndex = 34;
+            this.btnopencp.UseVisualStyleBackColor = false;
+            this.btnopencp.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // btnopenps
+            // 
+            this.btnopenps.BackColor = System.Drawing.SystemColors.Window;
+            this.btnopenps.BackgroundImage = global::TripMaker.Properties.Resources.eye;
+            this.btnopenps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnopenps.Location = new System.Drawing.Point(425, 335);
+            this.btnopenps.Name = "btnopenps";
+            this.btnopenps.Size = new System.Drawing.Size(40, 28);
+            this.btnopenps.TabIndex = 33;
+            this.btnopenps.UseVisualStyleBackColor = false;
+            this.btnopenps.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // btnclosecp
+            // 
+            this.btnclosecp.BackColor = System.Drawing.SystemColors.Window;
+            this.btnclosecp.BackgroundImage = global::TripMaker.Properties.Resources.close;
+            this.btnclosecp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnclosecp.Location = new System.Drawing.Point(425, 383);
+            this.btnclosecp.Name = "btnclosecp";
+            this.btnclosecp.Size = new System.Drawing.Size(40, 28);
+            this.btnclosecp.TabIndex = 32;
+            this.btnclosecp.UseVisualStyleBackColor = false;
+            this.btnclosecp.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btncloseps
+            // 
+            this.btncloseps.BackColor = System.Drawing.SystemColors.Window;
+            this.btncloseps.BackgroundImage = global::TripMaker.Properties.Resources.close;
+            this.btncloseps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btncloseps.Location = new System.Drawing.Point(425, 335);
+            this.btncloseps.Name = "btncloseps";
+            this.btncloseps.Size = new System.Drawing.Size(40, 28);
+            this.btncloseps.TabIndex = 31;
+            this.btncloseps.UseVisualStyleBackColor = false;
+            this.btncloseps.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label1
             // 
@@ -195,6 +243,7 @@ namespace TripMaker
             this.singup.TabIndex = 20;
             this.singup.Text = "Sign Up";
             this.singup.UseVisualStyleBackColor = false;
+            this.singup.Click += new System.EventHandler(this.singup_Click);
             // 
             // cancel
             // 
@@ -321,30 +370,6 @@ namespace TripMaker
             this.lblpdnm.Text = "Password Did Not Match";
             this.lblpdnm.Visible = false;
             // 
-            // btnclosecp
-            // 
-            this.btnclosecp.BackColor = System.Drawing.SystemColors.Window;
-            this.btnclosecp.BackgroundImage = global::TripMaker.Properties.Resources.close;
-            this.btnclosecp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnclosecp.Location = new System.Drawing.Point(425, 383);
-            this.btnclosecp.Name = "btnclosecp";
-            this.btnclosecp.Size = new System.Drawing.Size(40, 28);
-            this.btnclosecp.TabIndex = 32;
-            this.btnclosecp.UseVisualStyleBackColor = false;
-            this.btnclosecp.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btncloseps
-            // 
-            this.btncloseps.BackColor = System.Drawing.SystemColors.Window;
-            this.btncloseps.BackgroundImage = global::TripMaker.Properties.Resources.close;
-            this.btncloseps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btncloseps.Location = new System.Drawing.Point(425, 335);
-            this.btncloseps.Name = "btncloseps";
-            this.btncloseps.Size = new System.Drawing.Size(40, 28);
-            this.btncloseps.TabIndex = 31;
-            this.btncloseps.UseVisualStyleBackColor = false;
-            this.btncloseps.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Tan;
@@ -354,30 +379,6 @@ namespace TripMaker
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(333, 625);
             this.panel1.TabIndex = 0;
-            // 
-            // btnopenps
-            // 
-            this.btnopenps.BackColor = System.Drawing.SystemColors.Window;
-            this.btnopenps.BackgroundImage = global::TripMaker.Properties.Resources.eye;
-            this.btnopenps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnopenps.Location = new System.Drawing.Point(425, 335);
-            this.btnopenps.Name = "btnopenps";
-            this.btnopenps.Size = new System.Drawing.Size(40, 28);
-            this.btnopenps.TabIndex = 33;
-            this.btnopenps.UseVisualStyleBackColor = false;
-            this.btnopenps.Click += new System.EventHandler(this.btnOpen_Click);
-            // 
-            // btnopencp
-            // 
-            this.btnopencp.BackColor = System.Drawing.SystemColors.Window;
-            this.btnopencp.BackgroundImage = global::TripMaker.Properties.Resources.eye;
-            this.btnopencp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnopencp.Location = new System.Drawing.Point(425, 383);
-            this.btnopencp.Name = "btnopencp";
-            this.btnopencp.Size = new System.Drawing.Size(40, 28);
-            this.btnopencp.TabIndex = 34;
-            this.btnopencp.UseVisualStyleBackColor = false;
-            this.btnopencp.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // Signup
             // 
