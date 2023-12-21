@@ -55,7 +55,7 @@ namespace TripMaker
 
             
         }
-        private void newdata()
+        private void newdata(object sender,EventArgs e)
         {
             txtName.Text = "";
             txtun.Text = "";
@@ -65,7 +65,12 @@ namespace TripMaker
             rdbFemale.Checked = false;
             txtPass.Text = "";
             txtCpass.Text = "";
-
+            btncloseps.Visible = false;
+            btnopenps.Visible = true;
+            btnclosecp.Visible = false;
+            btnopencp.Visible = true;
+            txtPass.UseSystemPasswordChar = false;
+            txtCpass.UseSystemPasswordChar = false;
             richTxtAdrs.Text = "";
         }
         private void singup_Click(object sender, EventArgs e)
@@ -111,7 +116,7 @@ namespace TripMaker
                 return;
             }
             MessageBox.Show("Saccessfully Signup \nPlease Login");
-            this.newdata();
+            this.newdata(sender,e);
             
         }
 

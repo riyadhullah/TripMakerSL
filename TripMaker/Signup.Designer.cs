@@ -29,6 +29,7 @@ namespace TripMaker
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnopencp = new System.Windows.Forms.Button();
             this.btnopenps = new System.Windows.Forms.Button();
@@ -62,7 +63,7 @@ namespace TripMaker
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel2.Controls.Add(this.btnopencp);
             this.panel2.Controls.Add(this.btnopenps);
             this.panel2.Controls.Add(this.btnclosecp);
@@ -97,7 +98,7 @@ namespace TripMaker
             // btnopencp
             // 
             this.btnopencp.BackColor = System.Drawing.SystemColors.Window;
-            this.btnopencp.BackgroundImage = global::TripMaker.Properties.Resources.eye;
+            this.btnopencp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnopencp.BackgroundImage")));
             this.btnopencp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnopencp.Location = new System.Drawing.Point(425, 383);
             this.btnopencp.Name = "btnopencp";
@@ -109,7 +110,7 @@ namespace TripMaker
             // btnopenps
             // 
             this.btnopenps.BackColor = System.Drawing.SystemColors.Window;
-            this.btnopenps.BackgroundImage = global::TripMaker.Properties.Resources.eye;
+            this.btnopenps.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnopenps.BackgroundImage")));
             this.btnopenps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnopenps.Location = new System.Drawing.Point(425, 335);
             this.btnopenps.Name = "btnopenps";
@@ -121,7 +122,7 @@ namespace TripMaker
             // btnclosecp
             // 
             this.btnclosecp.BackColor = System.Drawing.SystemColors.Window;
-            this.btnclosecp.BackgroundImage = global::TripMaker.Properties.Resources.close;
+            this.btnclosecp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnclosecp.BackgroundImage")));
             this.btnclosecp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnclosecp.Location = new System.Drawing.Point(425, 383);
             this.btnclosecp.Name = "btnclosecp";
@@ -133,7 +134,7 @@ namespace TripMaker
             // btncloseps
             // 
             this.btncloseps.BackColor = System.Drawing.SystemColors.Window;
-            this.btncloseps.BackgroundImage = global::TripMaker.Properties.Resources.close;
+            this.btncloseps.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncloseps.BackgroundImage")));
             this.btncloseps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btncloseps.Location = new System.Drawing.Point(425, 335);
             this.btncloseps.Name = "btncloseps";
@@ -256,6 +257,7 @@ namespace TripMaker
             this.cancel.TabIndex = 19;
             this.cancel.Text = "CANCEL";
             this.cancel.UseVisualStyleBackColor = false;
+            this.cancel.Click += new System.EventHandler(this.newdata);
             // 
             // richTxtAdrs
             // 
@@ -373,7 +375,7 @@ namespace TripMaker
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Tan;
-            this.panel1.BackgroundImage = global::TripMaker.Properties.Resources.airline;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(43, 19);
             this.panel1.Name = "panel1";
