@@ -207,7 +207,7 @@ namespace TripMaker
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(106, 482);
+            this.label4.Location = new System.Drawing.Point(106, 450);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 21);
             this.label4.TabIndex = 24;
@@ -255,13 +255,13 @@ namespace TripMaker
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(111, 33);
             this.cancel.TabIndex = 19;
-            this.cancel.Text = "CANCEL";
+            this.cancel.Text = "CLEAR";
             this.cancel.UseVisualStyleBackColor = false;
             this.cancel.Click += new System.EventHandler(this.newdata);
             // 
             // richTxtAdrs
             // 
-            this.richTxtAdrs.Location = new System.Drawing.Point(219, 473);
+            this.richTxtAdrs.Location = new System.Drawing.Point(219, 450);
             this.richTxtAdrs.Name = "richTxtAdrs";
             this.richTxtAdrs.Size = new System.Drawing.Size(246, 75);
             this.richTxtAdrs.TabIndex = 18;
@@ -276,6 +276,7 @@ namespace TripMaker
             this.txtCpass.PasswordChar = '.';
             this.txtCpass.Size = new System.Drawing.Size(246, 28);
             this.txtCpass.TabIndex = 17;
+            this.txtCpass.Click += new System.EventHandler(this.btnClose_Click);
             this.txtCpass.TextChanged += new System.EventHandler(this.password_change);
             // 
             // txtPass
@@ -287,6 +288,7 @@ namespace TripMaker
             this.txtPass.PasswordChar = '.';
             this.txtPass.Size = new System.Drawing.Size(246, 28);
             this.txtPass.TabIndex = 16;
+            this.txtPass.Click += new System.EventHandler(this.btnClose_Click);
             this.txtPass.TextChanged += new System.EventHandler(this.password_change);
             // 
             // rdbFemale
@@ -365,7 +367,7 @@ namespace TripMaker
             this.lblpdnm.AutoSize = true;
             this.lblpdnm.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpdnm.ForeColor = System.Drawing.Color.Red;
-            this.lblpdnm.Location = new System.Drawing.Point(229, 427);
+            this.lblpdnm.Location = new System.Drawing.Point(229, 414);
             this.lblpdnm.Name = "lblpdnm";
             this.lblpdnm.Size = new System.Drawing.Size(219, 21);
             this.lblpdnm.TabIndex = 7;

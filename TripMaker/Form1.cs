@@ -110,6 +110,7 @@ namespace TripMaker
                 bus1.Visible = false;
                 flight1.Visible = false;
                 login.Visible = false;
+               
             }
             else if (btn.Text == "About")
             {

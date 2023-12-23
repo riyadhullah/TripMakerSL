@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace TripMaker
 {
@@ -36,8 +37,8 @@ namespace TripMaker
         }
         private void btnOpen_Click(object sender, EventArgs e)
         {
-            txtPass.UseSystemPasswordChar = true;
-            txtCpass.UseSystemPasswordChar = true;
+            txtPass.UseSystemPasswordChar = false;
+            txtCpass.UseSystemPasswordChar = false;
             btncloseps.Visible = true;
             btnopenps.Visible = false;
             btnclosecp.Visible = true;
@@ -46,14 +47,13 @@ namespace TripMaker
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            txtPass.UseSystemPasswordChar = false;
-            txtCpass.UseSystemPasswordChar = false;
+            txtPass.UseSystemPasswordChar = true;
+            txtCpass.UseSystemPasswordChar = true;
             btncloseps.Visible = false;
             btnopenps.Visible = true;
             btnclosecp.Visible = false;
             btnopencp.Visible = true;
 
-            
         }
         private void newdata(object sender,EventArgs e)
         {
@@ -75,11 +75,43 @@ namespace TripMaker
         }
         private void singup_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtun.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtPN.Text) || string.IsNullOrWhiteSpace(richTxtAdrs.Text) || string.IsNullOrWhiteSpace(txtPass.Text) || string.IsNullOrWhiteSpace(txtCpass.Text))
+            {
+                MessageBox.Show("Please Fill Up All Information");
+                return;
+            }
             string name = txtName.Text;
+            Regex rvn = new Regex(@"^([a-z-A-z\s]+)$");
+            bool validn = rvn.IsMatch(txtName.Text);
+            if (!validn)
+            {
+                MessageBox.Show("Please Enter Valid Name");
+                return;
+            }
             string un = txtun.Text;
+            Regex rvun = new Regex(@"^([a-zA-Z0-9]+)$");
+            bool validun = rvun.IsMatch(txtun.Text);
+            if (!validun)
+            {
+                MessageBox.Show("Please Enter Valid UserName");
+                return;
+            }
             string email = txtEmail.Text;
+            Regex rv = new Regex(@"[^@\s]+@[^@\s]+\.[^@\s]+$");
+            bool valid = rv.IsMatch(txtEmail.Text);
+            if(!valid)
+            {
+                MessageBox.Show("Please Enter Valid Email Address");
+                return;
+            }
             string PN = txtPN.Text;
+            Regex rv1 = new Regex("^[0-9]{11}");
+            bool valid1 = rv1.IsMatch(txtPN.Text);
+            if (!valid1)
+            {
+                MessageBox.Show("Please Enter Valid Phone Number");
+                return;
+            }
             string gender = "";
             if (rdbMale.Checked == true)
             {
@@ -95,10 +127,11 @@ namespace TripMaker
                 return;
             }
             string pass = txtPass.Text;
-            string adrs = richTxtAdrs.Text;
-            if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtun.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtPN.Text) || string.IsNullOrWhiteSpace(richTxtAdrs.Text)|| string.IsNullOrWhiteSpace(txtPass.Text)|| string.IsNullOrWhiteSpace(txtCpass.Text))
+            Regex rvp = new Regex(@"^.{8,}$");
+            bool validp = rvp.IsMatch(txtPass.Text);
+            if (!validp)
             {
-                MessageBox.Show("Please Fill Up All Information");
+                MessageBox.Show("Please Enter Password At Least 8 Character");
                 return;
             }
             if (lblpdnm.Visible==true)
@@ -106,6 +139,7 @@ namespace TripMaker
                 MessageBox.Show("Password Did Not Match \nPlease Match The Password");
                 return;
             }
+            string adrs = richTxtAdrs.Text;
 
             string query = "insert into user_table([name],userName,email,phone_number,[type],gender,[password],[address]) values('" + name + "','" + un + "','" + email + "','" + PN + "','Castomer','" + gender + "','" + pass + "','" + adrs + "')";
             string error;
