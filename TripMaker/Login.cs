@@ -30,5 +30,30 @@ namespace TripMaker
             btnClose.Visible = false;
             btnOpen.Visible = true;
         }
+
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            string un = txtUN.Text;
+            string pass = txtPassword.Text;
+
+            string query = "select * from user_table where userName = '" + un + "' and [password] = '" + pass + "'; ";
+            string error;
+
+            DataTable dt = DataAccess.GetData(query, out error);
+            
+            if (string.IsNullOrEmpty(error) == false)
+            {
+                MessageBox.Show(error,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+            if (dt.Rows.Count == 0)
+            {
+                MessageBox.Show("Invalid User Name or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            
+        }
+
     }
 }
