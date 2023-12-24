@@ -31,31 +31,22 @@ namespace TripMaker
             string un = txtUN.Text;
             string pass = txtPassword.Text;
 
-            //MessageBox.Show(un + " " + pass);
+            string query = "select * from user_table where userName = '" + un + "' and [password] = '" + pass + "'; ";
+            string error;
 
-            try
+            DataTable dt = DataAccess.GetData(query, out error);
+            
+            if (string.IsNullOrEmpty(error) == false)
             {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\C# project\TripMakerSL\TripMakerDB.mdf;Integrated Security=True;Connect Timeout=30");
-                con.Open();
-
-                string query = "select * from user_table where userName = '"+un+"' and [password] = '"+pass+"'; ";
-
-                SqlCommand cmd = new SqlCommand(query, con);
-
-                SqlDataAdapter adp = new SqlDataAdapter(cmd);
-                DataSet ds = new DataSet();
-                adp.Fill(ds);
-
-                DataTable dt = ds.Tables[0];
-
-                MessageBox.Show(query);  
-
-                con.Close();
+                MessageBox.Show(error,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
             }
-            catch (Exception ex)
+            if (dt.Rows.Count == 0)
             {
-                MessageBox.Show("ex");
+                MessageBox.Show("Invalid User Name or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+            
         }
     }
 }
