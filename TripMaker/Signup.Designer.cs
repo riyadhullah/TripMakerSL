@@ -276,7 +276,6 @@ namespace TripMaker
             this.txtCpass.PasswordChar = '.';
             this.txtCpass.Size = new System.Drawing.Size(246, 28);
             this.txtCpass.TabIndex = 17;
-            this.txtCpass.Click += new System.EventHandler(this.btnClose_Click);
             this.txtCpass.TextChanged += new System.EventHandler(this.password_change);
             // 
             // txtPass
@@ -288,7 +287,6 @@ namespace TripMaker
             this.txtPass.PasswordChar = '.';
             this.txtPass.Size = new System.Drawing.Size(246, 28);
             this.txtPass.TabIndex = 16;
-            this.txtPass.Click += new System.EventHandler(this.btnClose_Click);
             this.txtPass.TextChanged += new System.EventHandler(this.password_change);
             // 
             // rdbFemale

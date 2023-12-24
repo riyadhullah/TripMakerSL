@@ -21,6 +21,7 @@ namespace TripMaker
 
         private void password_change(object sender, EventArgs e)
         {
+           
             if (string.IsNullOrEmpty(txtPass.Text) || string.IsNullOrEmpty(txtCpass.Text))
             {
                 lblpdnm.Visible = false;
@@ -75,7 +76,7 @@ namespace TripMaker
         }
         private void singup_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtun.Text) || string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtPN.Text) || string.IsNullOrWhiteSpace(richTxtAdrs.Text) || string.IsNullOrWhiteSpace(txtPass.Text) || string.IsNullOrWhiteSpace(txtCpass.Text))
+            if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtun.Text) || string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtPN.Text) || string.IsNullOrEmpty(richTxtAdrs.Text) || string.IsNullOrEmpty(txtPass.Text) || string.IsNullOrEmpty(txtCpass.Text))
             {
                 MessageBox.Show("Please Fill Up All Information");
                 return;
@@ -86,6 +87,7 @@ namespace TripMaker
             if (!validn)
             {
                 MessageBox.Show("Please Enter Valid Name");
+                txtName.Focus();
                 return;
             }
             string un = txtun.Text;
@@ -94,6 +96,7 @@ namespace TripMaker
             if (!validun)
             {
                 MessageBox.Show("Please Enter Valid UserName");
+                txtun.Focus();
                 return;
             }
             string email = txtEmail.Text;
@@ -102,6 +105,7 @@ namespace TripMaker
             if(!valid)
             {
                 MessageBox.Show("Please Enter Valid Email Address");
+                txtEmail.Focus();
                 return;
             }
             string PN = txtPN.Text;
@@ -110,6 +114,7 @@ namespace TripMaker
             if (!valid1)
             {
                 MessageBox.Show("Please Enter Valid Phone Number");
+                txtPN.Focus();
                 return;
             }
             string gender = "";
@@ -132,11 +137,14 @@ namespace TripMaker
             if (!validp)
             {
                 MessageBox.Show("Please Enter Password At Least 8 Character");
+                txtPass.Focus();
                 return;
             }
             if (lblpdnm.Visible==true)
             {
                 MessageBox.Show("Password Did Not Match \nPlease Match The Password");
+                txtPass.Focus();
+                txtCpass.Focus();
                 return;
             }
             string adrs = richTxtAdrs.Text;

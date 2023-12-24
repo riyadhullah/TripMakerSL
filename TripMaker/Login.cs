@@ -1,7 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace TripMaker
 {
@@ -26,6 +31,7 @@ namespace TripMaker
             btnOpen.Visible = true;
         }
 
+
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             string un = txtUN.Text;
@@ -48,5 +54,6 @@ namespace TripMaker
             }
             
         }
+
     }
 }

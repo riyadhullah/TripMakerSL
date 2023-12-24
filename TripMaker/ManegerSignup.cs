@@ -17,8 +17,10 @@ namespace TripMaker
         {
             InitializeComponent();
         }
+    
         private void password_change(object sender, EventArgs e)
         {
+              
             if (string.IsNullOrEmpty(txtPass.Text) || string.IsNullOrEmpty(txtCpass.Text))
             {
                 lblPdnm.Visible = false;
@@ -57,7 +59,7 @@ namespace TripMaker
 
         private void metroButton4_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtun.Text) || string.IsNullOrWhiteSpace(txtemail.Text) || string.IsNullOrWhiteSpace(txtpn.Text) || string.IsNullOrWhiteSpace(txtadrs.Text) || string.IsNullOrWhiteSpace(txtPass.Text) || string.IsNullOrWhiteSpace(txtCpass.Text))
+            if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtun.Text) || string.IsNullOrEmpty(txtemail.Text) || string.IsNullOrEmpty(txtpn.Text) || string.IsNullOrEmpty(txtadrs.Text) || string.IsNullOrEmpty(txtPass.Text) || string.IsNullOrEmpty(txtCpass.Text))
             {
                 MessageBox.Show("Please Fill Up All Information");
                 return;
@@ -68,6 +70,7 @@ namespace TripMaker
             if (!validn)
             {
                 MessageBox.Show("Please Enter Valid Name");
+                txtName.Focus();
                 return;
             }
             string un = txtun.Text;
@@ -76,6 +79,7 @@ namespace TripMaker
             if (!validun)
             {
                 MessageBox.Show("Please Enter Valid UserName");
+                txtun.Focus();
                 return;
             }
             string email = txtemail.Text;
@@ -84,6 +88,7 @@ namespace TripMaker
             if (!valid)
             {
                 MessageBox.Show("Please Enter Valid Email Address");
+                txtemail.Focus();
                 return;
             }
             string PN = txtpn.Text;
@@ -92,6 +97,7 @@ namespace TripMaker
             if (!valid1)
             {
                 MessageBox.Show("Please Enter Valid Phone Number");
+                txtpn.Focus();
                 return;
             }
             string gender = "";
@@ -114,26 +120,53 @@ namespace TripMaker
             if (!validp)
             {
                 MessageBox.Show("Please Enter Password At Least 8 Character");
+                txtPass.Focus();
                 return;
             }
             if (lblPdnm.Visible == true)
             {
                 MessageBox.Show("Password Did Not Match \nPlease Match The Password");
+                txtPass.Focus();
+                txtCpass.Focus();
                 return;
             }
             string adrs = txtadrs.Text;
+            string id = txtid.Text;
 
-            string query = "insert into user_table([name],userName,email,phone_number,[type],gender,[password],[address]) values('" + name + "','" + un + "','" + email + "','" + PN + "','Castomer','" + gender + "','" + pass + "','" + adrs + "')";
-            string error;
-            DataAccess.ExecuteData(query, out error);
-            if (string.IsNullOrEmpty(error) == false)
+            if (string.IsNullOrEmpty(id))
             {
-                MessageBox.Show(error);
-                return;
+                var query = "insert into user_table([name],userName,email,phone_number,[type],gender,[password],[address]) output inserted.Id values('" + name + "','" + un + "','" + email + "','" + PN + "','Castomer','" + gender + "','" + pass + "','" + adrs + "')";
+                string error;
+                var dt=DataAccess.GetData(query, out error);
+                if (string.IsNullOrEmpty(error) == false)
+                {
+                    MessageBox.Show(error);
+                    return;
+                }
+                txtid.Text = dt.Rows[0]["Id"].ToString();
+                MessageBox.Show("Saccessfully Signup");
+            }
+            else
+            {
+                var query = "update user_table set [name]='" + name + "',userName='" + un + "',email='" + email + "',phone_number='" + PN + "',gender='" + gender + "',[password]='" + pass + "',[address]='" + adrs + "' where id=" + id + "";
+                string error;
+                DataAccess.ExecuteData(query, out error);
+                if (string.IsNullOrEmpty(error) == false)
+                {
+                    MessageBox.Show(error);
+                    return;
+                }
+                MessageBox.Show("Update Signup");
             }
             this.loadgrid();
-            
-            MessageBox.Show("Saccessfully Signup \nPlease Login");
+            for(int i=0;i<metroGrid.Rows.Count;i++)
+            {
+                if(metroGrid.Rows[i].Cells[0].Value.ToString()== txtid.Text)
+                {
+                    metroGrid.Rows[i].Selected = true;
+                    break;
+                }
+            }
         }
         private void loadgrid()
         {
@@ -252,6 +285,7 @@ namespace TripMaker
         private void metroButton3_Click(object sender, EventArgs e)
         {
             this.loadgrid();
+            this.newdata();
         }
     }
 }
