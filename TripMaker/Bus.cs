@@ -12,6 +12,18 @@ namespace TripMaker
 {
     public partial class Bus : UserControl
     {
+        private static Bus instance;
+        public static Bus Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Bus();
+                }
+                return instance;
+            }
+        }
         public Bus()
         {
             InitializeComponent();

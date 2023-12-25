@@ -12,6 +12,20 @@ namespace TripMaker
 {
     public partial class Login : UserControl
     {
+        private static Login instance;
+        public static Login Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Login();
+                }
+                return instance;
+            }
+        }
+
+
         public Login()
         {
             InitializeComponent();
