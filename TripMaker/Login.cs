@@ -25,6 +25,14 @@ namespace TripMaker
             }
         }
 
+        public static Login setInstance
+        {
+            set
+            {
+                instance = value;
+            }
+        }
+
 
         public Login()
         {
@@ -59,6 +67,7 @@ namespace TripMaker
             if (string.IsNullOrEmpty(error) == false)
             {
                 MessageBox.Show(error,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                
                 return;
             }
             if (dt.Rows.Count == 0)
@@ -66,7 +75,9 @@ namespace TripMaker
                 MessageBox.Show("Invalid User Name or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
+            Home.Instance.BringToFront();
+            LogoutPanel.Instance.BringToFront();
+
         }
 
     }

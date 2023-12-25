@@ -10,21 +10,23 @@ using System.Windows.Forms;
 
 namespace TripMaker
 {
-    public partial class Flight : UserControl
+    public partial class Home : UserControl
     {
-        private static Flight instance;
-        public static Flight Instance
+
+        private static Home instance;
+
+        public static Home Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new Flight();
+                    instance = new Home();
                 }
                 return instance;
             }
         }
-        public static Flight setInstance
+        public static Home setInstance
         {
             set
             {
@@ -32,7 +34,7 @@ namespace TripMaker
             }
         }
 
-        public Flight()
+        public Home()
         {
             InitializeComponent();
         }

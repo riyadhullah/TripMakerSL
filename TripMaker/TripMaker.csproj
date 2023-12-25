@@ -74,11 +74,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAndSignupPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginAndSignupPanel.Designer.cs">
+      <DependentUpon>LoginAndSignupPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogoutPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogoutPanel.Designer.cs">
+      <DependentUpon>LogoutPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="ManegerBus.cs">
       <SubType>Form</SubType>
@@ -109,8 +127,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAndSignupPanel.resx">
+      <DependentUpon>LoginAndSignupPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoutPanel.resx">
+      <DependentUpon>LogoutPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManegerBus.resx">
       <DependentUpon>ManegerBus.cs</DependentUpon>

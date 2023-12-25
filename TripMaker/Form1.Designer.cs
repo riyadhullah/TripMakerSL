@@ -47,11 +47,8 @@ namespace TripMaker
             this.btnBus = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.panel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSignup = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.panelUp = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblLogo
@@ -272,44 +269,14 @@ namespace TripMaker
             this.panel.Size = new System.Drawing.Size(935, 662);
             this.panel.TabIndex = 8;
             // 
-            // panel2
+            // panelUp
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.btnSignup);
-            this.panel2.Controls.Add(this.btnLogin);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(265, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(935, 139);
-            this.panel2.TabIndex = 9;
-            // 
-            // btnSignup
-            // 
-            this.btnSignup.FlatAppearance.BorderSize = 0;
-            this.btnSignup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnSignup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSignup.Location = new System.Drawing.Point(821, 19);
-            this.btnSignup.Name = "btnSignup";
-            this.btnSignup.Size = new System.Drawing.Size(87, 45);
-            this.btnSignup.TabIndex = 17;
-            this.btnSignup.Text = "Signup";
-            this.btnSignup.UseVisualStyleBackColor = true;
-            this.btnSignup.Click += new System.EventHandler(this.btn_function);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnLogin.Location = new System.Drawing.Point(712, 19);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(87, 45);
-            this.btnLogin.TabIndex = 16;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btn_function);
+            this.panelUp.BackColor = System.Drawing.Color.Gray;
+            this.panelUp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUp.Location = new System.Drawing.Point(265, 0);
+            this.panelUp.Name = "panelUp";
+            this.panelUp.Size = new System.Drawing.Size(935, 139);
+            this.panelUp.TabIndex = 9;
             // 
             // Form1
             // 
@@ -317,16 +284,16 @@ namespace TripMaker
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 800);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelUp);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -334,7 +301,6 @@ namespace TripMaker
         #endregion
 
         private System.Windows.Forms.Label lblLogo;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel pnlHome;
         private System.Windows.Forms.Panel pnlWallet;
@@ -349,10 +315,9 @@ namespace TripMaker
         private System.Windows.Forms.Button btnBus;
         private System.Windows.Forms.Panel pnlAbout;
         private System.Windows.Forms.Button btnAbout;
-        private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnSignup;
-        private System.Windows.Forms.Button btnLogin;
+        protected System.Windows.Forms.Panel panel1;
+        protected System.Windows.Forms.Panel panel;
+        protected System.Windows.Forms.Panel panelUp;
     }
 }
 

@@ -26,6 +26,13 @@ namespace TripMaker
                 return instance;
             }
         }
+        public static Signup setInstance
+        {
+            set
+            {
+                instance = value;
+            }
+        }
 
         public Signup()
         {

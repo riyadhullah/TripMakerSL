@@ -24,6 +24,15 @@ namespace TripMaker
                 return instance;
             }
         }
+
+        public static Bus setInstance
+        {
+            set
+            {
+                instance = value;
+            }
+        }
+
         public Bus()
         {
             InitializeComponent();

@@ -12,13 +12,27 @@ namespace TripMaker
 {
     public partial class Form1 : Form
     {
+
+        private static Form1 instance;
+        public static Form1 Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Form1();
+                }
+                return instance;
+            }
+        }
+
         public Form1()
         {
             InitializeComponent();
         }
 
 
-        private void red_panel_changed(bool home, bool bus, bool flight, bool hotel, bool packages, bool wallet, bool about)
+        public void red_panel_changed(bool home, bool bus, bool flight, bool hotel, bool packages, bool wallet, bool about)
         {
             pnlHome.Visible = home;
             pnlBus.Visible = bus;
@@ -30,7 +44,6 @@ namespace TripMaker
         }
 
 
-
         private void btn_function(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -38,6 +51,7 @@ namespace TripMaker
             if (btn.Text == "Home")
             {
                 red_panel_changed(true, false, false, false, false, false, false);
+                Home.Instance.BringToFront();
             }
             else if (btn.Text == "Bus")
             {
@@ -87,7 +101,9 @@ namespace TripMaker
             {
                 red_panel_changed(false, false, false, false, false, false, true);
             }
-            else if (btn.Text == "Signup")
+            
+            
+            /*else if (btn.Text == "Signup")
             {
                 if (!panel.Controls.Contains(Signup.Instance))
                 {
@@ -99,26 +115,43 @@ namespace TripMaker
                 {
                     Signup.Instance.BringToFront();
                 }
-            }
-            else if (btn.Text == "Login")
+            }*/
+            
+            /*else if (btn.Text == "Login")
             {
                 if (!panel.Controls.Contains(Login.Instance))
                 {
                     panel.Controls.Add(Login.Instance);
                     Login.Instance.Dock = DockStyle.Fill;
-                    Login.Instance.BringToFront();
+                    
                 }
                 else
                 {
                     Login.Instance.BringToFront();
                 }
-            }
+            }*/
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            panel.Controls.Add(Home.Instance);
+            Home.Instance.Dock = DockStyle.Fill;
+            Home.Instance.BringToFront();
 
+            panelUp.Controls.Add(LoginAndSignupPanel.Instance);
+            LoginAndSignupPanel.Instance.Dock = DockStyle.Fill;
+            LoginAndSignupPanel.Instance.BringToFront();
 
+            panelUp.Controls.Add(LogoutPanel.Instance);
+            LogoutPanel.Instance.Dock = DockStyle.Fill;
 
+            panel.Controls.Add(Login.Instance);
+            Login.Instance.Dock = DockStyle.Fill;
 
+            panel.Controls.Add(Signup.Instance);
+            Signup.Instance.Dock = DockStyle.Fill;
+        }
+        
     }
 }
