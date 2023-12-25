@@ -271,22 +271,20 @@ namespace TripMaker
             // 
             this.txtCpass.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCpass.Location = new System.Drawing.Point(219, 383);
-            this.txtCpass.Multiline = true;
             this.txtCpass.Name = "txtCpass";
-            this.txtCpass.PasswordChar = '.';
-            this.txtCpass.Size = new System.Drawing.Size(246, 28);
+            this.txtCpass.Size = new System.Drawing.Size(207, 28);
             this.txtCpass.TabIndex = 17;
+            this.txtCpass.UseSystemPasswordChar = true;
             this.txtCpass.TextChanged += new System.EventHandler(this.password_change);
             // 
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.Location = new System.Drawing.Point(219, 335);
-            this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '.';
-            this.txtPass.Size = new System.Drawing.Size(246, 28);
+            this.txtPass.Size = new System.Drawing.Size(207, 28);
             this.txtPass.TabIndex = 16;
+            this.txtPass.UseSystemPasswordChar = true;
             this.txtPass.TextChanged += new System.EventHandler(this.password_change);
             // 
             // rdbFemale
