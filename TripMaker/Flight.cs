@@ -12,6 +12,19 @@ namespace TripMaker
 {
     public partial class Flight : UserControl
     {
+        private static Flight instance;
+        public static Flight Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Flight();
+                }
+                return instance;
+            }
+        }
+
         public Flight()
         {
             InitializeComponent();

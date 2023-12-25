@@ -17,133 +17,108 @@ namespace TripMaker
             InitializeComponent();
         }
 
+
+        private void red_panel_changed(bool home, bool bus, bool flight, bool hotel, bool packages, bool wallet, bool about)
+        {
+            pnlHome.Visible = home;
+            pnlBus.Visible = bus;
+            pnlFlight.Visible = flight;
+            pnlHotel.Visible = hotel;
+            pnlPackages.Visible = packages;
+            pnlWallet.Visible = wallet;
+            pnlAbout.Visible = about;
+        }
+
+
+
         private void btn_function(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
 
             if (btn.Text == "Home")
             {
-                pnlHome.Visible = true;
-                pnlBus.Visible = false;
-                pnlFlight.Visible = false;
-                pnlHotel.Visible = false;
-                pnlPackages.Visible = false;
-                pnlWallet.Visible = false;
-                pnlAbout.Visible = false;
-
-                signup.Visible = false;
-                bus1.Visible = false;
-                flight1.Visible = false;
-                login.Visible = false;
+                red_panel_changed(true, false, false, false, false, false, false);
             }
             else if (btn.Text == "Bus")
             {
-                pnlHome.Visible = false;
-                pnlBus.Visible = true;
-                pnlFlight.Visible = false;
-                pnlHotel.Visible = false;
-                pnlPackages.Visible = false;
-                pnlWallet.Visible = false;
-                pnlAbout.Visible = false;
+                red_panel_changed(false, true, false, false, false, false, false);
 
-                bus1.Visible = true;
-                flight1.Visible = false;
-                signup.Visible = false;
-                login.Visible = false;
+                if (!panel.Controls.Contains(Bus.Instance))
+                {
+                    panel.Controls.Add(Bus.Instance);
+                    Bus.Instance.Dock = DockStyle.Fill;
+                    Bus.Instance.BringToFront();
+                }
+                else
+                {
+                    Bus.Instance.BringToFront();
+                }
             }
             else if (btn.Text == "Flight")
             {
-                pnlHome.Visible = false;
-                pnlBus.Visible = false;
-                pnlFlight.Visible = true;
-                pnlHotel.Visible = false;
-                pnlPackages.Visible = false;
-                pnlWallet.Visible = false;
-                pnlAbout.Visible = false;
+                red_panel_changed(false, false, true, false, false, false, false);
 
-                flight1.Visible = true;
-                bus1.Visible = false;
-                signup.Visible = false;
-                login.Visible = false;
+                if (!panel.Controls.Contains(Flight.Instance))
+                {
+                    panel.Controls.Add(Flight.Instance);
+                    Flight.Instance.Dock = DockStyle.Fill;
+                    Flight.Instance.BringToFront();
+                }
+                else
+                {
+                    Flight.Instance.BringToFront();
+                }
             }
             else if (btn.Text == "Hotel")
             {
-                pnlHome.Visible = false;
-                pnlBus.Visible = false;
-                pnlFlight.Visible = false;
-                pnlHotel.Visible = true;
-                pnlPackages.Visible = false;
-                pnlWallet.Visible = false;
-                pnlAbout.Visible = false;
+                red_panel_changed(false, false, false, true, false, false, false);
 
-                signup.Visible = false;
-                bus1.Visible = false;
-                flight1.Visible = false;
-                login.Visible = false;
             }
             else if (btn.Text == "Packages")
             {
-                pnlHome.Visible = false;
-                pnlBus.Visible = false;
-                pnlFlight.Visible = false;
-                pnlHotel.Visible = false;
-                pnlPackages.Visible = true;
-                pnlWallet.Visible = false;
-                pnlAbout.Visible = false;
-
-                signup.Visible = false;
-                bus1.Visible = false;
-                flight1.Visible = false;
-                login.Visible = false;
+                red_panel_changed(false, false, false, false, true, false, false);
             }
             else if (btn.Text == "Wallet")
             {
-                pnlHome.Visible = false;
-                pnlBus.Visible = false;
-                pnlFlight.Visible = false;
-                pnlHotel.Visible = false;
-                pnlPackages.Visible = false;
-                pnlWallet.Visible = true;
-                pnlAbout.Visible = false;
+                red_panel_changed(false, false, false, false, false, true, false);
 
-                signup.Visible = false;
-                bus1.Visible = false;
-                flight1.Visible = false;
-                login.Visible = false;
-               
             }
             else if (btn.Text == "About")
             {
-                pnlHome.Visible = false;
-                pnlBus.Visible = false;
-                pnlFlight.Visible = false;
-                pnlHotel.Visible = false;
-                pnlPackages.Visible = false;
-                pnlWallet.Visible = false;
-                pnlAbout.Visible = true;
-
-                signup.Visible = false;
-                bus1.Visible = false;
-                flight1.Visible = false;
-                login.Visible = false;
+                red_panel_changed(false, false, false, false, false, false, true);
             }
-            else if(btn.Text == "Signup")
+            else if (btn.Text == "Signup")
             {
-                signup.Visible = true;
-                bus1.Visible = false;
-                flight1.Visible = false;
-                login.Visible = false;
+                if (!panel.Controls.Contains(Signup.Instance))
+                {
+                    panel.Controls.Add(Signup.Instance);
+                    Signup.Instance.Dock = DockStyle.Fill;
+                    Signup.Instance.BringToFront();
+                }
+                else
+                {
+                    Signup.Instance.BringToFront();
+                }
             }
             else if (btn.Text == "Login")
             {
-                signup.Visible = false;
-                bus1.Visible = false;
-                flight1.Visible = false;
-                login.Visible = true;
+                if (!panel.Controls.Contains(Login.Instance))
+                {
+                    panel.Controls.Add(Login.Instance);
+                    Login.Instance.Dock = DockStyle.Fill;
+                    Login.Instance.BringToFront();
+                }
+                else
+                {
+                    Login.Instance.BringToFront();
+                }
             }
 
         }
 
-        
+
+
+
+
     }
 }

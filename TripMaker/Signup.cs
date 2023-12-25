@@ -14,6 +14,19 @@ namespace TripMaker
 {
     public partial class Signup : UserControl
     {
+        private static Signup instance;
+        public static Signup Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Signup();
+                }
+                return instance;
+            }
+        }
+
         public Signup()
         {
             InitializeComponent();
