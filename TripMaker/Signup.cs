@@ -37,6 +37,8 @@ namespace TripMaker
         public Signup()
         {
             InitializeComponent();
+            txtPass.UseSystemPasswordChar = true;
+            txtCpass.UseSystemPasswordChar = true;
         }
 
         private void password_change(object sender, EventArgs e)
