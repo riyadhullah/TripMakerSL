@@ -70,6 +70,9 @@ namespace TripMaker
                 
                 return;
             }
+
+            //MessageBox.Show(dt.Rows.Count+"");
+
             if (dt.Rows.Count == 0)
             {
                 MessageBox.Show("Invalid User Name or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -78,7 +81,15 @@ namespace TripMaker
             Home.Instance.BringToFront();
             LogoutPanel.Instance.BringToFront();
 
+            string query1 = "insert into tmp_table values('"+un+"','"+pass+"')";
+
+            DataAccess.ExecuteData(query1, out error);
+
         }
 
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            Signup.Instance.BringToFront();
+        }
     }
 }

@@ -33,7 +33,7 @@ namespace TripMaker
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            LoginAndSignupPanel.Instance.BringToFront();
+            //LoginAndSignupPanel.Instance.BringToFront();
 
             //Form1 form1 = new Form1();
             //form1.red_panel_changed(true, false, false, false, false, false, false);
@@ -48,6 +48,17 @@ namespace TripMaker
             //Home.setInstance = null;
             //Flight.setInstance = null;
             //Signup.setInstance = null;
+
+
+            //Form1 form1 = new Form1();
+
+            //form1.load();
+            
+            string error;
+            string query = "delete from tmp_table";
+
+            DataAccess.ExecuteData(query, out error);
+
         }
     }
 }

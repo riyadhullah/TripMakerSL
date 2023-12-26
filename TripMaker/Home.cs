@@ -32,6 +32,7 @@ namespace TripMaker
             {
                 instance = value;
             }
+
         }
 
         public Home()

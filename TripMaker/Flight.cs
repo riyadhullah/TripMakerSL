@@ -19,6 +19,7 @@ namespace TripMaker
             {
                 if (instance == null)
                 {
+                    //MessageBox.Show("Null");
                     instance = new Flight();
                 }
                 return instance;

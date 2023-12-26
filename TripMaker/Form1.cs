@@ -50,43 +50,30 @@ namespace TripMaker
 
             if (btn.Text == "Home")
             {
+                //MessageBox.Show("home");
                 red_panel_changed(true, false, false, false, false, false, false);
+                
                 Home.Instance.BringToFront();
             }
             else if (btn.Text == "Bus")
             {
+                //MessageBox.Show("bus");
                 red_panel_changed(false, true, false, false, false, false, false);
 
-                if (!panel.Controls.Contains(Bus.Instance))
-                {
-                    panel.Controls.Add(Bus.Instance);
-                    Bus.Instance.Dock = DockStyle.Fill;
-                    Bus.Instance.BringToFront();
-                }
-                else
-                {
-                    Bus.Instance.BringToFront();
-                }
+                Bus.Instance.BringToFront();
+                
             }
             else if (btn.Text == "Flight")
             {
                 red_panel_changed(false, false, true, false, false, false, false);
 
-                if (!panel.Controls.Contains(Flight.Instance))
-                {
-                    panel.Controls.Add(Flight.Instance);
-                    Flight.Instance.Dock = DockStyle.Fill;
-                    Flight.Instance.BringToFront();
-                }
-                else
-                {
-                    Flight.Instance.BringToFront();
-                }
+                Flight.Instance.BringToFront();
+                
             }
             else if (btn.Text == "Hotel")
             {
                 red_panel_changed(false, false, false, true, false, false, false);
-
+                Hotel.Instance.BringToFront();
             }
             else if (btn.Text == "Packages")
             {
@@ -116,24 +103,43 @@ namespace TripMaker
                     Signup.Instance.BringToFront();
                 }
             }*/
-            
-            /*else if (btn.Text == "Login")
-            {
-                if (!panel.Controls.Contains(Login.Instance))
-                {
-                    panel.Controls.Add(Login.Instance);
-                    Login.Instance.Dock = DockStyle.Fill;
-                    
-                }
-                else
-                {
-                    Login.Instance.BringToFront();
-                }
-            }*/
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+            //MessageBox.Show("asd");
+
+            panel.Controls.Add(Home.Instance);
+            Home.Instance.Dock = DockStyle.Fill;
+            Home.Instance.BringToFront();
+
+            panelUp.Controls.Add(LoginAndSignupPanel.Instance);
+            LoginAndSignupPanel.Instance.Dock = DockStyle.Fill;
+            LoginAndSignupPanel.Instance.BringToFront();
+
+            panelUp.Controls.Add(LogoutPanel.Instance);
+            LogoutPanel.Instance.Dock = DockStyle.Fill;
+
+            panel.Controls.Add(Login.Instance);
+            Login.Instance.Dock = DockStyle.Fill;
+
+            panel.Controls.Add(Signup.Instance);
+            Signup.Instance.Dock = DockStyle.Fill;
+
+            panel.Controls.Add(Bus.Instance);
+            Bus.Instance.Dock = DockStyle.Fill;
+
+            panel.Controls.Add(Flight.Instance);
+            Flight.Instance.Dock = DockStyle.Fill;
+            
+            panel.Controls.Add(Hotel.Instance);
+            Hotel.Instance.Dock = DockStyle.Fill;
+
+            red_panel_changed(true, false, false, false, false, false, false);
+        }
+        
+        /*public void load()
         {
             panel.Controls.Add(Home.Instance);
             Home.Instance.Dock = DockStyle.Fill;
@@ -151,7 +157,15 @@ namespace TripMaker
 
             panel.Controls.Add(Signup.Instance);
             Signup.Instance.Dock = DockStyle.Fill;
-        }
-        
+
+            panel.Controls.Add(Bus.Instance);
+            Bus.Instance.Dock = DockStyle.Fill;
+
+            panel.Controls.Add(Flight.Instance);
+            Flight.Instance.Dock = DockStyle.Fill;
+
+            red_panel_changed(true, false, false, false, false, false, false);
+        }*/
+
     }
 }
