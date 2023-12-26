@@ -87,6 +87,7 @@ namespace TripMaker
             else if (btn.Text == "About")
             {
                 red_panel_changed(false, false, false, false, false, false, true);
+                profile.Instance.BringToFront();
             }
             
             
@@ -157,6 +158,7 @@ namespace TripMaker
 
             panel.Controls.Add(Signup.Instance);
             Signup.Instance.Dock = DockStyle.Fill;
+<<<<<<< Updated upstream
 
             panel.Controls.Add(Bus.Instance);
             Bus.Instance.Dock = DockStyle.Fill;
@@ -167,5 +169,12 @@ namespace TripMaker
             red_panel_changed(true, false, false, false, false, false, false);
         }*/
 
+=======
+           
+            panel.Controls.Add(profile.Instance);
+            profile.Instance.Dock = DockStyle.Fill;
+        }
+        
+>>>>>>> Stashed changes
     }
 }

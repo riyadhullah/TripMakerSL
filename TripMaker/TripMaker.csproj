@@ -116,6 +116,12 @@
     <Compile Include="ManegerSignup.Designer.cs">
       <DependentUpon>ManegerSignup.cs</DependentUpon>
     </Compile>
+    <Compile Include="profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="profile.Designer.cs">
+      <DependentUpon>profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signup.cs">
@@ -154,6 +160,9 @@
     <EmbeddedResource Include="ManegerSignup.resx">
       <DependentUpon>ManegerSignup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="profile.resx">
+      <DependentUpon>profile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -189,6 +198,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="photo\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="photo\imageIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
