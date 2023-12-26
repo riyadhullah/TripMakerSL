@@ -80,11 +80,17 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hotel.cs">
+    <Compile Include="Hotel1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Hotel.Designer.cs">
-      <DependentUpon>Hotel.cs</DependentUpon>
+    <Compile Include="Hotel1.Designer.cs">
+      <DependentUpon>Hotel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HotelInfo.Designer.cs">
+      <DependentUpon>HotelInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>UserControl</SubType>
@@ -142,8 +148,11 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hotel.resx">
-      <DependentUpon>Hotel.cs</DependentUpon>
+    <EmbeddedResource Include="Hotel1.resx">
+      <DependentUpon>Hotel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelInfo.resx">
+      <DependentUpon>HotelInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
