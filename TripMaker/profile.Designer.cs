@@ -104,7 +104,7 @@ namespace TripMaker
             // 
             this.lbladrs.AutoSize = true;
             this.lbladrs.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbladrs.Location = new System.Drawing.Point(36, 515);
+            this.lbladrs.Location = new System.Drawing.Point(92, 502);
             this.lbladrs.Name = "lbladrs";
             this.lbladrs.Size = new System.Drawing.Size(0, 23);
             this.lbladrs.TabIndex = 11;
@@ -182,9 +182,9 @@ namespace TripMaker
             // btnup
             // 
             this.btnup.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnup.Location = new System.Drawing.Point(714, 600);
+            this.btnup.Location = new System.Drawing.Point(607, 593);
             this.btnup.Name = "btnup";
-            this.btnup.Size = new System.Drawing.Size(161, 31);
+            this.btnup.Size = new System.Drawing.Size(268, 38);
             this.btnup.TabIndex = 19;
             this.btnup.Text = "Update Profile";
             this.btnup.UseVisualStyleBackColor = true;
@@ -260,6 +260,7 @@ namespace TripMaker
             this.Controls.Add(this.label1);
             this.Name = "profile";
             this.Size = new System.Drawing.Size(935, 662);
+            this.Load += new System.EventHandler(this.profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
