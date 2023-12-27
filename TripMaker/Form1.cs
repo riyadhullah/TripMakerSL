@@ -38,7 +38,6 @@ namespace TripMaker
             pnlBus.Visible = bus;
             pnlFlight.Visible = flight;
             pnlHotel.Visible = hotel;
-            pnlPackages.Visible = packages;
             pnlWallet.Visible = wallet;
             pnlAbout.Visible = about;
         }
@@ -143,9 +142,18 @@ namespace TripMaker
             panel.Controls.Add(profile.Instance);
             profile.Instance.Dock = DockStyle.Fill;
 
+            panel.Controls.Add(HotelRoom.Instance);
+            HotelRoom.Instance.Dock = DockStyle.Fill;
+
             red_panel_changed(true, false, false, false, false, false, false);
         }
-        
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
         /*public void load()
         {
             panel.Controls.Add(Home.Instance);
@@ -164,10 +172,6 @@ namespace TripMaker
 
             panel.Controls.Add(Signup.Instance);
             Signup.Instance.Dock = DockStyle.Fill;
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 
             panel.Controls.Add(Bus.Instance);
             Bus.Instance.Dock = DockStyle.Fill;
@@ -177,16 +181,8 @@ namespace TripMaker
 
             red_panel_changed(true, false, false, false, false, false, false);
         }*/
-<<<<<<< Updated upstream
-           
-            
-        
-=======
 
 
-        }
-        
-
->>>>>>> Stashed changes
     }
+}
 

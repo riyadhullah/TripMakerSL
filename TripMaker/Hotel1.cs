@@ -12,7 +12,7 @@ namespace TripMaker
 {
     public partial class Hotel : UserControl
     {
-        private HotelInfo[] listItem;
+        private HotelName[] listItem;
         private int[] index;
         private static Hotel instance;
 
@@ -57,7 +57,7 @@ namespace TripMaker
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(cmbDestination.Text) == true)
+            /*if(string.IsNullOrEmpty(cmbDestination.Text) == true)
             {
                 return;
             }
@@ -93,23 +93,49 @@ namespace TripMaker
                     flowLayoutPanel1.Controls.Add(listItem[i]);
                     panel.Visible = true;
                 }
+                catch (Exception ex) 
+                {
+
+                }*/
+
+            if (string.IsNullOrEmpty(cmbDestination.Text) == true)
+            {
+                return;
+            }
+
+            string query = "select hotel_name from hotel_table  where destination_id = (select destination_id from destination_table where destination_loc = 'Cox')";
+            string error;
+
+            DataTable dt = DataAccess.GetData(query, out error);
+
+            listItem = new HotelName[dt.Rows.Count];
+
+            index = new int[listItem.Length];
+
+            if (listItem.Length == 0)
+            {
+                panel.Visible = false;
+                flowLayoutPanel1.Controls.Clear();
+            }
+
+            for (int i = 0; i < listItem.Length; i++)
+            {
+                try
+                {
+                    listItem[i] = new HotelName();
+                    listItem[i].HotelNamee = dt.Rows[i]["hotel_name"].ToString();
+
+                    flowLayoutPanel1.Controls.Add(listItem[i]);
+                    panel.Visible = true;
+                }
                 catch (Exception ex)
                 {
 
                 }
-                
+
             }
+
         }
 
-        private void btnBook_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < listItem.Length; i++)
-            {
-                if(listItem[i].checkBox_checker())
-                {
-
-                }
-            }
-        }
     }
 }

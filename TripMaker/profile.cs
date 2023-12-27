@@ -84,18 +84,26 @@ namespace TripMaker
                 MessageBox.Show(error);
                 return;
             }
-           
-            lblname.Text = dt.Rows[0]["name"].ToString();
-            lblun.Text = dt.Rows[0]["userName"].ToString();
-            lblemail.Text = dt.Rows[0]["Email"].ToString();
-            lblpn.Text = dt.Rows[0]["Phone_number"].ToString();
-            lblgender.Text = dt.Rows[0]["gender"].ToString();
-            lbladrs.Text = dt.Rows[0]["Address"].ToString();
-            picturebox.Image = convertByteArrayToImage((byte[])dt.Rows[0]["ImagePath"]);
-          
-            
 
-            un = lblun.Text;
+            try
+            {
+                lblname.Text = dt.Rows[0]["name"].ToString();
+                lblun.Text = dt.Rows[0]["userName"].ToString();
+                lblemail.Text = dt.Rows[0]["Email"].ToString();
+                lblpn.Text = dt.Rows[0]["Phone_number"].ToString();
+                lblgender.Text = dt.Rows[0]["gender"].ToString();
+                lbladrs.Text = dt.Rows[0]["Address"].ToString();
+                //picturebox.Image = convertByteArrayToImage((byte[])dt.Rows[0]["ImagePath"]);
+
+
+
+                un = lblun.Text;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("fahad");
+            }
+            
         }
          byte[] convertImageToBytes(Image img)
         {

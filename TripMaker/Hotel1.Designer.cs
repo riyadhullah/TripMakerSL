@@ -38,7 +38,6 @@ namespace TripMaker
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel = new System.Windows.Forms.Panel();
-            this.btnBook = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel.SuspendLayout();
             this.SuspendLayout();
@@ -129,24 +128,12 @@ namespace TripMaker
             // 
             // panel
             // 
-            this.panel.Controls.Add(this.btnBook);
             this.panel.Controls.Add(this.label3);
             this.panel.Location = new System.Drawing.Point(1, 160);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(932, 48);
             this.panel.TabIndex = 0;
             this.panel.Visible = false;
-            // 
-            // btnBook
-            // 
-            this.btnBook.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBook.Location = new System.Drawing.Point(792, 6);
-            this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(93, 33);
-            this.btnBook.TabIndex = 26;
-            this.btnBook.Text = "Book";
-            this.btnBook.UseVisualStyleBackColor = true;
-            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // label3
             // 
@@ -164,6 +151,7 @@ namespace TripMaker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnSearch);
@@ -194,7 +182,6 @@ namespace TripMaker
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.Button btnBook;
         private System.Windows.Forms.Label label3;
     }
 }
