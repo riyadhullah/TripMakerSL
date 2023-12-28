@@ -33,14 +33,11 @@ namespace TripMaker
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.picturebox = new System.Windows.Forms.PictureBox();
             this.lbladrs = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnadd = new System.Windows.Forms.Button();
-            this.txtpath = new System.Windows.Forms.TextBox();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnup = new System.Windows.Forms.Button();
             this.lblname = new System.Windows.Forms.Label();
@@ -48,6 +45,8 @@ namespace TripMaker
             this.lblpn = new System.Windows.Forms.Label();
             this.lblun = new System.Windows.Forms.Label();
             this.lblgender = new System.Windows.Forms.Label();
+            this.btnadd = new System.Windows.Forms.Button();
+            this.picturebox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,15 +89,6 @@ namespace TripMaker
             this.label4.Size = new System.Drawing.Size(96, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Gender :";
-            // 
-            // picturebox
-            // 
-            this.picturebox.Location = new System.Drawing.Point(693, 51);
-            this.picturebox.Name = "picturebox";
-            this.picturebox.Size = new System.Drawing.Size(159, 169);
-            this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picturebox.TabIndex = 9;
-            this.picturebox.TabStop = false;
             // 
             // lbladrs
             // 
@@ -149,25 +139,6 @@ namespace TripMaker
             this.label5.TabIndex = 12;
             this.label5.Text = "Contact Information";
             // 
-            // btnadd
-            // 
-            this.btnadd.BackgroundImage = global::TripMaker.Properties.Resources.imageIcon;
-            this.btnadd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnadd.Location = new System.Drawing.Point(728, 95);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(87, 89);
-            this.btnadd.TabIndex = 15;
-            this.btnadd.UseVisualStyleBackColor = true;
-            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
-            // 
-            // txtpath
-            // 
-            this.txtpath.Location = new System.Drawing.Point(693, 23);
-            this.txtpath.Name = "txtpath";
-            this.txtpath.Size = new System.Drawing.Size(159, 22);
-            this.txtpath.TabIndex = 17;
-            this.txtpath.Visible = false;
-            // 
             // btnsave
             // 
             this.btnsave.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,6 +159,7 @@ namespace TripMaker
             this.btnup.TabIndex = 19;
             this.btnup.Text = "Update Profile";
             this.btnup.UseVisualStyleBackColor = true;
+            this.btnup.Click += new System.EventHandler(this.btnup_Click);
             // 
             // lblname
             // 
@@ -234,6 +206,26 @@ namespace TripMaker
             this.lblgender.Size = new System.Drawing.Size(0, 23);
             this.lblgender.TabIndex = 25;
             // 
+            // btnadd
+            // 
+            this.btnadd.BackgroundImage = global::TripMaker.Properties.Resources.imageIcon;
+            this.btnadd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnadd.Location = new System.Drawing.Point(728, 95);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(87, 89);
+            this.btnadd.TabIndex = 15;
+            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
+            // 
+            // picturebox
+            // 
+            this.picturebox.Location = new System.Drawing.Point(693, 51);
+            this.picturebox.Name = "picturebox";
+            this.picturebox.Size = new System.Drawing.Size(159, 169);
+            this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturebox.TabIndex = 9;
+            this.picturebox.TabStop = false;
+            // 
             // profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -246,7 +238,6 @@ namespace TripMaker
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.btnup);
             this.Controls.Add(this.btnsave);
-            this.Controls.Add(this.txtpath);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -280,7 +271,6 @@ namespace TripMaker
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.TextBox txtpath;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnup;
         private System.Windows.Forms.Label lblname;
