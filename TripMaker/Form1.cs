@@ -38,7 +38,6 @@ namespace TripMaker
             pnlBus.Visible = bus;
             pnlFlight.Visible = flight;
             pnlHotel.Visible = hotel;
-            pnlPackages.Visible = packages;
             pnlWallet.Visible = wallet;
             pnlAbout.Visible = about;
         }
@@ -73,6 +72,7 @@ namespace TripMaker
             else if (btn.Text == "Hotel")
             {
                 red_panel_changed(false, false, false, true, false, false, false);
+                HotelRoom.Instance.flowLayoutPanel_clear();
                 Hotel.Instance.BringToFront();
             }
             else if (btn.Text == "Packages")
@@ -82,12 +82,12 @@ namespace TripMaker
             else if (btn.Text == "Wallet")
             {
                 red_panel_changed(false, false, false, false, false, true, false);
-
+                profile.Instance.BringToFront();
             }
             else if (btn.Text == "About")
             {
                 red_panel_changed(false, false, false, false, false, false, true);
-                profile.Instance.BringToFront();
+                Profileedit.Instance.BringToFront();
             }
             
             
@@ -137,15 +137,25 @@ namespace TripMaker
             panel.Controls.Add(Hotel.Instance);
             Hotel.Instance.Dock = DockStyle.Fill;
            
+            
             panel.Controls.Add(profile.Instance);
             profile.Instance.Dock = DockStyle.Fill;
+            
+            panel.Controls.Add(Profileedit.Instance);
+            Profileedit.Instance.Dock = DockStyle.Fill;
 
-            panel.Controls.Add(profile.Instance);
-            profile.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(HotelRoom.Instance);
+            HotelRoom.Instance.Dock = DockStyle.Fill;
 
             red_panel_changed(true, false, false, false, false, false, false);
         }
-        
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
         /*public void load()
         {
             panel.Controls.Add(Home.Instance);
@@ -164,10 +174,7 @@ namespace TripMaker
 
             panel.Controls.Add(Signup.Instance);
             Signup.Instance.Dock = DockStyle.Fill;
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 
             panel.Controls.Add(Bus.Instance);
             Bus.Instance.Dock = DockStyle.Fill;
@@ -177,16 +184,14 @@ namespace TripMaker
 
             red_panel_changed(true, false, false, false, false, false, false);
         }*/
-<<<<<<< Updated upstream
-           
-            
-        
-=======
+
 
 
         }
         
 
->>>>>>> Stashed changes
+
+
     }
+
 

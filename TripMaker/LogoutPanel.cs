@@ -60,5 +60,10 @@ namespace TripMaker
             DataAccess.ExecuteData(query, out error);
 
         }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            profile.Instance.BringToFront();
+        }
     }
 }

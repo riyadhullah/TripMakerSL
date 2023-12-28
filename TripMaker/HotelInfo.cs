@@ -75,7 +75,6 @@ namespace TripMaker
             set
             {
                 hotelName = value;
-                lblName.Text = value;
             }
         }
 
