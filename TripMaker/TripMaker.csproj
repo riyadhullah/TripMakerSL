@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="AirportManagerView.Designer.cs">
       <DependentUpon>AirportManagerView.cs</DependentUpon>
+   </Compile>
     <Compile Include="BookingInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +180,7 @@
     </Compile>
     <EmbeddedResource Include="AirportManagerView.resx">
       <DependentUpon>AirportManagerView.cs</DependentUpon>
+</EmbeddedResource>
     <EmbeddedResource Include="BookingInfo.resx">
       <DependentUpon>BookingInfo.cs</DependentUpon>
     </EmbeddedResource>
