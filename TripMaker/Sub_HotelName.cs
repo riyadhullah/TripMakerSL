@@ -10,28 +10,28 @@ using System.Windows.Forms;
 
 namespace TripMaker
 {
-    public partial class HotelName : UserControl
+    public partial class Sub_HotelName : UserControl
     {
-        public HotelName()
+        public Sub_HotelName()
         {
             InitializeComponent();
         }
 
-        private static HotelName instance;
+        private static Sub_HotelName instance;
 
-        public static HotelName Instance
+        public static Sub_HotelName Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new HotelName();
+                    instance = new Sub_HotelName();
                 }
                 return instance;
             }
         }
 
-        public static HotelName setInstance
+        public static Sub_HotelName setInstance
         {
             set
             {

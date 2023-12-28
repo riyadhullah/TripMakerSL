@@ -60,6 +60,11 @@
     </Compile>
     <Compile Include="AirportManagerView.Designer.cs">
       <DependentUpon>AirportManagerView.cs</DependentUpon>
+    <Compile Include="BookingInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookingInfo.Designer.cs">
+      <DependentUpon>BookingInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Bus.cs">
       <SubType>UserControl</SubType>
@@ -98,17 +103,23 @@
     <Compile Include="Hotel1.Designer.cs">
       <DependentUpon>Hotel1.cs</DependentUpon>
     </Compile>
-    <Compile Include="HotelInfo.cs">
+    <Compile Include="Sub_HotelBookingInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HotelInfo.Designer.cs">
-      <DependentUpon>HotelInfo.cs</DependentUpon>
+    <Compile Include="Sub_HotelBookingInfo.Designer.cs">
+      <DependentUpon>Sub_HotelBookingInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="HotelName.cs">
+    <Compile Include="Sub_RoomInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HotelName.Designer.cs">
-      <DependentUpon>HotelName.cs</DependentUpon>
+    <Compile Include="Sub_RoomInfo.Designer.cs">
+      <DependentUpon>Sub_RoomInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sub_HotelName.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub_HotelName.Designer.cs">
+      <DependentUpon>Sub_HotelName.cs</DependentUpon>
     </Compile>
     <Compile Include="HotelRoom.cs">
       <SubType>UserControl</SubType>
@@ -168,6 +179,8 @@
     </Compile>
     <EmbeddedResource Include="AirportManagerView.resx">
       <DependentUpon>AirportManagerView.cs</DependentUpon>
+    <EmbeddedResource Include="BookingInfo.resx">
+      <DependentUpon>BookingInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bus.resx">
       <DependentUpon>Bus.cs</DependentUpon>
@@ -187,11 +200,14 @@
     <EmbeddedResource Include="Hotel1.resx">
       <DependentUpon>Hotel1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HotelInfo.resx">
-      <DependentUpon>HotelInfo.cs</DependentUpon>
+    <EmbeddedResource Include="Sub_HotelBookingInfo.resx">
+      <DependentUpon>Sub_HotelBookingInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HotelName.resx">
-      <DependentUpon>HotelName.cs</DependentUpon>
+    <EmbeddedResource Include="Sub_RoomInfo.resx">
+      <DependentUpon>Sub_RoomInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub_HotelName.resx">
+      <DependentUpon>Sub_HotelName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HotelRoom.resx">
       <DependentUpon>HotelRoom.cs</DependentUpon>
@@ -229,9 +245,6 @@
     </Compile>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Wallet.resx">
-      <DependentUpon>Wallet.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

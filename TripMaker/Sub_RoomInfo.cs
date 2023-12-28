@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TripMaker
 {
-    public partial class HotelInfo : UserControl
+    public partial class Sub_RoomInfo : UserControl
     {
-        public HotelInfo()
+        public Sub_RoomInfo()
         {
             InitializeComponent();
         }

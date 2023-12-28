@@ -12,7 +12,7 @@ namespace TripMaker
 {
     public partial class Hotel : UserControl
     {
-        private HotelName[] listItem;
+        private Sub_HotelName[] listItem;
         private int[] index;
         private static Hotel instance;
         private string dateTimePicker11;
@@ -121,7 +121,7 @@ namespace TripMaker
 
             DataTable dt = DataAccess.GetData(query, out error);
 
-            listItem = new HotelName[dt.Rows.Count];
+            listItem = new Sub_HotelName[dt.Rows.Count];
 
             index = new int[listItem.Length];
 
@@ -140,7 +140,7 @@ namespace TripMaker
             {
                 try
                 {
-                    listItem[i] = new HotelName();
+                    listItem[i] = new Sub_HotelName();
                     listItem[i].HotelNamee = dt.Rows[i]["hotel_name"].ToString();
 
                     flowLayoutPanel1.Controls.Add(listItem[i]);
@@ -148,7 +148,7 @@ namespace TripMaker
                 }
                 catch (Exception ex)
                 {
-
+                    MessageBox.Show(ex.Message);
                 }
 
             }
