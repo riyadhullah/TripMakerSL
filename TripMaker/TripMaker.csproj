@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AirportManagerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AirportManagerView.Designer.cs">
+      <DependentUpon>AirportManagerView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bus.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -67,6 +73,12 @@
     </Compile>
     <Compile Include="Flight.Designer.cs">
       <DependentUpon>Flight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightManagerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightManagerView.Designer.cs">
+      <DependentUpon>FlightManagerView.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -136,11 +148,17 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AirportManagerView.resx">
+      <DependentUpon>AirportManagerView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bus.resx">
       <DependentUpon>Bus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Flight.resx">
       <DependentUpon>Flight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightManagerView.resx">
+      <DependentUpon>FlightManagerView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
