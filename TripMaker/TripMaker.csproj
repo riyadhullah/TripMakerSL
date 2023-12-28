@@ -92,6 +92,18 @@
     <Compile Include="HotelInfo.Designer.cs">
       <DependentUpon>HotelInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="HotelName.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HotelName.Designer.cs">
+      <DependentUpon>HotelName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HotelRoom.Designer.cs">
+      <DependentUpon>HotelRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +154,12 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Wallet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wallet.Designer.cs">
+      <DependentUpon>Wallet.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Bus.resx">
       <DependentUpon>Bus.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +177,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HotelInfo.resx">
       <DependentUpon>HotelInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelName.resx">
+      <DependentUpon>HotelName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelRoom.resx">
+      <DependentUpon>HotelRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -193,6 +217,9 @@
     </Compile>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wallet.resx">
+      <DependentUpon>Wallet.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
