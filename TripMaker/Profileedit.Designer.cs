@@ -235,6 +235,7 @@ namespace TripMaker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.btnnew);
             this.Controls.Add(this.btnup);
             this.Controls.Add(this.picturebox);
