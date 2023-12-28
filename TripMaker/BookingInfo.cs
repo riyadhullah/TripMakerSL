@@ -37,7 +37,7 @@ namespace TripMaker
 
 
             string query = @"select * from (select book_room_info.book_id, book_room_info.room_id, check_in, check_out, book_room_info.hotel_id, breakfast_include, 
-                            lunch_include, dinner_include, guest_per_room, price_per_night from 
+                            lunch_include, dinner_include, guest_per_room, price_per_night , room_type from 
                             (select book_info.book_id, room_id, check_in, check_out, hotel_id  from (select * from hotel_book_info where user_id = 1006) as book_info
                             inner join book_room_relation on book_info.book_Id = book_room_relation.book_id) as book_room_info
                             inner join hotel_room_table on hotel_room_table.room_id = book_room_info.room_id) as book_hotel_info
@@ -57,6 +57,24 @@ namespace TripMaker
             for (int i = 0; i < listItem.Length; i++)
             {
                 listItem[i] = new Sub_HotelBookingInfo();
+
+                DateTime date1 = DateTime.Parse(dt.Rows[i]["check_in"].ToString());
+                DateTime date2 = DateTime.Parse(dt.Rows[i]["check_out"].ToString());
+                int day = (date2 - date1).Days;
+
+                listItem[i].HotelName = dt.Rows[i]["hotel_name"].ToString();
+                listItem[i].RoomName = dt.Rows[i]["room_type"].ToString();
+                listItem[i].Breakfast = dt.Rows[i]["breakfast_include"].ToString();
+                listItem[i].Lunch = dt.Rows[i]["lunch_include"].ToString();
+                listItem[i].Dinner = dt.Rows[i]["dinner_include"].ToString();
+                listItem[i].Guest = dt.Rows[i]["guest_per_room"].ToString();
+                listItem[i].BookingId = "Booking Id : " + dt.Rows[i]["book_id"].ToString();
+                listItem[i].Checkin = dt.Rows[i]["check_in"].ToString();
+                listItem[i].Checkout = dt.Rows[i]["check_out"].ToString();
+                listItem[i].NightStay = "Nights Stay : " + day;
+                listItem[i].TotalPrice = day +" * "+ dt.Rows[i]["price_per_night"]+" = " + (day* Int32.Parse(dt.Rows[i]["price_per_night"].ToString()));
+
+                //MessageBox.Show(day+"");
 
                 flowLayoutPanel1.Controls.Add(listItem[i]);
                 lblSelectOne.Visible = false;

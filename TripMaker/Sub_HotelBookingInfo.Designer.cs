@@ -34,7 +34,6 @@ namespace TripMaker
             this.lblDinner = new System.Windows.Forms.Label();
             this.lblLunch = new System.Windows.Forms.Label();
             this.lblBreakfast = new System.Windows.Forms.Label();
-            this.lblPrice = new System.Windows.Forms.Label();
             this.aaaa = new System.Windows.Forms.Label();
             this.aaa = new System.Windows.Forms.Label();
             this.aa = new System.Windows.Forms.Label();
@@ -45,10 +44,7 @@ namespace TripMaker
             this.lblCheckin = new System.Windows.Forms.Label();
             this.lblCheckout = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblNight = new System.Windows.Forms.Label();
             this.lblBookingId = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -104,17 +100,6 @@ namespace TripMaker
             this.lblBreakfast.Size = new System.Drawing.Size(39, 21);
             this.lblBreakfast.TabIndex = 19;
             this.lblBreakfast.Text = "Yes";
-            // 
-            // lblPrice
-            // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblPrice.Location = new System.Drawing.Point(727, 239);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(74, 23);
-            this.lblPrice.TabIndex = 18;
-            this.lblPrice.Text = "1000TK";
             // 
             // aaaa
             // 
@@ -225,17 +210,6 @@ namespace TripMaker
             this.label4.TabIndex = 29;
             this.label4.Text = "to";
             // 
-            // lblNight
-            // 
-            this.lblNight.AutoSize = true;
-            this.lblNight.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNight.ForeColor = System.Drawing.Color.Black;
-            this.lblNight.Location = new System.Drawing.Point(693, 239);
-            this.lblNight.Name = "lblNight";
-            this.lblNight.Size = new System.Drawing.Size(21, 23);
-            this.lblNight.TabIndex = 30;
-            this.lblNight.Text = "1";
-            // 
             // lblBookingId
             // 
             this.lblBookingId.AutoSize = true;
@@ -247,48 +221,23 @@ namespace TripMaker
             this.lblBookingId.TabIndex = 31;
             this.lblBookingId.Text = "Booking Id :";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(709, 239);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 23);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "x";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(800, 239);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(22, 23);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "=";
-            // 
             // lblTotalPrice
             // 
             this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPrice.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalPrice.Location = new System.Drawing.Point(819, 239);
+            this.lblTotalPrice.Location = new System.Drawing.Point(747, 227);
             this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(74, 23);
-            this.lblTotalPrice.TabIndex = 34;
-            this.lblTotalPrice.Text = "1000TK";
+            this.lblTotalPrice.Size = new System.Drawing.Size(105, 23);
+            this.lblTotalPrice.TabIndex = 32;
+            this.lblTotalPrice.Text = "Total Price";
             // 
             // Sub_HotelBookingInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblTotalPrice);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.lblBookingId);
-            this.Controls.Add(this.lblNight);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblCheckout);
             this.Controls.Add(this.lblCheckin);
@@ -299,7 +248,6 @@ namespace TripMaker
             this.Controls.Add(this.lblDinner);
             this.Controls.Add(this.lblLunch);
             this.Controls.Add(this.lblBreakfast);
-            this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.aaaa);
             this.Controls.Add(this.aaa);
             this.Controls.Add(this.aa);
@@ -318,7 +266,6 @@ namespace TripMaker
         private System.Windows.Forms.Label lblDinner;
         private System.Windows.Forms.Label lblLunch;
         private System.Windows.Forms.Label lblBreakfast;
-        private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label aaaa;
         private System.Windows.Forms.Label aaa;
         private System.Windows.Forms.Label aa;
@@ -329,10 +276,7 @@ namespace TripMaker
         private System.Windows.Forms.Label lblCheckin;
         private System.Windows.Forms.Label lblCheckout;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblNight;
         private System.Windows.Forms.Label lblBookingId;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblTotalPrice;
     }
 }

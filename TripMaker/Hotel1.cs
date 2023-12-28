@@ -135,6 +135,7 @@ namespace TripMaker
             dateTimePicker22 = dateTimePicker2.Value.ToShortDateString();
 
             MessageBox.Show(dateTimePicker11);
+            MessageBox.Show(dateTimePicker22);
 
             for (int i = 0; i < listItem.Length; i++)
             {
