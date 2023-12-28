@@ -34,6 +34,7 @@ namespace TripMaker
             this.lblHotelName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnBook = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@ namespace TripMaker
             // 
             // panel
             // 
+            this.panel.Controls.Add(this.btnBack);
             this.panel.Controls.Add(this.lblHotelName);
             this.panel.Controls.Add(this.label3);
             this.panel.Controls.Add(this.btnBook);
@@ -86,13 +88,24 @@ namespace TripMaker
             // btnBook
             // 
             this.btnBook.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBook.Location = new System.Drawing.Point(814, 5);
+            this.btnBook.Location = new System.Drawing.Point(684, 5);
             this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(88, 38);
+            this.btnBook.Size = new System.Drawing.Size(117, 38);
             this.btnBook.TabIndex = 2;
-            this.btnBook.Text = "Book";
+            this.btnBook.Text = "Book now";
             this.btnBook.UseVisualStyleBackColor = true;
             this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(820, 6);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(88, 38);
+            this.btnBack.TabIndex = 21;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // HotelRoom
             // 
@@ -115,5 +128,6 @@ namespace TripMaker
         private System.Windows.Forms.Label lblHotelName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnBook;
+        private System.Windows.Forms.Button btnBack;
     }
 }

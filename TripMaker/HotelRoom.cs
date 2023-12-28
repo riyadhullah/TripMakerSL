@@ -15,6 +15,7 @@ namespace TripMaker
         private HotelInfo[] listItem;
         private int[] index;
         private static string hotelName;
+        private DataTable dt;
         public HotelRoom()
         {
             InitializeComponent();
@@ -65,7 +66,7 @@ namespace TripMaker
             string query = "select * from hotel_room_table where hotel_id = (select hotel_id from hotel_table where hotel_name = '"+ hotelName + "')";
             string error;
 
-            DataTable dt = DataAccess.GetData(query, out error);
+            dt = DataAccess.GetData(query, out error);
 
             listItem = new HotelInfo[dt.Rows.Count];
 
@@ -104,24 +105,79 @@ namespace TripMaker
 
         private void btnBook_Click(object sender, EventArgs e)
         {
-            List<int> list = new List<int>();
+            List<int> index = new List<int>();
 
             for (int i = 0; i < listItem.Length; i++)
             {
                 if (listItem[i].checkBox_checker())
                 {
-                    list.Add(i);
+                    index.Add(i);
                 }
             }
 
             string s = "";
-            foreach (int num in list)
+            foreach (int num in index)
             {
                 
                 s = num + s;
                 
             }
-            MessageBox.Show(s);
+
+            string dtp1 = Hotel.Instance.DateTimePicker11;
+            string dtp2 = Hotel.Instance.DateTimePicker22;
+
+            string query = "select hotel_id from hotel_table where hotel_name = '" + hotelName + "'";
+            string error;
+
+            DataTable dt1 = DataAccess.GetData(query, out error);
+
+            if(!string.IsNullOrEmpty(error))
+            {
+                MessageBox.Show(error);
+                return;
+            }
+
+            int hotel_id = Int32.Parse(dt1.Rows[0][0].ToString());
+            MessageBox.Show(hotel_id+" hotel id");
+
+
+            string query1 = "insert into hotel_book_info output inserted.book_id values ('" + dtp1+"', '"+dtp2+"', 1006, "+hotel_id+")";
+            string error1;
+
+            DataTable dt2 = DataAccess.GetData(query1, out error1);
+
+            if (!string.IsNullOrEmpty(error1))
+            {
+                MessageBox.Show(error1);
+                return;
+            }
+
+            int book_id = Int32.Parse(dt2.Rows[0][0].ToString());
+            MessageBox.Show(book_id + " booking id");
+
+            for (int i = 0; i < index.Count; i++)
+            {
+                int room_id = Int32.Parse(dt.Rows[index[i]]["room_id"].ToString());
+
+                string query2 = "insert into book_room_relation values (" + book_id + ", " + room_id + ", " + index.Count + " )";
+                string error2;
+                MessageBox.Show(query2);
+                DataAccess.ExecuteData(query2, out error2);
+            }
+
+
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel_clear();
+            Hotel.Instance.BringToFront();
+        }
+
+        public void flowLayoutPanel_clear()
+        {
+            flowLayoutPanel1.Controls.Clear();
         }
     }
 }

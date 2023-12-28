@@ -72,6 +72,7 @@ namespace TripMaker
             else if (btn.Text == "Hotel")
             {
                 red_panel_changed(false, false, false, true, false, false, false);
+                HotelRoom.Instance.flowLayoutPanel_clear();
                 Hotel.Instance.BringToFront();
             }
             else if (btn.Text == "Packages")

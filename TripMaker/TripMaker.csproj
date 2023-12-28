@@ -148,6 +148,12 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Wallet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wallet.Designer.cs">
+      <DependentUpon>Wallet.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Bus.resx">
       <DependentUpon>Bus.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +208,9 @@
     </Compile>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wallet.resx">
+      <DependentUpon>Wallet.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

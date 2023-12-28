@@ -15,6 +15,18 @@ namespace TripMaker
         private HotelName[] listItem;
         private int[] index;
         private static Hotel instance;
+        private string dateTimePicker11;
+        private string dateTimePicker22;
+
+        public string DateTimePicker11
+        {
+            get { return dateTimePicker11; }
+        }
+        
+        public string DateTimePicker22
+        {
+            get { return dateTimePicker22; }
+        }
 
         public static Hotel Instance
         {
@@ -97,13 +109,14 @@ namespace TripMaker
                 {
 
                 }*/
+            flowLayoutPanel1.Controls.Clear();
 
             if (string.IsNullOrEmpty(cmbDestination.Text) == true)
             {
                 return;
             }
 
-            string query = "select hotel_name from hotel_table  where destination_id = (select destination_id from destination_table where destination_loc = 'Cox')";
+            string query = "select hotel_name from hotel_table  where destination_id = (select destination_id from destination_table where destination_loc = '"+ cmbDestination.Text + "')";
             string error;
 
             DataTable dt = DataAccess.GetData(query, out error);
@@ -117,6 +130,11 @@ namespace TripMaker
                 panel.Visible = false;
                 flowLayoutPanel1.Controls.Clear();
             }
+
+            dateTimePicker11 = dateTimePicker1.Value.ToShortDateString();
+            dateTimePicker22 = dateTimePicker2.Value.ToShortDateString();
+
+            MessageBox.Show(dateTimePicker11);
 
             for (int i = 0; i < listItem.Length; i++)
             {
