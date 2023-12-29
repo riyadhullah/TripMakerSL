@@ -1,7 +1,7 @@
 ﻿
 namespace TripMaker
 {
-    partial class HotelName
+    partial class Sub_HotelName
     {
         /// <summary> 
         /// Required designer variable.

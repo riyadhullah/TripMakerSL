@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TripMaker
 {
-    public partial class HotelInfo : UserControl
+    public partial class Sub_HotelBookingInfo : UserControl
     {
-        public HotelInfo()
+        public Sub_HotelBookingInfo()
         {
             InitializeComponent();
         }
@@ -23,9 +23,13 @@ namespace TripMaker
         private string hotelName;
         private string roomName;
         private string guest;
-        private string price;
+        private string totalPrice;
+        private string checkin;
+        private string checkout;
+        private string bookingId;
+        private string nightStay;
 
-        
+
         public string Breakfast
         {
             get
@@ -75,6 +79,7 @@ namespace TripMaker
             set
             {
                 hotelName = value;
+                lblName.Text = value;
             }
         }
 
@@ -104,30 +109,69 @@ namespace TripMaker
             }
         }
 
-        public string Price
+        public string TotalPrice
         {
             get
             {
-                return price;
+                return totalPrice;
             }
             set
             {
-                price = value;
-                lblPrice.Text = value;
+                totalPrice = value;
+                lblTotalPrice.Text = value;
             }
         }
 
-        public bool checkBox_checker()
+        public string Checkin
         {
-            if (checkBox.Checked == true)
+            get
             {
-                return true;
+                return checkin;
             }
-            else
+            set
             {
-                return false;
+                checkin = value;
+                lblCheckin.Text = value;
             }
+        }
 
+        public string Checkout
+        {
+            get
+            {
+                return checkout;
+            }
+            set
+            {
+                checkout = value;
+                lblCheckout.Text = value;
+            }
+        }
+        
+        public string BookingId
+        {
+            get
+            {
+                return bookingId;
+            }
+            set
+            {
+                bookingId = value;
+                lblBookingId.Text = value;
+            }
+        }
+
+        public string NightStay
+        {
+            get
+            {
+                return nightStay;
+            }
+            set
+            {
+                nightStay = value;
+                lblNightsStay.Text = value;
+            }
         }
 
     }
