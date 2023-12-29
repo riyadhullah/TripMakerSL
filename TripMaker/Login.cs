@@ -59,31 +59,65 @@ namespace TripMaker
             string un = txtUN.Text;
             string pass = txtPassword.Text;
 
-            string query = "select * from user_table where userName = '" + un + "' and [password] = '" + pass + "'; ";
-            string error;
-
-            DataTable dt = DataAccess.GetData(query, out error);
-            
-            if (string.IsNullOrEmpty(error) == false)
+            if (!cbAdmin.Checked)
             {
-                MessageBox.Show(error,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                string query = "select * from user_table where userName = '" + un + "' and [password] = '" + pass + "'; ";
                 
-                return;
+                string error;
+
+                DataTable dt = DataAccess.GetData(query, out error);
+
+                if (string.IsNullOrEmpty(error) == false)
+                {
+                    MessageBox.Show(error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    return;
+                }
+
+                //MessageBox.Show(dt.Rows.Count+"");
+
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Invalid User Name or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                Home.Instance.BringToFront();
+                LogoutPanel.Instance.BringToFront();
+
+                string query1 = "insert into tmp_table values('" + un + "','" + pass + "')";
+
+                DataAccess.ExecuteData(query1, out error);
             }
-
-            //MessageBox.Show(dt.Rows.Count+"");
-
-            if (dt.Rows.Count == 0)
+            else
             {
-                MessageBox.Show("Invalid User Name or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                string query = "select * from user_table where userName = '" + un + "' and [password] = '" + pass + "' and [type] = 'admin'; ";
+                string error;
+
+                DataTable dt = DataAccess.GetData(query, out error);
+
+                if (string.IsNullOrEmpty(error) == false)
+                {
+                    MessageBox.Show(error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    return;
+                }
+
+                //MessageBox.Show(dt.Rows.Count+"");
+
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Invalid User Name or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                Home.Instance.BringToFront();
+                LogoutPanel.Instance.BringToFront();
+
+                string query1 = "insert into tmp_table values('" + un + "','" + pass + "')";
+
+                DataAccess.ExecuteData(query1, out error);
+
             }
-            Home.Instance.BringToFront();
-            LogoutPanel.Instance.BringToFront();
-
-            string query1 = "insert into tmp_table values('"+un+"','"+pass+"')";
-
-            DataAccess.ExecuteData(query1, out error);
+            
 
         }
 

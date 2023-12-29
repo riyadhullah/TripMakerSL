@@ -147,26 +147,37 @@ namespace TripMaker
                 MessageBox.Show(error);
                 return;
             }
-
-            txtname.Text = dt.Rows[0]["name"].ToString();
-            txtun.Text = dt.Rows[0]["userName"].ToString();
-            txtemail.Text = dt.Rows[0]["Email"].ToString();
-            txtpn.Text = dt.Rows[0]["Phone_number"].ToString();
-            string g = dt.Rows[0]["gender"].ToString().Trim();
-            if (g == "Male")
+            try
             {
-                rdbMale.Checked = true;
+                txtname.Text = dt.Rows[0]["name"].ToString();
+                txtun.Text = dt.Rows[0]["userName"].ToString();
+                txtemail.Text = dt.Rows[0]["Email"].ToString();
+                txtpn.Text = dt.Rows[0]["Phone_number"].ToString();
+                string g = dt.Rows[0]["gender"].ToString().Trim();
+                if (g == "Male")
+                {
+                    rdbMale.Checked = true;
+                }
+                else
+                {
+                    rdbFemale.Checked = true;
+                }
+
+
+                richTxtAdrs.Text = dt.Rows[0]["Address"].ToString();
+                picturebox.Image = convertByteArrayToImage((byte[])dt.Rows[0]["imagePath"]);
+
+                un = txtun.Text;
             }
-            else
+            catch (Exception ex)
             {
-                rdbFemale.Checked = true;
+
             }
 
-
-            richTxtAdrs.Text = dt.Rows[0]["Address"].ToString();
+           // richTxtAdrs.Text = dt.Rows[0]["Address"].ToString();
             //picturebox.Image = convertByteArrayToImage((byte[])dt.Rows[0]["imagePath"]);
+
             
-            un = txtun.Text;
             
 
         }

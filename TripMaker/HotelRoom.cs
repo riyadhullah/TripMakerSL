@@ -98,10 +98,6 @@ namespace TripMaker
             }
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btnBook_Click(object sender, EventArgs e)
         {
@@ -115,13 +111,13 @@ namespace TripMaker
                 }
             }
 
-            string s = "";
-            foreach (int num in index)
-            {
+            //string s = "";
+            //foreach (int num in index)
+            //{
                 
-                s = num + s;
+                ///s = num + s;
                 
-            }
+            //}
 
             string dtp1 = Hotel.Instance.DateTimePicker11;
             string dtp2 = Hotel.Instance.DateTimePicker22;

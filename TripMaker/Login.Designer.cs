@@ -42,12 +42,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbAdmin = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.panel1.Controls.Add(this.cbAdmin);
             this.panel1.Controls.Add(this.btnOpen);
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnSignup);
@@ -195,6 +197,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Login to Your Account";
             // 
+            // cbAdmin
+            // 
+            this.cbAdmin.AutoSize = true;
+            this.cbAdmin.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAdmin.ForeColor = System.Drawing.Color.White;
+            this.cbAdmin.Location = new System.Drawing.Point(431, 201);
+            this.cbAdmin.Name = "cbAdmin";
+            this.cbAdmin.Size = new System.Drawing.Size(139, 23);
+            this.cbAdmin.TabIndex = 12;
+            this.cbAdmin.Text = "Signin as admin";
+            this.cbAdmin.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,5 +237,6 @@
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSignup;
+        private System.Windows.Forms.CheckBox cbAdmin;
     }
 }
