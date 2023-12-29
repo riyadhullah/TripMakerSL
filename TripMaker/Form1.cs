@@ -75,14 +75,10 @@ namespace TripMaker
                 HotelRoom.Instance.flowLayoutPanel_clear();
                 Hotel.Instance.BringToFront();
             }
-            else if (btn.Text == "Packages")
-            {
-                red_panel_changed(false, false, false, false, true, false, false);
-            }
-            else if (btn.Text == "Wallet")
+            else if (btn.Text == "Booking Info")
             {
                 red_panel_changed(false, false, false, false, false, true, false);
-                profile.Instance.BringToFront();
+                BookingInfo.Instance.BringToFront();
             }
             else if (btn.Text == "About")
             {
@@ -143,6 +139,12 @@ namespace TripMaker
             
             panel.Controls.Add(Profileedit.Instance);
             Profileedit.Instance.Dock = DockStyle.Fill;
+
+            panel.Controls.Add(HotelRoom.Instance);
+            HotelRoom.Instance.Dock = DockStyle.Fill;
+            
+            panel.Controls.Add(BookingInfo.Instance);
+            BookingInfo.Instance.Dock = DockStyle.Fill;
 
             red_panel_changed(true, false, false, false, false, false, false);
         }

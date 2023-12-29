@@ -37,7 +37,7 @@ namespace TripMaker
             this.btnAbout = new System.Windows.Forms.Button();
             this.pnlHotel = new System.Windows.Forms.Panel();
             this.pnlFlight = new System.Windows.Forms.Panel();
-            this.btnWallet = new System.Windows.Forms.Button();
+            this.btnBookingInfo = new System.Windows.Forms.Button();
             this.btnHotel = new System.Windows.Forms.Button();
             this.pnlBus = new System.Windows.Forms.Panel();
             this.btnFlight = new System.Windows.Forms.Button();
@@ -68,7 +68,7 @@ namespace TripMaker
             this.panel1.Controls.Add(this.btnAbout);
             this.panel1.Controls.Add(this.pnlHotel);
             this.panel1.Controls.Add(this.pnlFlight);
-            this.panel1.Controls.Add(this.btnWallet);
+            this.panel1.Controls.Add(this.btnBookingInfo);
             this.panel1.Controls.Add(this.btnHotel);
             this.panel1.Controls.Add(this.pnlBus);
             this.panel1.Controls.Add(this.btnFlight);
@@ -135,21 +135,21 @@ namespace TripMaker
             this.pnlFlight.TabIndex = 4;
             this.pnlFlight.Visible = false;
             // 
-            // btnWallet
+            // btnBookingInfo
             // 
-            this.btnWallet.FlatAppearance.BorderSize = 0;
-            this.btnWallet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWallet.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWallet.ForeColor = System.Drawing.Color.White;
-            this.btnWallet.Image = ((System.Drawing.Image)(resources.GetObject("btnWallet.Image")));
-            this.btnWallet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWallet.Location = new System.Drawing.Point(20, 480);
-            this.btnWallet.Name = "btnWallet";
-            this.btnWallet.Size = new System.Drawing.Size(236, 60);
-            this.btnWallet.TabIndex = 8;
-            this.btnWallet.Text = "Wallet";
-            this.btnWallet.UseVisualStyleBackColor = true;
-            this.btnWallet.Click += new System.EventHandler(this.btn_function);
+            this.btnBookingInfo.FlatAppearance.BorderSize = 0;
+            this.btnBookingInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookingInfo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookingInfo.ForeColor = System.Drawing.Color.White;
+            this.btnBookingInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnBookingInfo.Image")));
+            this.btnBookingInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBookingInfo.Location = new System.Drawing.Point(20, 480);
+            this.btnBookingInfo.Name = "btnBookingInfo";
+            this.btnBookingInfo.Size = new System.Drawing.Size(236, 60);
+            this.btnBookingInfo.TabIndex = 8;
+            this.btnBookingInfo.Text = "Booking Info";
+            this.btnBookingInfo.UseVisualStyleBackColor = true;
+            this.btnBookingInfo.Click += new System.EventHandler(this.btn_function);
             // 
             // btnHotel
             // 
@@ -278,7 +278,7 @@ namespace TripMaker
         private System.Windows.Forms.Panel pnlWallet;
         private System.Windows.Forms.Panel pnlHotel;
         private System.Windows.Forms.Panel pnlFlight;
-        private System.Windows.Forms.Button btnWallet;
+        private System.Windows.Forms.Button btnBookingInfo;
         private System.Windows.Forms.Button btnHotel;
         private System.Windows.Forms.Panel pnlBus;
         private System.Windows.Forms.Button btnFlight;

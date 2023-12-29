@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace TripMaker
 {
-    public partial class Wallet : UserControl
+    public partial class AirportManagerView : Form
     {
-        public Wallet()
+        public AirportManagerView()
         {
             InitializeComponent();
         }
+
     }
 }

@@ -12,7 +12,7 @@ namespace TripMaker
 {
     public partial class HotelRoom : UserControl
     {
-        private HotelInfo[] listItem;
+        private Sub_RoomInfo[] listItem;
         private int[] index;
         private static string hotelName;
         private DataTable dt;
@@ -68,7 +68,7 @@ namespace TripMaker
 
             dt = DataAccess.GetData(query, out error);
 
-            listItem = new HotelInfo[dt.Rows.Count];
+            listItem = new Sub_RoomInfo[dt.Rows.Count];
 
             index = new int[listItem.Length];
 
@@ -81,7 +81,7 @@ namespace TripMaker
             {
                 try
                 {
-                    listItem[i] = new HotelInfo();
+                    listItem[i] = new Sub_RoomInfo();
                     listItem[i].RoomName = dt.Rows[i]["room_type"].ToString();
                     listItem[i].Breakfast = dt.Rows[i]["breakfast_include"].ToString();
                     listItem[i].Lunch = dt.Rows[i]["lunch_include"].ToString();
