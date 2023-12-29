@@ -47,6 +47,7 @@ namespace TripMaker
             departureAirportidTB.Text = "";
             departTB.Text = "";
             arriveTB.Text = "";
+            dateTB.Text = "";
             this.loadEventTypes();
         }
 
@@ -78,6 +79,7 @@ namespace TripMaker
             departTB.Text = dt.Rows[0]["departure_airport_id"].ToString();
             arriveTB.Text = dt.Rows[0]["arrival_airport_id"].ToString();
             priceTB.Text = dt.Rows[0]["price"].ToString();
+            dateTB.Text = dt.Rows[0]["date"].ToString();
 
         }
         private void newData()
@@ -88,6 +90,8 @@ namespace TripMaker
             departureAirportidTB.Text = "";
             departTB.Text = "";
             arriveTB.Text = "";
+            priceTB.Text = "";
+            dateTB.Text = "";
 
             dataGridView.ClearSelection();
 
@@ -132,16 +136,17 @@ namespace TripMaker
             string depart=departTB.Text;
             string arrive=arriveTB.Text;
             string price = priceTB.Text;
+            string date = dateTB.Text;
 
             if (string.IsNullOrEmpty(depart) || string.IsNullOrEmpty(arrive) || string.IsNullOrEmpty(price) ||
-                string.IsNullOrEmpty(airportid) || string.IsNullOrEmpty(airline))
+                string.IsNullOrEmpty(airportid) || string.IsNullOrEmpty(airline) || string.IsNullOrEmpty(date) || string.IsNullOrEmpty(price))
             {
                 MessageBox.Show("Please fill blank text-boxes");
             }
 
             if (string.IsNullOrEmpty(fid))
             {
-                string query = "insert into flight_table(airline, departure_airport_id, arrival_airport_id, departure_datetime, arrival_datetime, price) values ('"+airline+"', " + depAirportid + ", "+airportid+", '"+ depart + "', '"+arrive+"', "+price+") ";
+                string query = "insert into flight_table(airline, departure_airport_id, arrival_airport_id, departure_datetime, arrival_datetime, price, date) values ('"+airline+"', " + depAirportid + ", "+airportid+", '"+ depart + "', '"+arrive+"', "+price+ ",'" + date + "') ";
                 
                 string error;
                 DataAccess.ExecuteData(query, out error);
@@ -157,7 +162,7 @@ namespace TripMaker
             {
                 string query = "update flight_table set airline = '"+airline+ "', departure_airport_id = " + depAirportid + "," +
                     " arrival_airport_id = "+airportid+", departure_datetime = '"+ depart + "', arrival_datetime = '"+arrive+"', " +
-                    "price = "+price+" where flight_id = " + fid + "";
+                    "price = "+price+ ", date= '" + date + "' where flight_id = " + fid + "";
                 string error;
                 DataAccess.ExecuteData(query, out error);
                 if (string.IsNullOrEmpty(error) == false)

@@ -230,9 +230,6 @@
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Wallet.resx">
-      <DependentUpon>Wallet.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

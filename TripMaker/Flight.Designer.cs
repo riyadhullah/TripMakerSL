@@ -33,20 +33,17 @@ namespace TripMaker
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DateLbl = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(661, 125);
+            this.label4.Location = new System.Drawing.Point(280, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 30);
             this.label4.TabIndex = 18;
@@ -59,7 +56,7 @@ namespace TripMaker
             this.comboBox4.Items.AddRange(new object[] {
             "Dhaka",
             "Cumilla"});
-            this.comboBox4.Location = new System.Drawing.Point(719, 130);
+            this.comboBox4.Location = new System.Drawing.Point(338, 130);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(148, 25);
             this.comboBox4.TabIndex = 17;
@@ -71,7 +68,7 @@ namespace TripMaker
             this.comboBox1.Items.AddRange(new object[] {
             "Dhaka",
             "Cumilla"});
-            this.comboBox1.Location = new System.Drawing.Point(498, 130);
+            this.comboBox1.Location = new System.Drawing.Point(117, 130);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(148, 25);
             this.comboBox1.TabIndex = 16;
@@ -80,71 +77,11 @@ namespace TripMaker
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(493, 90);
+            this.label3.Location = new System.Drawing.Point(112, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(208, 28);
             this.label3.TabIndex = 15;
             this.label3.Text = "Available Station";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.panel1.Location = new System.Drawing.Point(454, 90);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 65);
-            this.panel1.TabIndex = 14;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Dhaka",
-            "Cumilla"});
-            this.comboBox3.Location = new System.Drawing.Point(97, 130);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(148, 25);
-            this.comboBox3.TabIndex = 13;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Dhaka",
-            "Cumilla"});
-            this.comboBox2.Location = new System.Drawing.Point(281, 130);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(148, 25);
-            this.comboBox2.TabIndex = 12;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(92, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 28);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Start from";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(276, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 28);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Where to go";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Location = new System.Drawing.Point(97, 233);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(770, 363);
-            this.panel2.TabIndex = 19;
             // 
             // label5
             // 
@@ -156,21 +93,47 @@ namespace TripMaker
             this.label5.TabIndex = 20;
             this.label5.Text = "Flight";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(608, 130);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(163, 27);
+            this.dateTimePicker1.TabIndex = 24;
+            // 
+            // DateLbl
+            // 
+            this.DateLbl.AutoSize = true;
+            this.DateLbl.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateLbl.Location = new System.Drawing.Point(604, 86);
+            this.DateLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DateLbl.Name = "DateLbl";
+            this.DateLbl.Size = new System.Drawing.Size(54, 23);
+            this.DateLbl.TabIndex = 23;
+            this.DateLbl.Text = "Date";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 242);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(935, 420);
+            this.flowLayoutPanel1.TabIndex = 25;
+            // 
             // Flight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.DateLbl);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Flight";
             this.Size = new System.Drawing.Size(935, 662);
             this.ResumeLayout(false);
@@ -184,12 +147,9 @@ namespace TripMaker
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label DateLbl;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
