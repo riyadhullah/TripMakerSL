@@ -60,7 +60,7 @@
     </Compile>
     <Compile Include="AirportManagerView.Designer.cs">
       <DependentUpon>AirportManagerView.cs</DependentUpon>
-   </Compile>
+    </Compile>
     <Compile Include="BookingInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,6 +72,18 @@
     </Compile>
     <Compile Include="Bus.Designer.cs">
       <DependentUpon>Bus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busbooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Busbooking.Designer.cs">
+      <DependentUpon>Busbooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busconfirmbook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Busconfirmbook.Designer.cs">
+      <DependentUpon>Busconfirmbook.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess.cs" />
     <Compile Include="Flight.cs">
@@ -146,12 +158,6 @@
     <Compile Include="LogoutPanel.Designer.cs">
       <DependentUpon>LogoutPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManegerBus.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManegerBus.Designer.cs">
-      <DependentUpon>ManegerBus.cs</DependentUpon>
-    </Compile>
     <Compile Include="ManegerSignup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,12 +186,18 @@
     </Compile>
     <EmbeddedResource Include="AirportManagerView.resx">
       <DependentUpon>AirportManagerView.cs</DependentUpon>
-</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookingInfo.resx">
       <DependentUpon>BookingInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bus.resx">
       <DependentUpon>Bus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busbooking.resx">
+      <DependentUpon>Busbooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busconfirmbook.resx">
+      <DependentUpon>Busconfirmbook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Flight.resx">
       <DependentUpon>Flight.cs</DependentUpon>
@@ -222,9 +234,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LogoutPanel.resx">
       <DependentUpon>LogoutPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManegerBus.resx">
-      <DependentUpon>ManegerBus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManegerSignup.resx">
       <DependentUpon>ManegerSignup.cs</DependentUpon>

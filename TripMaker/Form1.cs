@@ -146,6 +146,9 @@ namespace TripMaker
             panel.Controls.Add(BookingInfo.Instance);
             BookingInfo.Instance.Dock = DockStyle.Fill;
 
+            panel.Controls.Add(Busconfirmbook.Instance);
+            Busconfirmbook.Instance.Dock = DockStyle.Fill;
+
             red_panel_changed(true, false, false, false, false, false, false);
         }
 
