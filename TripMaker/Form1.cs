@@ -144,9 +144,6 @@ namespace TripMaker
             panel.Controls.Add(Profileedit.Instance);
             Profileedit.Instance.Dock = DockStyle.Fill;
 
-            panel.Controls.Add(HotelRoom.Instance);
-            HotelRoom.Instance.Dock = DockStyle.Fill;
-
             red_panel_changed(true, false, false, false, false, false, false);
         }
 
@@ -186,12 +183,9 @@ namespace TripMaker
         }*/
 
 
-
         }
         
 
 
-
     }
-
 

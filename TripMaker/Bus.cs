@@ -38,6 +38,23 @@ namespace TripMaker
             InitializeComponent();
         }
 
-        
+        private void Bus_Load(object sender, EventArgs e)
+        {
+            string query = "select * from city_table";
+            string error;
+
+            DataTable dt = DataAccess.GetData(query, out error);
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                cmbstart.Items.Add(dt.Rows[i]["city-name"].ToString());
+                cmbto.Items.Add(dt.Rows[i]["city-name"].ToString());
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
