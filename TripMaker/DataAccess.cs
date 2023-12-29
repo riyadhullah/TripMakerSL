@@ -10,7 +10,7 @@ namespace TripMaker
 {
     static class DataAccess
     {
-        public static string conection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\AIUB\Semester 05\C#Project\TripMakerSL\TripMakerDB.mdf;Integrated Security=True;Connect Timeout=30";
+        public static string conection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\C# project\TripMakerSL\TripMakerDB.mdf;Integrated Security=True;Connect Timeout=30";
      
 
         public static void ExecuteData(string query, out string error)
