@@ -29,28 +29,17 @@ namespace TripMaker
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
-            this.txtadrs = new MetroFramework.Controls.MetroTextBox();
-            this.btnopencps = new MetroFramework.Controls.MetroButton();
-            this.btnopenps = new MetroFramework.Controls.MetroButton();
-            this.btnClosecps = new MetroFramework.Controls.MetroButton();
-            this.btnCloseps = new MetroFramework.Controls.MetroButton();
             this.txtun = new MetroFramework.Controls.MetroTextBox();
-            this.txtCpass = new MetroFramework.Controls.MetroTextBox();
-            this.txtPass = new MetroFramework.Controls.MetroTextBox();
             this.txtpn = new MetroFramework.Controls.MetroTextBox();
             this.txtemail = new MetroFramework.Controls.MetroTextBox();
-            this.rdbFemale = new MetroFramework.Controls.MetroRadioButton();
-            this.rdbMale = new MetroFramework.Controls.MetroRadioButton();
             this.txtName = new MetroFramework.Controls.MetroTextBox();
             this.txtid = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.lblPdnm = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
@@ -70,6 +59,17 @@ namespace TripMaker
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.lblPdnm = new MetroFramework.Controls.MetroLabel();
+            this.txtadrs = new MetroFramework.Controls.MetroTextBox();
+            this.rdbMale = new MetroFramework.Controls.MetroRadioButton();
+            this.rdbFemale = new MetroFramework.Controls.MetroRadioButton();
+            this.btnClosecps = new MetroFramework.Controls.MetroButton();
+            this.btnopencps = new MetroFramework.Controls.MetroButton();
+            this.btnCloseps = new MetroFramework.Controls.MetroButton();
+            this.btnopenps = new MetroFramework.Controls.MetroButton();
+            this.txtCpass = new MetroFramework.Controls.MetroTextBox();
+            this.txtPass = new MetroFramework.Controls.MetroTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.metroPanel4.SuspendLayout();
@@ -152,83 +152,6 @@ namespace TripMaker
             this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel4.VerticalScrollbarSize = 10;
             // 
-            // txtadrs
-            // 
-            // 
-            // 
-            // 
-            this.txtadrs.CustomButton.Image = null;
-            this.txtadrs.CustomButton.Location = new System.Drawing.Point(154, 1);
-            this.txtadrs.CustomButton.Name = "";
-            this.txtadrs.CustomButton.Size = new System.Drawing.Size(77, 77);
-            this.txtadrs.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtadrs.CustomButton.TabIndex = 1;
-            this.txtadrs.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtadrs.CustomButton.UseSelectable = true;
-            this.txtadrs.CustomButton.Visible = false;
-            this.txtadrs.Lines = new string[0];
-            this.txtadrs.Location = new System.Drawing.Point(234, 527);
-            this.txtadrs.MaxLength = 32767;
-            this.txtadrs.Multiline = true;
-            this.txtadrs.Name = "txtadrs";
-            this.txtadrs.PasswordChar = '\0';
-            this.txtadrs.PromptText = "Enter Address";
-            this.txtadrs.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtadrs.SelectedText = "";
-            this.txtadrs.SelectionLength = 0;
-            this.txtadrs.SelectionStart = 0;
-            this.txtadrs.ShortcutsEnabled = true;
-            this.txtadrs.Size = new System.Drawing.Size(232, 79);
-            this.txtadrs.TabIndex = 54;
-            this.txtadrs.UseSelectable = true;
-            this.txtadrs.WaterMark = "Enter Address";
-            this.txtadrs.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtadrs.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnopencps
-            // 
-            this.btnopencps.BackgroundImage = global::TripMaker.Properties.Resources.eye;
-            this.btnopencps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnopencps.Location = new System.Drawing.Point(432, 454);
-            this.btnopencps.Name = "btnopencps";
-            this.btnopencps.Size = new System.Drawing.Size(35, 30);
-            this.btnopencps.TabIndex = 53;
-            this.btnopencps.UseSelectable = true;
-            this.btnopencps.Click += new System.EventHandler(this.btnOpen_Click);
-            // 
-            // btnopenps
-            // 
-            this.btnopenps.BackgroundImage = global::TripMaker.Properties.Resources.eye;
-            this.btnopenps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnopenps.Location = new System.Drawing.Point(431, 403);
-            this.btnopenps.Name = "btnopenps";
-            this.btnopenps.Size = new System.Drawing.Size(35, 30);
-            this.btnopenps.TabIndex = 52;
-            this.btnopenps.UseSelectable = true;
-            this.btnopenps.Click += new System.EventHandler(this.btnOpen_Click);
-            // 
-            // btnClosecps
-            // 
-            this.btnClosecps.BackgroundImage = global::TripMaker.Properties.Resources.close;
-            this.btnClosecps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnClosecps.Location = new System.Drawing.Point(432, 454);
-            this.btnClosecps.Name = "btnClosecps";
-            this.btnClosecps.Size = new System.Drawing.Size(35, 30);
-            this.btnClosecps.TabIndex = 51;
-            this.btnClosecps.UseSelectable = true;
-            this.btnClosecps.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnCloseps
-            // 
-            this.btnCloseps.BackgroundImage = global::TripMaker.Properties.Resources.close;
-            this.btnCloseps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnCloseps.Location = new System.Drawing.Point(431, 403);
-            this.btnCloseps.Name = "btnCloseps";
-            this.btnCloseps.Size = new System.Drawing.Size(35, 30);
-            this.btnCloseps.TabIndex = 50;
-            this.btnCloseps.UseSelectable = true;
-            this.btnCloseps.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // txtun
             // 
             // 
@@ -260,74 +183,6 @@ namespace TripMaker
             this.txtun.WaterMark = "Enter User Name";
             this.txtun.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtun.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // txtCpass
-            // 
-            // 
-            // 
-            // 
-            this.txtCpass.CustomButton.Image = null;
-            this.txtCpass.CustomButton.Location = new System.Drawing.Point(204, 2);
-            this.txtCpass.CustomButton.Name = "";
-            this.txtCpass.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtCpass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtCpass.CustomButton.TabIndex = 1;
-            this.txtCpass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtCpass.CustomButton.UseSelectable = true;
-            this.txtCpass.CustomButton.Visible = false;
-            this.txtCpass.Lines = new string[0];
-            this.txtCpass.Location = new System.Drawing.Point(235, 454);
-            this.txtCpass.MaxLength = 32767;
-            this.txtCpass.Name = "txtCpass";
-            this.txtCpass.PasswordChar = '●';
-            this.txtCpass.PromptText = "Enter Confirm Password";
-            this.txtCpass.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtCpass.SelectedText = "";
-            this.txtCpass.SelectionLength = 0;
-            this.txtCpass.SelectionStart = 0;
-            this.txtCpass.ShortcutsEnabled = true;
-            this.txtCpass.Size = new System.Drawing.Size(200, 30);
-            this.txtCpass.TabIndex = 48;
-            this.txtCpass.UseSelectable = true;
-            this.txtCpass.UseSystemPasswordChar = true;
-            this.txtCpass.WaterMark = "Enter Confirm Password";
-            this.txtCpass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtCpass.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpass.TextChanged += new System.EventHandler(this.password_change);
-            // 
-            // txtPass
-            // 
-            // 
-            // 
-            // 
-            this.txtPass.CustomButton.Image = null;
-            this.txtPass.CustomButton.Location = new System.Drawing.Point(204, 2);
-            this.txtPass.CustomButton.Name = "";
-            this.txtPass.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtPass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtPass.CustomButton.TabIndex = 1;
-            this.txtPass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtPass.CustomButton.UseSelectable = true;
-            this.txtPass.CustomButton.Visible = false;
-            this.txtPass.Lines = new string[0];
-            this.txtPass.Location = new System.Drawing.Point(235, 403);
-            this.txtPass.MaxLength = 32767;
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '●';
-            this.txtPass.PromptText = "Enter Password";
-            this.txtPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtPass.SelectedText = "";
-            this.txtPass.SelectionLength = 0;
-            this.txtPass.SelectionStart = 0;
-            this.txtPass.ShortcutsEnabled = true;
-            this.txtPass.Size = new System.Drawing.Size(200, 30);
-            this.txtPass.TabIndex = 47;
-            this.txtPass.UseSelectable = true;
-            this.txtPass.UseSystemPasswordChar = true;
-            this.txtPass.WaterMark = "Enter Password";
-            this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtPass.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.TextChanged += new System.EventHandler(this.password_change);
             // 
             // txtpn
             // 
@@ -393,28 +248,6 @@ namespace TripMaker
             this.txtemail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtemail.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // rdbFemale
-            // 
-            this.rdbFemale.AutoSize = true;
-            this.rdbFemale.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.rdbFemale.Location = new System.Drawing.Point(331, 357);
-            this.rdbFemale.Name = "rdbFemale";
-            this.rdbFemale.Size = new System.Drawing.Size(73, 20);
-            this.rdbFemale.TabIndex = 43;
-            this.rdbFemale.Text = "Female";
-            this.rdbFemale.UseSelectable = true;
-            // 
-            // rdbMale
-            // 
-            this.rdbMale.AutoSize = true;
-            this.rdbMale.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.rdbMale.Location = new System.Drawing.Point(242, 357);
-            this.rdbMale.Name = "rdbMale";
-            this.rdbMale.Size = new System.Drawing.Size(58, 20);
-            this.rdbMale.TabIndex = 42;
-            this.rdbMale.Text = "Male";
-            this.rdbMale.UseSelectable = true;
-            // 
             // txtName
             // 
             // 
@@ -479,30 +312,6 @@ namespace TripMaker
             this.txtid.WaterMark = "Auto Generate";
             this.txtid.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtid.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // metroLabel9
-            // 
-            this.metroLabel9.AutoSize = true;
-            this.metroLabel9.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel9.Location = new System.Drawing.Point(102, 525);
-            this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(88, 25);
-            this.metroLabel9.TabIndex = 39;
-            this.metroLabel9.Text = "Address :";
-            // 
-            // lblPdnm
-            // 
-            this.lblPdnm.AutoSize = true;
-            this.lblPdnm.BackColor = System.Drawing.Color.Black;
-            this.lblPdnm.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.lblPdnm.ForeColor = System.Drawing.Color.Red;
-            this.lblPdnm.Location = new System.Drawing.Point(235, 482);
-            this.lblPdnm.Name = "lblPdnm";
-            this.lblPdnm.Size = new System.Drawing.Size(172, 20);
-            this.lblPdnm.TabIndex = 38;
-            this.lblPdnm.Text = "Password Did Not Match";
-            this.lblPdnm.Visible = false;
             // 
             // metroLabel3
             // 
@@ -689,23 +498,23 @@ namespace TripMaker
             this.metroGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.metroGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid.DefaultCellStyle = dataGridViewCellStyle17;
             this.metroGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroGrid.EnableHeadersVisualStyles = false;
             this.metroGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -714,14 +523,14 @@ namespace TripMaker
             this.metroGrid.Name = "metroGrid";
             this.metroGrid.ReadOnly = true;
             this.metroGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.metroGrid.RowHeadersWidth = 51;
             this.metroGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid.RowTemplate.Height = 24;
@@ -782,6 +591,197 @@ namespace TripMaker
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
+            // metroLabel9
+            // 
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel9.Location = new System.Drawing.Point(102, 525);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(88, 25);
+            this.metroLabel9.TabIndex = 39;
+            this.metroLabel9.Text = "Address :";
+            // 
+            // lblPdnm
+            // 
+            this.lblPdnm.AutoSize = true;
+            this.lblPdnm.BackColor = System.Drawing.Color.Black;
+            this.lblPdnm.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.lblPdnm.ForeColor = System.Drawing.Color.Red;
+            this.lblPdnm.Location = new System.Drawing.Point(235, 482);
+            this.lblPdnm.Name = "lblPdnm";
+            this.lblPdnm.Size = new System.Drawing.Size(172, 20);
+            this.lblPdnm.TabIndex = 38;
+            this.lblPdnm.Text = "Password Did Not Match";
+            this.lblPdnm.Visible = false;
+            // 
+            // txtadrs
+            // 
+            // 
+            // 
+            // 
+            this.txtadrs.CustomButton.Image = null;
+            this.txtadrs.CustomButton.Location = new System.Drawing.Point(154, 1);
+            this.txtadrs.CustomButton.Name = "";
+            this.txtadrs.CustomButton.Size = new System.Drawing.Size(77, 77);
+            this.txtadrs.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtadrs.CustomButton.TabIndex = 1;
+            this.txtadrs.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtadrs.CustomButton.UseSelectable = true;
+            this.txtadrs.CustomButton.Visible = false;
+            this.txtadrs.Lines = new string[0];
+            this.txtadrs.Location = new System.Drawing.Point(234, 527);
+            this.txtadrs.MaxLength = 32767;
+            this.txtadrs.Multiline = true;
+            this.txtadrs.Name = "txtadrs";
+            this.txtadrs.PasswordChar = '\0';
+            this.txtadrs.PromptText = "Enter Address";
+            this.txtadrs.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtadrs.SelectedText = "";
+            this.txtadrs.SelectionLength = 0;
+            this.txtadrs.SelectionStart = 0;
+            this.txtadrs.ShortcutsEnabled = true;
+            this.txtadrs.Size = new System.Drawing.Size(232, 79);
+            this.txtadrs.TabIndex = 54;
+            this.txtadrs.UseSelectable = true;
+            this.txtadrs.WaterMark = "Enter Address";
+            this.txtadrs.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtadrs.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // rdbMale
+            // 
+            this.rdbMale.AutoSize = true;
+            this.rdbMale.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
+            this.rdbMale.Location = new System.Drawing.Point(242, 357);
+            this.rdbMale.Name = "rdbMale";
+            this.rdbMale.Size = new System.Drawing.Size(58, 20);
+            this.rdbMale.TabIndex = 42;
+            this.rdbMale.Text = "Male";
+            this.rdbMale.UseSelectable = true;
+            // 
+            // rdbFemale
+            // 
+            this.rdbFemale.AutoSize = true;
+            this.rdbFemale.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
+            this.rdbFemale.Location = new System.Drawing.Point(331, 357);
+            this.rdbFemale.Name = "rdbFemale";
+            this.rdbFemale.Size = new System.Drawing.Size(73, 20);
+            this.rdbFemale.TabIndex = 43;
+            this.rdbFemale.Text = "Female";
+            this.rdbFemale.UseSelectable = true;
+            // 
+            // btnClosecps
+            // 
+            this.btnClosecps.BackgroundImage = global::TripMaker.Properties.Resources.close;
+            this.btnClosecps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnClosecps.Location = new System.Drawing.Point(432, 454);
+            this.btnClosecps.Name = "btnClosecps";
+            this.btnClosecps.Size = new System.Drawing.Size(35, 30);
+            this.btnClosecps.TabIndex = 51;
+            this.btnClosecps.UseSelectable = true;
+            this.btnClosecps.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnopencps
+            // 
+            this.btnopencps.BackgroundImage = global::TripMaker.Properties.Resources.eye;
+            this.btnopencps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnopencps.Location = new System.Drawing.Point(432, 454);
+            this.btnopencps.Name = "btnopencps";
+            this.btnopencps.Size = new System.Drawing.Size(35, 30);
+            this.btnopencps.TabIndex = 53;
+            this.btnopencps.UseSelectable = true;
+            this.btnopencps.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // btnCloseps
+            // 
+            this.btnCloseps.BackgroundImage = global::TripMaker.Properties.Resources.close;
+            this.btnCloseps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCloseps.Location = new System.Drawing.Point(431, 403);
+            this.btnCloseps.Name = "btnCloseps";
+            this.btnCloseps.Size = new System.Drawing.Size(35, 30);
+            this.btnCloseps.TabIndex = 50;
+            this.btnCloseps.UseSelectable = true;
+            this.btnCloseps.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnopenps
+            // 
+            this.btnopenps.BackgroundImage = global::TripMaker.Properties.Resources.eye;
+            this.btnopenps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnopenps.Location = new System.Drawing.Point(431, 403);
+            this.btnopenps.Name = "btnopenps";
+            this.btnopenps.Size = new System.Drawing.Size(35, 30);
+            this.btnopenps.TabIndex = 52;
+            this.btnopenps.UseSelectable = true;
+            this.btnopenps.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // txtCpass
+            // 
+            // 
+            // 
+            // 
+            this.txtCpass.CustomButton.Image = null;
+            this.txtCpass.CustomButton.Location = new System.Drawing.Point(172, 2);
+            this.txtCpass.CustomButton.Name = "";
+            this.txtCpass.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtCpass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtCpass.CustomButton.TabIndex = 1;
+            this.txtCpass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtCpass.CustomButton.UseSelectable = true;
+            this.txtCpass.CustomButton.Visible = false;
+            this.txtCpass.Lines = new string[0];
+            this.txtCpass.Location = new System.Drawing.Point(235, 454);
+            this.txtCpass.MaxLength = 32767;
+            this.txtCpass.Name = "txtCpass";
+            this.txtCpass.PasswordChar = '●';
+            this.txtCpass.PromptText = "Enter Confirm Password";
+            this.txtCpass.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtCpass.SelectedText = "";
+            this.txtCpass.SelectionLength = 0;
+            this.txtCpass.SelectionStart = 0;
+            this.txtCpass.ShortcutsEnabled = true;
+            this.txtCpass.Size = new System.Drawing.Size(200, 30);
+            this.txtCpass.TabIndex = 48;
+            this.txtCpass.UseSelectable = true;
+            this.txtCpass.UseSystemPasswordChar = true;
+            this.txtCpass.WaterMark = "Enter Confirm Password";
+            this.txtCpass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtCpass.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpass.TextChanged += new System.EventHandler(this.password_change);
+            // 
+            // txtPass
+            // 
+            // 
+            // 
+            // 
+            this.txtPass.CustomButton.Image = null;
+            this.txtPass.CustomButton.Location = new System.Drawing.Point(172, 2);
+            this.txtPass.CustomButton.Name = "";
+            this.txtPass.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtPass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPass.CustomButton.TabIndex = 1;
+            this.txtPass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPass.CustomButton.UseSelectable = true;
+            this.txtPass.CustomButton.Visible = false;
+            this.txtPass.Lines = new string[0];
+            this.txtPass.Location = new System.Drawing.Point(235, 403);
+            this.txtPass.MaxLength = 32767;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '●';
+            this.txtPass.PromptText = "Enter Password";
+            this.txtPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPass.SelectedText = "";
+            this.txtPass.SelectionLength = 0;
+            this.txtPass.SelectionStart = 0;
+            this.txtPass.ShortcutsEnabled = true;
+            this.txtPass.Size = new System.Drawing.Size(200, 30);
+            this.txtPass.TabIndex = 47;
+            this.txtPass.UseSelectable = true;
+            this.txtPass.UseSystemPasswordChar = true;
+            this.txtPass.WaterMark = "Enter Password";
+            this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPass.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.TextChanged += new System.EventHandler(this.password_change);
+            // 
             // ManegerSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -811,16 +811,10 @@ namespace TripMaker
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private MetroFramework.Controls.MetroPanel metroPanel4;
         private MetroFramework.Controls.MetroTextBox txtun;
-        private MetroFramework.Controls.MetroTextBox txtCpass;
-        private MetroFramework.Controls.MetroTextBox txtPass;
         private MetroFramework.Controls.MetroTextBox txtpn;
         private MetroFramework.Controls.MetroTextBox txtemail;
-        private MetroFramework.Controls.MetroRadioButton rdbFemale;
-        private MetroFramework.Controls.MetroRadioButton rdbMale;
         private MetroFramework.Controls.MetroTextBox txtName;
         private MetroFramework.Controls.MetroTextBox txtid;
-        private MetroFramework.Controls.MetroLabel metroLabel9;
-        private MetroFramework.Controls.MetroLabel lblPdnm;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel7;
@@ -840,10 +834,16 @@ namespace TripMaker
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroTextBox txtadrs;
         private MetroFramework.Controls.MetroButton btnopencps;
         private MetroFramework.Controls.MetroButton btnopenps;
         private MetroFramework.Controls.MetroButton btnClosecps;
         private MetroFramework.Controls.MetroButton btnCloseps;
-        private MetroFramework.Controls.MetroTextBox txtadrs;
+        private MetroFramework.Controls.MetroTextBox txtCpass;
+        private MetroFramework.Controls.MetroTextBox txtPass;
+        private MetroFramework.Controls.MetroRadioButton rdbFemale;
+        private MetroFramework.Controls.MetroRadioButton rdbMale;
+        private MetroFramework.Controls.MetroLabel metroLabel9;
+        private MetroFramework.Controls.MetroLabel lblPdnm;
     }
 }
