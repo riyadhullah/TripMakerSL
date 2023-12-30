@@ -29,19 +29,29 @@ namespace TripMaker
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
             this.dataGridView = new MetroFramework.Controls.MetroGrid();
+            this.DGVflight_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVdeparture_airport_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVarrival_airport_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVairline = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVdeparture_datetime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVarrival_datetime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.newBtn = new MetroFramework.Controls.MetroButton();
             this.deleteBtn = new MetroFramework.Controls.MetroButton();
             this.refreshBtn = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.dateTB = new MetroFramework.Controls.MetroDateTime();
+            this.dateLbl = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.departureAirportidTB = new MetroFramework.Controls.MetroTextBox();
@@ -60,16 +70,7 @@ namespace TripMaker
             this.flightidLbl = new MetroFramework.Controls.MetroLabel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.saveBtn = new MetroFramework.Controls.MetroButton();
-            this.dateLbl = new MetroFramework.Controls.MetroLabel();
-            this.dateTB = new MetroFramework.Controls.MetroDateTime();
-            this.DGVflight_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DGVdeparture_airport_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DGVarrival_airport_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DGVairline = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DGVdeparture_datetime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DGVarrival_datetime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DGVprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBack = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.metroPanel4.SuspendLayout();
@@ -135,14 +136,14 @@ namespace TripMaker
             this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DGVflight_id,
@@ -153,14 +154,14 @@ namespace TripMaker
             this.DGVdeparture_datetime,
             this.DGVarrival_datetime,
             this.DGVprice});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.EnableHeadersVisualStyles = false;
             this.dataGridView.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -169,14 +170,14 @@ namespace TripMaker
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView.RowTemplate.Height = 24;
@@ -185,9 +186,86 @@ namespace TripMaker
             this.dataGridView.TabIndex = 2;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
+            // DGVflight_id
+            // 
+            this.DGVflight_id.DataPropertyName = "flight_id";
+            this.DGVflight_id.FillWeight = 40F;
+            this.DGVflight_id.HeaderText = "Flight ID";
+            this.DGVflight_id.MinimumWidth = 6;
+            this.DGVflight_id.Name = "DGVflight_id";
+            this.DGVflight_id.ReadOnly = true;
+            this.DGVflight_id.Width = 40;
+            // 
+            // DGVdeparture_airport_id
+            // 
+            this.DGVdeparture_airport_id.DataPropertyName = "departure_airport_id";
+            this.DGVdeparture_airport_id.FillWeight = 50F;
+            this.DGVdeparture_airport_id.HeaderText = "Departure Airport ID";
+            this.DGVdeparture_airport_id.MinimumWidth = 6;
+            this.DGVdeparture_airport_id.Name = "DGVdeparture_airport_id";
+            this.DGVdeparture_airport_id.ReadOnly = true;
+            this.DGVdeparture_airport_id.Width = 70;
+            // 
+            // DGVarrival_airport_id
+            // 
+            this.DGVarrival_airport_id.DataPropertyName = "arrival_airport_id";
+            this.DGVarrival_airport_id.FillWeight = 50F;
+            this.DGVarrival_airport_id.HeaderText = "Arrival Airport ID";
+            this.DGVarrival_airport_id.MinimumWidth = 6;
+            this.DGVarrival_airport_id.Name = "DGVarrival_airport_id";
+            this.DGVarrival_airport_id.ReadOnly = true;
+            this.DGVarrival_airport_id.Width = 70;
+            // 
+            // DGVairline
+            // 
+            this.DGVairline.DataPropertyName = "airline";
+            this.DGVairline.FillWeight = 150F;
+            this.DGVairline.HeaderText = "Airline";
+            this.DGVairline.MinimumWidth = 6;
+            this.DGVairline.Name = "DGVairline";
+            this.DGVairline.ReadOnly = true;
+            this.DGVairline.Width = 150;
+            // 
+            // Date
+            // 
+            this.Date.DataPropertyName = "date";
+            this.Date.HeaderText = "Date";
+            this.Date.MinimumWidth = 6;
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            this.Date.Width = 60;
+            // 
+            // DGVdeparture_datetime
+            // 
+            this.DGVdeparture_datetime.DataPropertyName = "departure_datetime";
+            this.DGVdeparture_datetime.HeaderText = "Departure Time";
+            this.DGVdeparture_datetime.MinimumWidth = 6;
+            this.DGVdeparture_datetime.Name = "DGVdeparture_datetime";
+            this.DGVdeparture_datetime.ReadOnly = true;
+            this.DGVdeparture_datetime.Width = 60;
+            // 
+            // DGVarrival_datetime
+            // 
+            this.DGVarrival_datetime.DataPropertyName = "arrival_datetime";
+            this.DGVarrival_datetime.HeaderText = "Arrival Time";
+            this.DGVarrival_datetime.MinimumWidth = 6;
+            this.DGVarrival_datetime.Name = "DGVarrival_datetime";
+            this.DGVarrival_datetime.ReadOnly = true;
+            this.DGVarrival_datetime.Width = 60;
+            // 
+            // DGVprice
+            // 
+            this.DGVprice.DataPropertyName = "price";
+            this.DGVprice.HeaderText = "Price";
+            this.DGVprice.MinimumWidth = 6;
+            this.DGVprice.Name = "DGVprice";
+            this.DGVprice.ReadOnly = true;
+            this.DGVprice.Width = 60;
+            // 
             // metroPanel3
             // 
             this.metroPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.metroPanel3.Controls.Add(this.btnBack);
             this.metroPanel3.Controls.Add(this.newBtn);
             this.metroPanel3.Controls.Add(this.deleteBtn);
             this.metroPanel3.Controls.Add(this.refreshBtn);
@@ -280,6 +358,28 @@ namespace TripMaker
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 10;
+            // 
+            // dateTB
+            // 
+            this.dateTB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTB.Location = new System.Drawing.Point(121, 465);
+            this.dateTB.MaxDate = new System.DateTime(2024, 1, 7, 0, 0, 0, 0);
+            this.dateTB.MinDate = new System.DateTime(2023, 12, 29, 16, 8, 1, 0);
+            this.dateTB.MinimumSize = new System.Drawing.Size(0, 30);
+            this.dateTB.Name = "dateTB";
+            this.dateTB.Size = new System.Drawing.Size(212, 30);
+            this.dateTB.TabIndex = 20;
+            this.dateTB.Value = new System.DateTime(2023, 12, 29, 16, 8, 1, 0);
+            // 
+            // dateLbl
+            // 
+            this.dateLbl.AutoSize = true;
+            this.dateLbl.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.dateLbl.Location = new System.Drawing.Point(49, 465);
+            this.dateLbl.Name = "dateLbl";
+            this.dateLbl.Size = new System.Drawing.Size(46, 20);
+            this.dateLbl.TabIndex = 18;
+            this.dateLbl.Text = "Date:";
             // 
             // metroLabel3
             // 
@@ -624,103 +724,17 @@ namespace TripMaker
             this.saveBtn.UseSelectable = true;
             this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
-            // dateLbl
+            // btnBack
             // 
-            this.dateLbl.AutoSize = true;
-            this.dateLbl.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.dateLbl.Location = new System.Drawing.Point(49, 465);
-            this.dateLbl.Name = "dateLbl";
-            this.dateLbl.Size = new System.Drawing.Size(46, 20);
-            this.dateLbl.TabIndex = 18;
-            this.dateLbl.Text = "Date:";
-            // 
-            // dateTB
-            // 
-            this.dateTB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTB.Location = new System.Drawing.Point(121, 465);
-            this.dateTB.MaxDate = new System.DateTime(2024, 1, 7, 0, 0, 0, 0);
-            this.dateTB.MinDate = new System.DateTime(2023, 12, 29, 16, 8, 1, 0);
-            this.dateTB.MinimumSize = new System.Drawing.Size(0, 30);
-            this.dateTB.Name = "dateTB";
-            this.dateTB.Size = new System.Drawing.Size(212, 30);
-            this.dateTB.TabIndex = 20;
-            this.dateTB.Value = new System.DateTime(2023, 12, 29, 16, 8, 1, 0);
-            // 
-            // DGVflight_id
-            // 
-            this.DGVflight_id.DataPropertyName = "flight_id";
-            this.DGVflight_id.FillWeight = 40F;
-            this.DGVflight_id.HeaderText = "Flight ID";
-            this.DGVflight_id.MinimumWidth = 6;
-            this.DGVflight_id.Name = "DGVflight_id";
-            this.DGVflight_id.ReadOnly = true;
-            this.DGVflight_id.Width = 40;
-            // 
-            // DGVdeparture_airport_id
-            // 
-            this.DGVdeparture_airport_id.DataPropertyName = "departure_airport_id";
-            this.DGVdeparture_airport_id.FillWeight = 50F;
-            this.DGVdeparture_airport_id.HeaderText = "Departure Airport ID";
-            this.DGVdeparture_airport_id.MinimumWidth = 6;
-            this.DGVdeparture_airport_id.Name = "DGVdeparture_airport_id";
-            this.DGVdeparture_airport_id.ReadOnly = true;
-            this.DGVdeparture_airport_id.Width = 70;
-            // 
-            // DGVarrival_airport_id
-            // 
-            this.DGVarrival_airport_id.DataPropertyName = "arrival_airport_id";
-            this.DGVarrival_airport_id.FillWeight = 50F;
-            this.DGVarrival_airport_id.HeaderText = "Arrival Airport ID";
-            this.DGVarrival_airport_id.MinimumWidth = 6;
-            this.DGVarrival_airport_id.Name = "DGVarrival_airport_id";
-            this.DGVarrival_airport_id.ReadOnly = true;
-            this.DGVarrival_airport_id.Width = 70;
-            // 
-            // DGVairline
-            // 
-            this.DGVairline.DataPropertyName = "airline";
-            this.DGVairline.FillWeight = 150F;
-            this.DGVairline.HeaderText = "Airline";
-            this.DGVairline.MinimumWidth = 6;
-            this.DGVairline.Name = "DGVairline";
-            this.DGVairline.ReadOnly = true;
-            this.DGVairline.Width = 150;
-            // 
-            // Date
-            // 
-            this.Date.DataPropertyName = "date";
-            this.Date.HeaderText = "Date";
-            this.Date.MinimumWidth = 6;
-            this.Date.Name = "Date";
-            this.Date.ReadOnly = true;
-            this.Date.Width = 60;
-            // 
-            // DGVdeparture_datetime
-            // 
-            this.DGVdeparture_datetime.DataPropertyName = "departure_datetime";
-            this.DGVdeparture_datetime.HeaderText = "Departure Time";
-            this.DGVdeparture_datetime.MinimumWidth = 6;
-            this.DGVdeparture_datetime.Name = "DGVdeparture_datetime";
-            this.DGVdeparture_datetime.ReadOnly = true;
-            this.DGVdeparture_datetime.Width = 60;
-            // 
-            // DGVarrival_datetime
-            // 
-            this.DGVarrival_datetime.DataPropertyName = "arrival_datetime";
-            this.DGVarrival_datetime.HeaderText = "Arrival Time";
-            this.DGVarrival_datetime.MinimumWidth = 6;
-            this.DGVarrival_datetime.Name = "DGVarrival_datetime";
-            this.DGVarrival_datetime.ReadOnly = true;
-            this.DGVarrival_datetime.Width = 60;
-            // 
-            // DGVprice
-            // 
-            this.DGVprice.DataPropertyName = "price";
-            this.DGVprice.HeaderText = "Price";
-            this.DGVprice.MinimumWidth = 6;
-            this.DGVprice.Name = "DGVprice";
-            this.DGVprice.ReadOnly = true;
-            this.DGVprice.Width = 60;
+            this.btnBack.BackColor = System.Drawing.Color.DimGray;
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnBack.Location = new System.Drawing.Point(721, 0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 42);
+            this.btnBack.TabIndex = 6;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseSelectable = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // FlightManagerView
             // 
@@ -730,6 +744,7 @@ namespace TripMaker
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FlightManagerView";
             this.Text = "Flight Manager View";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FlightManagerView_FormClosing);
             this.Load += new System.EventHandler(this.FlightManagerView_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -784,5 +799,6 @@ namespace TripMaker
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVdeparture_datetime;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVarrival_datetime;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVprice;
+        private MetroFramework.Controls.MetroButton btnBack;
     }
 }

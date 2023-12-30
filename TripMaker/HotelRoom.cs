@@ -12,8 +12,7 @@ namespace TripMaker
 {
     public partial class HotelRoom : UserControl
     {
-        private Sub_RoomInfo[] listItem;
-        private int[] index;
+        private Sub_RoomInfo[] Sub_RoomInfo;
         private static string hotelName;
         private DataTable dt;
         public HotelRoom()
@@ -68,28 +67,27 @@ namespace TripMaker
 
             dt = DataAccess.GetData(query, out error);
 
-            listItem = new Sub_RoomInfo[dt.Rows.Count];
+            Sub_RoomInfo = new Sub_RoomInfo[dt.Rows.Count];
 
-            index = new int[listItem.Length];
 
-            if (listItem.Length == 0)
+            if (Sub_RoomInfo.Length == 0)
             {
                 flowLayoutPanel1.Controls.Clear();
             }
 
-            for (int i = 0; i < listItem.Length; i++)
+            for (int i = 0; i < Sub_RoomInfo.Length; i++)
             {
                 try
                 {
-                    listItem[i] = new Sub_RoomInfo();
-                    listItem[i].RoomName = dt.Rows[i]["room_type"].ToString();
-                    listItem[i].Breakfast = dt.Rows[i]["breakfast_include"].ToString();
-                    listItem[i].Lunch = dt.Rows[i]["lunch_include"].ToString();
-                    listItem[i].Dinner = dt.Rows[i]["dinner_include"].ToString();
-                    listItem[i].Guest = dt.Rows[i]["guest_per_room"].ToString();
-                    listItem[i].Price = dt.Rows[i]["price_per_night"].ToString() + "TK";
+                    Sub_RoomInfo[i] = new Sub_RoomInfo();
+                    Sub_RoomInfo[i].RoomName = dt.Rows[i]["room_type"].ToString();
+                    Sub_RoomInfo[i].Breakfast = dt.Rows[i]["breakfast_include"].ToString();
+                    Sub_RoomInfo[i].Lunch = dt.Rows[i]["lunch_include"].ToString();
+                    Sub_RoomInfo[i].Dinner = dt.Rows[i]["dinner_include"].ToString();
+                    Sub_RoomInfo[i].Guest = dt.Rows[i]["guest_per_room"].ToString();
+                    Sub_RoomInfo[i].Price = dt.Rows[i]["price_per_night"].ToString() + "TK";
 
-                    flowLayoutPanel1.Controls.Add(listItem[i]);
+                    flowLayoutPanel1.Controls.Add(Sub_RoomInfo[i]);
                 }
                 catch (Exception ex)
                 {
@@ -101,23 +99,45 @@ namespace TripMaker
 
         private void btnBook_Click(object sender, EventArgs e)
         {
+            string query3 = "select Id from user_table where userName = (select user_name from tmp_table)";
+            string error3;
+            int id = 0;
+
+            DataTable dt3 = DataAccess.GetData(query3, out error3);
+            try
+            {
+                id = Int32.Parse(dt3.Rows[0][0].ToString());
+            }
+            catch(Exception ex)
+            {
+
+            }
+            MessageBox.Show(id+" id sdds");
+
+
+            if (dt3.Rows.Count == 0)
+            {
+                MessageBox.Show("Please login");
+                return;
+            }
+
+
             List<int> index = new List<int>();
 
-            for (int i = 0; i < listItem.Length; i++)
+            for (int i = 0; i < Sub_RoomInfo.Length; i++)
             {
-                if (listItem[i].checkBox_checker())
+                if (Sub_RoomInfo[i].checkBox_checker())
                 {
                     index.Add(i);
                 }
             }
+            
+            if (index.Count == 0)
+            {
+                MessageBox.Show("Please select rooms");
+                return;
+            }
 
-            //string s = "";
-            //foreach (int num in index)
-            //{
-                
-                ///s = num + s;
-                
-            //}
 
             string dtp1 = Hotel.Instance.DateTimePicker11;
             string dtp2 = Hotel.Instance.DateTimePicker22;
@@ -134,10 +154,12 @@ namespace TripMaker
             }
 
             int hotel_id = Int32.Parse(dt1.Rows[0][0].ToString());
-            MessageBox.Show(hotel_id+" hotel id");
+            //MessageBox.Show(hotel_id+" hotel id");
+
+            
 
 
-            string query1 = "insert into hotel_book_info output inserted.book_id values ('" + dtp1+"', '"+dtp2+"', 1006, "+hotel_id+")";
+            string query1 = "insert into hotel_book_info output inserted.book_id values ('" + dtp1+"', '"+dtp2+"', "+ id + ", "+hotel_id+")";
             string error1;
 
             DataTable dt2 = DataAccess.GetData(query1, out error1);
@@ -149,19 +171,19 @@ namespace TripMaker
             }
 
             int book_id = Int32.Parse(dt2.Rows[0][0].ToString());
-            MessageBox.Show(book_id + " booking id");
+            //MessageBox.Show(book_id + " booking id");
 
             for (int i = 0; i < index.Count; i++)
             {
                 int room_id = Int32.Parse(dt.Rows[index[i]]["room_id"].ToString());
 
-                string query2 = "insert into book_room_relation values (" + book_id + ", " + room_id + ", " + index.Count + " )";
+                string query2 = "insert into book_room_relation values (" + book_id + ", " + room_id + ", " + 1 + " )";
                 string error2;
-                MessageBox.Show(query2);
+                //MessageBox.Show(query2);
                 DataAccess.ExecuteData(query2, out error2);
             }
 
-
+            MessageBox.Show("Successfully booked");
 
         }
 

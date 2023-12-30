@@ -83,30 +83,13 @@ namespace TripMaker
             else if (btn.Text == "About")
             {
                 red_panel_changed(false, false, false, false, false, false, true);
-                Profileedit.Instance.BringToFront();
             }
             
-            
-            /*else if (btn.Text == "Signup")
-            {
-                if (!panel.Controls.Contains(Signup.Instance))
-                {
-                    panel.Controls.Add(Signup.Instance);
-                    Signup.Instance.Dock = DockStyle.Fill;
-                    Signup.Instance.BringToFront();
-                }
-                else
-                {
-                    Signup.Instance.BringToFront();
-                }
-            }*/
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show("asd");
-
             panel.Controls.Add(Home.Instance);
             Home.Instance.Dock = DockStyle.Fill;
             Home.Instance.BringToFront();
@@ -149,48 +132,20 @@ namespace TripMaker
             panel.Controls.Add(Busconfirmbook.Instance);
             Busconfirmbook.Instance.Dock = DockStyle.Fill;
 
-            red_panel_changed(true, false, false, false, false, false, false);
-        }
+            string query = "select Id from user_table where userName = (select user_name from tmp_table)";
+            string error;
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+            DataTable dt = DataAccess.GetData(query, out error);
 
-        }
-
-
-        /*public void load()
-        {
-            panel.Controls.Add(Home.Instance);
-            Home.Instance.Dock = DockStyle.Fill;
-            Home.Instance.BringToFront();
-
-            panelUp.Controls.Add(LoginAndSignupPanel.Instance);
-            LoginAndSignupPanel.Instance.Dock = DockStyle.Fill;
-            LoginAndSignupPanel.Instance.BringToFront();
-
-            panelUp.Controls.Add(LogoutPanel.Instance);
-            LogoutPanel.Instance.Dock = DockStyle.Fill;
-
-            panel.Controls.Add(Login.Instance);
-            Login.Instance.Dock = DockStyle.Fill;
-
-            panel.Controls.Add(Signup.Instance);
-            Signup.Instance.Dock = DockStyle.Fill;
-
-
-            panel.Controls.Add(Bus.Instance);
-            Bus.Instance.Dock = DockStyle.Fill;
-
-            panel.Controls.Add(Flight.Instance);
-            Flight.Instance.Dock = DockStyle.Fill;
+            if (dt != null)
+            {
+                LogoutPanel.Instance.BringToFront();
+            }
 
             red_panel_changed(true, false, false, false, false, false, false);
-        }*/
-
-
         }
-        
-
 
     }
+
+}
 

@@ -19,7 +19,36 @@ namespace TripMaker
 
         private void button1_Click(object sender, EventArgs e)
         {
-           // new ManageHotelRooms().Show;
+            ManageHotelRooms obj = new ManageHotelRooms();
+            obj.Show();
+
+            this.Hide();
+        }
+
+        private void btnFlight_Click(object sender, EventArgs e)
+        {
+            FlightManagerView obj = new FlightManagerView();
+            obj.Show();
+
+            this.Hide();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 obj = new Form1();
+            obj.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            string error;
+            string query = "delete from tmp_table";
+
+            DataAccess.ExecuteData(query, out error);
+
+            Form1 obj = new Form1();
+            obj.Show();
         }
     }
 }

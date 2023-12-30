@@ -51,8 +51,9 @@ namespace TripMaker
             this.btnBusInfo.Name = "btnBusInfo";
             this.btnBusInfo.Size = new System.Drawing.Size(236, 60);
             this.btnBusInfo.TabIndex = 4;
-            this.btnBusInfo.Text = "Bus Info";
+            this.btnBusInfo.Text = "Bus booking Info";
             this.btnBusInfo.UseVisualStyleBackColor = true;
+            this.btnBusInfo.Click += new System.EventHandler(this.btnBusInfo_Click);
             // 
             // btnFlightInfo
             // 
@@ -64,8 +65,9 @@ namespace TripMaker
             this.btnFlightInfo.Name = "btnFlightInfo";
             this.btnFlightInfo.Size = new System.Drawing.Size(236, 60);
             this.btnFlightInfo.TabIndex = 5;
-            this.btnFlightInfo.Text = "Flight Info";
+            this.btnFlightInfo.Text = "Flight booking Info";
             this.btnFlightInfo.UseVisualStyleBackColor = true;
+            this.btnFlightInfo.Click += new System.EventHandler(this.btnFlightInfo_Click);
             // 
             // btnHotelInfo
             // 
@@ -77,7 +79,7 @@ namespace TripMaker
             this.btnHotelInfo.Name = "btnHotelInfo";
             this.btnHotelInfo.Size = new System.Drawing.Size(236, 60);
             this.btnHotelInfo.TabIndex = 6;
-            this.btnHotelInfo.Text = "Hotel Info";
+            this.btnHotelInfo.Text = "Hotel booking Info";
             this.btnHotelInfo.UseVisualStyleBackColor = true;
             this.btnHotelInfo.Click += new System.EventHandler(this.btnHotelInfo_Click);
             // 

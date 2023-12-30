@@ -81,7 +81,6 @@ namespace TripMaker
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(265, 800);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pnlAbout
             // 
@@ -236,9 +235,9 @@ namespace TripMaker
             // 
             this.panel.BackColor = System.Drawing.Color.LightGray;
             this.panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel.Location = new System.Drawing.Point(265, 138);
+            this.panel.Location = new System.Drawing.Point(265, 137);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(935, 662);
+            this.panel.Size = new System.Drawing.Size(935, 663);
             this.panel.TabIndex = 8;
             // 
             // panelUp

@@ -29,17 +29,17 @@ namespace TripMaker
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
@@ -156,14 +156,14 @@ namespace TripMaker
             this.dgvManageHotelRooms.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvManageHotelRooms.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvManageHotelRooms.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvManageHotelRooms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvManageHotelRooms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvManageHotelRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvManageHotelRooms.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvID,
@@ -174,14 +174,14 @@ namespace TripMaker
             this.dvgRoomType,
             this.dgvGuest,
             this.dgvHotelId});
-            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle54.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvManageHotelRooms.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvManageHotelRooms.DefaultCellStyle = dataGridViewCellStyle10;
             this.dgvManageHotelRooms.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvManageHotelRooms.EnableHeadersVisualStyles = false;
             this.dgvManageHotelRooms.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -190,14 +190,14 @@ namespace TripMaker
             this.dgvManageHotelRooms.Name = "dgvManageHotelRooms";
             this.dgvManageHotelRooms.ReadOnly = true;
             this.dgvManageHotelRooms.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle55.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvManageHotelRooms.RowHeadersDefaultCellStyle = dataGridViewCellStyle55;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvManageHotelRooms.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvManageHotelRooms.RowHeadersWidth = 51;
             this.dgvManageHotelRooms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvManageHotelRooms.RowTemplate.Height = 24;
@@ -209,8 +209,8 @@ namespace TripMaker
             // dgvID
             // 
             this.dgvID.DataPropertyName = "room_id";
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
-            this.dgvID.DefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            this.dgvID.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvID.HeaderText = "ID";
             this.dgvID.MinimumWidth = 6;
             this.dgvID.Name = "dgvID";
@@ -220,8 +220,8 @@ namespace TripMaker
             // dvgPrice
             // 
             this.dvgPrice.DataPropertyName = "price_per_night";
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.White;
-            this.dvgPrice.DefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            this.dvgPrice.DefaultCellStyle = dataGridViewCellStyle3;
             this.dvgPrice.HeaderText = "Price per night";
             this.dvgPrice.MinimumWidth = 6;
             this.dvgPrice.Name = "dvgPrice";
@@ -231,8 +231,8 @@ namespace TripMaker
             // dgvBreakfast
             // 
             this.dgvBreakfast.DataPropertyName = "breakfast_include";
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
-            this.dgvBreakfast.DefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvBreakfast.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvBreakfast.HeaderText = "Breakfast";
             this.dgvBreakfast.MinimumWidth = 6;
             this.dgvBreakfast.Name = "dgvBreakfast";
@@ -242,8 +242,8 @@ namespace TripMaker
             // dgvLunch
             // 
             this.dgvLunch.DataPropertyName = "lunch_include";
-            dataGridViewCellStyle49.BackColor = System.Drawing.Color.White;
-            this.dgvLunch.DefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.dgvLunch.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvLunch.HeaderText = "Lunch";
             this.dgvLunch.MinimumWidth = 6;
             this.dgvLunch.Name = "dgvLunch";
@@ -253,8 +253,8 @@ namespace TripMaker
             // dgvDinner
             // 
             this.dgvDinner.DataPropertyName = "dinner_include";
-            dataGridViewCellStyle50.BackColor = System.Drawing.Color.White;
-            this.dgvDinner.DefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            this.dgvDinner.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvDinner.HeaderText = "Dinner";
             this.dgvDinner.MinimumWidth = 6;
             this.dgvDinner.Name = "dgvDinner";
@@ -264,8 +264,8 @@ namespace TripMaker
             // dvgRoomType
             // 
             this.dvgRoomType.DataPropertyName = "room_type";
-            dataGridViewCellStyle51.BackColor = System.Drawing.Color.White;
-            this.dvgRoomType.DefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dvgRoomType.DefaultCellStyle = dataGridViewCellStyle7;
             this.dvgRoomType.HeaderText = "Room Type";
             this.dvgRoomType.MinimumWidth = 6;
             this.dvgRoomType.Name = "dvgRoomType";
@@ -275,8 +275,8 @@ namespace TripMaker
             // dgvGuest
             // 
             this.dgvGuest.DataPropertyName = "guest_per_room";
-            dataGridViewCellStyle52.BackColor = System.Drawing.Color.White;
-            this.dgvGuest.DefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            this.dgvGuest.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvGuest.HeaderText = "Guest per room";
             this.dgvGuest.MinimumWidth = 6;
             this.dgvGuest.Name = "dgvGuest";
@@ -287,8 +287,8 @@ namespace TripMaker
             // 
             this.dgvHotelId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dgvHotelId.DataPropertyName = "hotel_id";
-            dataGridViewCellStyle53.BackColor = System.Drawing.Color.White;
-            this.dgvHotelId.DefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.dgvHotelId.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvHotelId.HeaderText = "Hotel ID";
             this.dgvHotelId.MinimumWidth = 6;
             this.dgvHotelId.Name = "dgvHotelId";
@@ -323,6 +323,7 @@ namespace TripMaker
             this.btnBack.TabIndex = 1;
             this.btnBack.Text = "Back";
             this.btnBack.UseSelectable = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnNew
             // 

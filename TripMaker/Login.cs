@@ -109,8 +109,10 @@ namespace TripMaker
                     MessageBox.Show("Invalid User Name or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                Home.Instance.BringToFront();
-                LogoutPanel.Instance.BringToFront();
+
+                AdminHome obj = new AdminHome();
+                obj.Show();
+                this.Hide();
 
                 string query1 = "insert into tmp_table values('" + un + "','" + pass + "')";
 

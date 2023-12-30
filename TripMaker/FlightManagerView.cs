@@ -184,5 +184,17 @@ namespace TripMaker
         {
 
         }
+
+        private void FlightManagerView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            AdminHome obj = new AdminHome();
+            obj.Show();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            AdminHome obj = new AdminHome();
+            obj.Show();
+        }
     }
 }
