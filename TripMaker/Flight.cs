@@ -50,12 +50,18 @@ namespace TripMaker
 
         private void Flight_Load(object sender, EventArgs e)
         {
-            string query = "select * from airport_table";
+
+
+            /*string query = "select * from flight_table inner join airport_table on flight_id=airport_id";
             string error;
 
             DataTable dt = DataAccess.GetData(query, out error);
+
+
+              
             try
             {
+
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     cbFromAirport.Items.Add(dt.Rows[i]["airport_name"].ToString());
@@ -71,7 +77,7 @@ namespace TripMaker
             catch (Exception ex)
             {
 
-            }
+            }*/
 
 
 
@@ -80,7 +86,67 @@ namespace TripMaker
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            try
+            if (cbFromAirport.Text==cbToAirport.Text)
+            {
+                MessageBox.Show("Airports must be different!");
+            }
+            if (cbFromAirport.Text.Contains("Chittagong Airport") && cbToAirport.Text.Contains("Cumilla Airport"))
+            {
+                labelAirways.Text = "Bangladesh Biman";
+                labelRoute.Text = "Chittagong To Cumilla";
+                labelTime.Text = "7 am";
+                labelTaka.Text = "3500 BDT";
+
+            }
+
+            if (cbFromAirport.Text.Contains("Chittagong Airport") && cbToAirport.Text.Contains("Dhaka Airport"))
+            {
+                labelAirways.Text = "US-Bangla Airways";
+                labelRoute.Text = "Chittagong To Dhaka";
+                labelTime.Text = "10 am";
+                labelTaka.Text = "6500 BDT";
+
+            }
+
+            if (cbFromAirport.Text.Contains("Cumilla Airport") && cbToAirport.Text.Contains("Dhaka Airport"))
+            {
+                labelAirways.Text = "AIUB Airways";
+                labelRoute.Text = "Cumilla To Dhaka";
+                labelTime.Text = "9 am";
+                labelTaka.Text = "3500 BDT";
+
+            }
+            if (cbFromAirport.Text.Contains("Cumilla Airport") && cbToAirport.Text.Contains("Chittagong Airport"))
+            {
+                labelAirways.Text = "Palestine Airways";
+                labelRoute.Text = "Cumilla To Chittagong";
+                labelTime.Text = "9 pm";
+                labelTaka.Text = "3000 BDT";
+
+            }
+            if (cbFromAirport.Text.Contains("Dhaka Airport") && cbToAirport.Text.Contains("Cumilla Airport"))
+            {
+                labelAirways.Text = "New Airways";
+                labelRoute.Text = "Dhaka To Cumilla";
+                labelTime.Text = "9 am";
+                labelTaka.Text = "3500 BDT";
+
+            }
+            if (cbFromAirport.Text.Contains("Dhaka Airport") && cbToAirport.Text.Contains("Chittagong Airport"))
+            {
+                labelAirways.Text = "US-Bangla Airways";
+                labelRoute.Text = "Dhaka To Chittagong";
+                labelTime.Text = "10 pm";
+                labelTaka.Text = "6500 BDT";
+
+            }
+
+
+            /*
+            Chittagong Airport
+            Cumilla Airport
+            Dhaka Airport
+              try
             {
                 flowLayoutPanel1.Controls.Clear();
 
@@ -166,8 +232,23 @@ namespace TripMaker
             {
                 MessageBox.Show("adsfgbhn");
 
-            }
+            }*/
 
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelCTGtoDhaka_MouseClick(object sender, MouseEventArgs e)
+        {
 
         }
     }

@@ -103,9 +103,39 @@ namespace TripMaker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap homeLeft {
+            get {
+                object obj = ResourceManager.GetObject("homeLeft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HomeRight {
+            get {
+                object obj = ResourceManager.GetObject("HomeRight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imageIcon {
             get {
                 object obj = ResourceManager.GetObject("imageIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoginLogoutBG {
+            get {
+                object obj = ResourceManager.GetObject("LoginLogoutBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

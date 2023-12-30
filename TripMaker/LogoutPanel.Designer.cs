@@ -67,6 +67,7 @@ namespace TripMaker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::TripMaker.Properties.Resources.LoginLogoutBG;
             this.Controls.Add(this.btnProfile);
             this.Controls.Add(this.btnLogout);
             this.Name = "LogoutPanel";
