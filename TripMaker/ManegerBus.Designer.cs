@@ -29,28 +29,18 @@ namespace TripMaker
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel5 = new MetroFramework.Controls.MetroPanel();
-            this.metroGrid = new MetroFramework.Controls.MetroGrid();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.txtun = new MetroFramework.Controls.MetroTextBox();
-            this.txtpn = new MetroFramework.Controls.MetroTextBox();
-            this.txtemail = new MetroFramework.Controls.MetroTextBox();
+            this.txtprice = new MetroFramework.Controls.MetroTextBox();
+            this.txtbt = new MetroFramework.Controls.MetroTextBox();
+            this.txtat = new MetroFramework.Controls.MetroTextBox();
+            this.txtds = new MetroFramework.Controls.MetroTextBox();
+            this.txtdt = new MetroFramework.Controls.MetroTextBox();
+            this.txtas = new MetroFramework.Controls.MetroTextBox();
             this.txtName = new MetroFramework.Controls.MetroTextBox();
             this.txtid = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -62,6 +52,16 @@ namespace TripMaker
             this.metroLblName = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.metroPanel5 = new MetroFramework.Controls.MetroPanel();
+            this.metroGrid = new MetroFramework.Controls.MetroGrid();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.metroPanel4.SuspendLayout();
@@ -107,12 +107,12 @@ namespace TripMaker
             // metroPanel4
             // 
             this.metroPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.metroPanel4.Controls.Add(this.metroTextBox3);
-            this.metroPanel4.Controls.Add(this.metroTextBox2);
-            this.metroPanel4.Controls.Add(this.metroTextBox1);
-            this.metroPanel4.Controls.Add(this.txtun);
-            this.metroPanel4.Controls.Add(this.txtpn);
-            this.metroPanel4.Controls.Add(this.txtemail);
+            this.metroPanel4.Controls.Add(this.txtprice);
+            this.metroPanel4.Controls.Add(this.txtbt);
+            this.metroPanel4.Controls.Add(this.txtat);
+            this.metroPanel4.Controls.Add(this.txtds);
+            this.metroPanel4.Controls.Add(this.txtdt);
+            this.metroPanel4.Controls.Add(this.txtas);
             this.metroPanel4.Controls.Add(this.txtName);
             this.metroPanel4.Controls.Add(this.txtid);
             this.metroPanel4.Controls.Add(this.metroLabel3);
@@ -135,6 +135,363 @@ namespace TripMaker
             this.metroPanel4.VerticalScrollbarBarColor = true;
             this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel4.VerticalScrollbarSize = 10;
+            // 
+            // txtprice
+            // 
+            // 
+            // 
+            // 
+            this.txtprice.CustomButton.Image = null;
+            this.txtprice.CustomButton.Location = new System.Drawing.Point(204, 2);
+            this.txtprice.CustomButton.Name = "";
+            this.txtprice.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtprice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtprice.CustomButton.TabIndex = 1;
+            this.txtprice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtprice.CustomButton.UseSelectable = true;
+            this.txtprice.CustomButton.Visible = false;
+            this.txtprice.Lines = new string[0];
+            this.txtprice.Location = new System.Drawing.Point(227, 477);
+            this.txtprice.MaxLength = 32767;
+            this.txtprice.Name = "txtprice";
+            this.txtprice.PasswordChar = '\0';
+            this.txtprice.PromptText = "Enter Price";
+            this.txtprice.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtprice.SelectedText = "";
+            this.txtprice.SelectionLength = 0;
+            this.txtprice.SelectionStart = 0;
+            this.txtprice.ShortcutsEnabled = true;
+            this.txtprice.Size = new System.Drawing.Size(232, 30);
+            this.txtprice.TabIndex = 66;
+            this.txtprice.UseSelectable = true;
+            this.txtprice.WaterMark = "Enter Price";
+            this.txtprice.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtprice.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtbt
+            // 
+            // 
+            // 
+            // 
+            this.txtbt.CustomButton.Image = null;
+            this.txtbt.CustomButton.Location = new System.Drawing.Point(204, 2);
+            this.txtbt.CustomButton.Name = "";
+            this.txtbt.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtbt.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtbt.CustomButton.TabIndex = 1;
+            this.txtbt.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtbt.CustomButton.UseSelectable = true;
+            this.txtbt.CustomButton.Visible = false;
+            this.txtbt.Lines = new string[0];
+            this.txtbt.Location = new System.Drawing.Point(227, 428);
+            this.txtbt.MaxLength = 32767;
+            this.txtbt.Name = "txtbt";
+            this.txtbt.PasswordChar = '\0';
+            this.txtbt.PromptText = "Enter Bus Type";
+            this.txtbt.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtbt.SelectedText = "";
+            this.txtbt.SelectionLength = 0;
+            this.txtbt.SelectionStart = 0;
+            this.txtbt.ShortcutsEnabled = true;
+            this.txtbt.Size = new System.Drawing.Size(232, 30);
+            this.txtbt.TabIndex = 65;
+            this.txtbt.UseSelectable = true;
+            this.txtbt.WaterMark = "Enter Bus Type";
+            this.txtbt.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtbt.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtat
+            // 
+            // 
+            // 
+            // 
+            this.txtat.CustomButton.Image = null;
+            this.txtat.CustomButton.Location = new System.Drawing.Point(204, 2);
+            this.txtat.CustomButton.Name = "";
+            this.txtat.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtat.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtat.CustomButton.TabIndex = 1;
+            this.txtat.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtat.CustomButton.UseSelectable = true;
+            this.txtat.CustomButton.Visible = false;
+            this.txtat.Lines = new string[0];
+            this.txtat.Location = new System.Drawing.Point(227, 375);
+            this.txtat.MaxLength = 32767;
+            this.txtat.Name = "txtat";
+            this.txtat.PasswordChar = '\0';
+            this.txtat.PromptText = "Enter Arrival Time";
+            this.txtat.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtat.SelectedText = "";
+            this.txtat.SelectionLength = 0;
+            this.txtat.SelectionStart = 0;
+            this.txtat.ShortcutsEnabled = true;
+            this.txtat.Size = new System.Drawing.Size(232, 30);
+            this.txtat.TabIndex = 64;
+            this.txtat.UseSelectable = true;
+            this.txtat.WaterMark = "Enter Arrival Time";
+            this.txtat.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtat.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtds
+            // 
+            // 
+            // 
+            // 
+            this.txtds.CustomButton.Image = null;
+            this.txtds.CustomButton.Location = new System.Drawing.Point(204, 2);
+            this.txtds.CustomButton.Name = "";
+            this.txtds.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtds.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtds.CustomButton.TabIndex = 1;
+            this.txtds.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtds.CustomButton.UseSelectable = true;
+            this.txtds.CustomButton.Visible = false;
+            this.txtds.Lines = new string[0];
+            this.txtds.Location = new System.Drawing.Point(227, 224);
+            this.txtds.MaxLength = 32767;
+            this.txtds.Name = "txtds";
+            this.txtds.PasswordChar = '\0';
+            this.txtds.PromptText = "Enter Departure Station";
+            this.txtds.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtds.SelectedText = "";
+            this.txtds.SelectionLength = 0;
+            this.txtds.SelectionStart = 0;
+            this.txtds.ShortcutsEnabled = true;
+            this.txtds.Size = new System.Drawing.Size(232, 30);
+            this.txtds.TabIndex = 61;
+            this.txtds.UseSelectable = true;
+            this.txtds.WaterMark = "Enter Departure Station";
+            this.txtds.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtds.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtdt
+            // 
+            // 
+            // 
+            // 
+            this.txtdt.CustomButton.Image = null;
+            this.txtdt.CustomButton.Location = new System.Drawing.Point(204, 2);
+            this.txtdt.CustomButton.Name = "";
+            this.txtdt.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtdt.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtdt.CustomButton.TabIndex = 1;
+            this.txtdt.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtdt.CustomButton.UseSelectable = true;
+            this.txtdt.CustomButton.Visible = false;
+            this.txtdt.Lines = new string[0];
+            this.txtdt.Location = new System.Drawing.Point(227, 324);
+            this.txtdt.MaxLength = 32767;
+            this.txtdt.Name = "txtdt";
+            this.txtdt.PasswordChar = '\0';
+            this.txtdt.PromptText = "Enter Departure Time";
+            this.txtdt.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtdt.SelectedText = "";
+            this.txtdt.SelectionLength = 0;
+            this.txtdt.SelectionStart = 0;
+            this.txtdt.ShortcutsEnabled = true;
+            this.txtdt.Size = new System.Drawing.Size(232, 30);
+            this.txtdt.TabIndex = 63;
+            this.txtdt.UseSelectable = true;
+            this.txtdt.WaterMark = "Enter Departure Time";
+            this.txtdt.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtdt.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtas
+            // 
+            // 
+            // 
+            // 
+            this.txtas.CustomButton.Image = null;
+            this.txtas.CustomButton.Location = new System.Drawing.Point(204, 2);
+            this.txtas.CustomButton.Name = "";
+            this.txtas.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtas.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtas.CustomButton.TabIndex = 1;
+            this.txtas.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtas.CustomButton.UseSelectable = true;
+            this.txtas.CustomButton.Visible = false;
+            this.txtas.Lines = new string[0];
+            this.txtas.Location = new System.Drawing.Point(227, 273);
+            this.txtas.MaxLength = 32767;
+            this.txtas.Name = "txtas";
+            this.txtas.PasswordChar = '\0';
+            this.txtas.PromptText = "Enter Arrival Station";
+            this.txtas.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtas.SelectedText = "";
+            this.txtas.SelectionLength = 0;
+            this.txtas.SelectionStart = 0;
+            this.txtas.ShortcutsEnabled = true;
+            this.txtas.Size = new System.Drawing.Size(232, 30);
+            this.txtas.TabIndex = 62;
+            this.txtas.UseSelectable = true;
+            this.txtas.WaterMark = "Enter Arrival Station";
+            this.txtas.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtas.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtName
+            // 
+            // 
+            // 
+            // 
+            this.txtName.CustomButton.Image = null;
+            this.txtName.CustomButton.Location = new System.Drawing.Point(204, 2);
+            this.txtName.CustomButton.Name = "";
+            this.txtName.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtName.CustomButton.TabIndex = 1;
+            this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtName.CustomButton.UseSelectable = true;
+            this.txtName.CustomButton.Visible = false;
+            this.txtName.Lines = new string[0];
+            this.txtName.Location = new System.Drawing.Point(227, 171);
+            this.txtName.MaxLength = 32767;
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.PromptText = "Enter Bus Company Name";
+            this.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtName.SelectedText = "";
+            this.txtName.SelectionLength = 0;
+            this.txtName.SelectionStart = 0;
+            this.txtName.ShortcutsEnabled = true;
+            this.txtName.Size = new System.Drawing.Size(232, 30);
+            this.txtName.TabIndex = 60;
+            this.txtName.UseSelectable = true;
+            this.txtName.WaterMark = "Enter Bus Company Name";
+            this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtName.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtid
+            // 
+            // 
+            // 
+            // 
+            this.txtid.CustomButton.Image = null;
+            this.txtid.CustomButton.Location = new System.Drawing.Point(204, 2);
+            this.txtid.CustomButton.Name = "";
+            this.txtid.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtid.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtid.CustomButton.TabIndex = 1;
+            this.txtid.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtid.CustomButton.UseSelectable = true;
+            this.txtid.CustomButton.Visible = false;
+            this.txtid.Lines = new string[0];
+            this.txtid.Location = new System.Drawing.Point(227, 120);
+            this.txtid.MaxLength = 32767;
+            this.txtid.Name = "txtid";
+            this.txtid.PasswordChar = '\0';
+            this.txtid.PromptText = "Auto Generate";
+            this.txtid.ReadOnly = true;
+            this.txtid.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtid.SelectedText = "";
+            this.txtid.SelectionLength = 0;
+            this.txtid.SelectionStart = 0;
+            this.txtid.ShortcutsEnabled = true;
+            this.txtid.Size = new System.Drawing.Size(232, 30);
+            this.txtid.TabIndex = 59;
+            this.txtid.UseSelectable = true;
+            this.txtid.WaterMark = "Auto Generate";
+            this.txtid.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtid.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel3.Location = new System.Drawing.Point(147, 477);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(63, 25);
+            this.metroLabel3.TabIndex = 58;
+            this.metroLabel3.Text = "Price :";
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel8.Location = new System.Drawing.Point(104, 428);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(95, 25);
+            this.metroLabel8.TabIndex = 57;
+            this.metroLabel8.Text = "Bus Type :";
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel7.Location = new System.Drawing.Point(35, 324);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(152, 25);
+            this.metroLabel7.TabIndex = 56;
+            this.metroLabel7.Text = "Departure Time :";
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel6.Location = new System.Drawing.Point(77, 375);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(122, 25);
+            this.metroLabel6.TabIndex = 55;
+            this.metroLabel6.Text = "Arrival Time :";
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel5.Location = new System.Drawing.Point(48, 273);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(139, 25);
+            this.metroLabel5.TabIndex = 54;
+            this.metroLabel5.Text = "Arrival Station :";
+            // 
+            // metroLblun
+            // 
+            this.metroLblun.AutoSize = true;
+            this.metroLblun.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLblun.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLblun.Location = new System.Drawing.Point(7, 224);
+            this.metroLblun.Name = "metroLblun";
+            this.metroLblun.Size = new System.Drawing.Size(169, 25);
+            this.metroLblun.TabIndex = 53;
+            this.metroLblun.Text = "Departure Station :";
+            // 
+            // metroLblName
+            // 
+            this.metroLblName.AutoSize = true;
+            this.metroLblName.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLblName.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLblName.Location = new System.Drawing.Point(20, 171);
+            this.metroLblName.Name = "metroLblName";
+            this.metroLblName.Size = new System.Drawing.Size(156, 25);
+            this.metroLblName.TabIndex = 52;
+            this.metroLblName.Text = "Company Name :";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel2.Location = new System.Drawing.Point(173, 120);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(37, 25);
+            this.metroLabel2.TabIndex = 51;
+            this.metroLabel2.Text = "Id :";
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.metroLabel1.Location = new System.Drawing.Point(212, 61);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(116, 25);
+            this.metroLabel1.TabIndex = 50;
+            this.metroLabel1.Text = "Buss Details";
             // 
             // metroPanel3
             // 
@@ -162,6 +519,7 @@ namespace TripMaker
             this.metroButton4.TabIndex = 5;
             this.metroButton4.Text = "Save";
             this.metroButton4.UseSelectable = true;
+            this.metroButton4.Click += new System.EventHandler(this.metroButton4_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -220,23 +578,23 @@ namespace TripMaker
             this.metroGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle55;
             this.metroGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid.DefaultCellStyle = dataGridViewCellStyle56;
             this.metroGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroGrid.EnableHeadersVisualStyles = false;
             this.metroGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -245,20 +603,21 @@ namespace TripMaker
             this.metroGrid.Name = "metroGrid";
             this.metroGrid.ReadOnly = true;
             this.metroGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle57.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle57;
             this.metroGrid.RowHeadersWidth = 51;
             this.metroGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid.RowTemplate.Height = 24;
             this.metroGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid.Size = new System.Drawing.Size(646, 656);
             this.metroGrid.TabIndex = 2;
+            this.metroGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid_CellClick);
             // 
             // metroPanel1
             // 
@@ -287,6 +646,7 @@ namespace TripMaker
             this.metroButton3.TabIndex = 4;
             this.metroButton3.Text = "Refrash";
             this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
             // metroButton2
             // 
@@ -297,6 +657,7 @@ namespace TripMaker
             this.metroButton2.TabIndex = 3;
             this.metroButton2.Text = "Delete";
             this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // metroButton1
             // 
@@ -309,363 +670,6 @@ namespace TripMaker
             this.metroButton1.Text = "New";
             this.metroButton1.UseSelectable = true;
             // 
-            // metroTextBox3
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox3.CustomButton.Image = null;
-            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(204, 2);
-            this.metroTextBox3.CustomButton.Name = "";
-            this.metroTextBox3.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.metroTextBox3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox3.CustomButton.TabIndex = 1;
-            this.metroTextBox3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox3.CustomButton.UseSelectable = true;
-            this.metroTextBox3.CustomButton.Visible = false;
-            this.metroTextBox3.Lines = new string[0];
-            this.metroTextBox3.Location = new System.Drawing.Point(229, 521);
-            this.metroTextBox3.MaxLength = 32767;
-            this.metroTextBox3.Name = "metroTextBox3";
-            this.metroTextBox3.PasswordChar = '\0';
-            this.metroTextBox3.PromptText = "Enter Price";
-            this.metroTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox3.SelectedText = "";
-            this.metroTextBox3.SelectionLength = 0;
-            this.metroTextBox3.SelectionStart = 0;
-            this.metroTextBox3.ShortcutsEnabled = true;
-            this.metroTextBox3.Size = new System.Drawing.Size(232, 30);
-            this.metroTextBox3.TabIndex = 66;
-            this.metroTextBox3.UseSelectable = true;
-            this.metroTextBox3.WaterMark = "Enter Price";
-            this.metroTextBox3.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox3.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // metroTextBox2
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(204, 2);
-            this.metroTextBox2.CustomButton.Name = "";
-            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox2.CustomButton.TabIndex = 1;
-            this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox2.CustomButton.UseSelectable = true;
-            this.metroTextBox2.CustomButton.Visible = false;
-            this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(229, 472);
-            this.metroTextBox2.MaxLength = 32767;
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.PasswordChar = '\0';
-            this.metroTextBox2.PromptText = "Enter Bus Type";
-            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox2.SelectedText = "";
-            this.metroTextBox2.SelectionLength = 0;
-            this.metroTextBox2.SelectionStart = 0;
-            this.metroTextBox2.ShortcutsEnabled = true;
-            this.metroTextBox2.Size = new System.Drawing.Size(232, 30);
-            this.metroTextBox2.TabIndex = 65;
-            this.metroTextBox2.UseSelectable = true;
-            this.metroTextBox2.WaterMark = "Enter Bus Type";
-            this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // metroTextBox1
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(204, 2);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(229, 419);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.PromptText = "Enter Arrival Time";
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(232, 30);
-            this.metroTextBox1.TabIndex = 64;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMark = "Enter Arrival Time";
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // txtun
-            // 
-            // 
-            // 
-            // 
-            this.txtun.CustomButton.Image = null;
-            this.txtun.CustomButton.Location = new System.Drawing.Point(204, 2);
-            this.txtun.CustomButton.Name = "";
-            this.txtun.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtun.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtun.CustomButton.TabIndex = 1;
-            this.txtun.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtun.CustomButton.UseSelectable = true;
-            this.txtun.CustomButton.Visible = false;
-            this.txtun.Lines = new string[0];
-            this.txtun.Location = new System.Drawing.Point(229, 268);
-            this.txtun.MaxLength = 32767;
-            this.txtun.Name = "txtun";
-            this.txtun.PasswordChar = '\0';
-            this.txtun.PromptText = "Enter Departure Station";
-            this.txtun.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtun.SelectedText = "";
-            this.txtun.SelectionLength = 0;
-            this.txtun.SelectionStart = 0;
-            this.txtun.ShortcutsEnabled = true;
-            this.txtun.Size = new System.Drawing.Size(232, 30);
-            this.txtun.TabIndex = 61;
-            this.txtun.UseSelectable = true;
-            this.txtun.WaterMark = "Enter Departure Station";
-            this.txtun.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtun.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // txtpn
-            // 
-            // 
-            // 
-            // 
-            this.txtpn.CustomButton.Image = null;
-            this.txtpn.CustomButton.Location = new System.Drawing.Point(204, 2);
-            this.txtpn.CustomButton.Name = "";
-            this.txtpn.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtpn.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtpn.CustomButton.TabIndex = 1;
-            this.txtpn.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtpn.CustomButton.UseSelectable = true;
-            this.txtpn.CustomButton.Visible = false;
-            this.txtpn.Lines = new string[0];
-            this.txtpn.Location = new System.Drawing.Point(229, 368);
-            this.txtpn.MaxLength = 32767;
-            this.txtpn.Name = "txtpn";
-            this.txtpn.PasswordChar = '\0';
-            this.txtpn.PromptText = "Enter Departure Time";
-            this.txtpn.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtpn.SelectedText = "";
-            this.txtpn.SelectionLength = 0;
-            this.txtpn.SelectionStart = 0;
-            this.txtpn.ShortcutsEnabled = true;
-            this.txtpn.Size = new System.Drawing.Size(232, 30);
-            this.txtpn.TabIndex = 63;
-            this.txtpn.UseSelectable = true;
-            this.txtpn.WaterMark = "Enter Departure Time";
-            this.txtpn.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtpn.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // txtemail
-            // 
-            // 
-            // 
-            // 
-            this.txtemail.CustomButton.Image = null;
-            this.txtemail.CustomButton.Location = new System.Drawing.Point(204, 2);
-            this.txtemail.CustomButton.Name = "";
-            this.txtemail.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtemail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtemail.CustomButton.TabIndex = 1;
-            this.txtemail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtemail.CustomButton.UseSelectable = true;
-            this.txtemail.CustomButton.Visible = false;
-            this.txtemail.Lines = new string[0];
-            this.txtemail.Location = new System.Drawing.Point(229, 317);
-            this.txtemail.MaxLength = 32767;
-            this.txtemail.Name = "txtemail";
-            this.txtemail.PasswordChar = '\0';
-            this.txtemail.PromptText = "Enter Arrival Station";
-            this.txtemail.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtemail.SelectedText = "";
-            this.txtemail.SelectionLength = 0;
-            this.txtemail.SelectionStart = 0;
-            this.txtemail.ShortcutsEnabled = true;
-            this.txtemail.Size = new System.Drawing.Size(232, 30);
-            this.txtemail.TabIndex = 62;
-            this.txtemail.UseSelectable = true;
-            this.txtemail.WaterMark = "Enter Arrival Station";
-            this.txtemail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtemail.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // txtName
-            // 
-            // 
-            // 
-            // 
-            this.txtName.CustomButton.Image = null;
-            this.txtName.CustomButton.Location = new System.Drawing.Point(204, 2);
-            this.txtName.CustomButton.Name = "";
-            this.txtName.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtName.CustomButton.TabIndex = 1;
-            this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtName.CustomButton.UseSelectable = true;
-            this.txtName.CustomButton.Visible = false;
-            this.txtName.Lines = new string[0];
-            this.txtName.Location = new System.Drawing.Point(229, 215);
-            this.txtName.MaxLength = 32767;
-            this.txtName.Name = "txtName";
-            this.txtName.PasswordChar = '\0';
-            this.txtName.PromptText = "Enter Bus Company Name";
-            this.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtName.SelectedText = "";
-            this.txtName.SelectionLength = 0;
-            this.txtName.SelectionStart = 0;
-            this.txtName.ShortcutsEnabled = true;
-            this.txtName.Size = new System.Drawing.Size(232, 30);
-            this.txtName.TabIndex = 60;
-            this.txtName.UseSelectable = true;
-            this.txtName.WaterMark = "Enter Bus Company Name";
-            this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtName.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // txtid
-            // 
-            // 
-            // 
-            // 
-            this.txtid.CustomButton.Image = null;
-            this.txtid.CustomButton.Location = new System.Drawing.Point(204, 2);
-            this.txtid.CustomButton.Name = "";
-            this.txtid.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtid.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtid.CustomButton.TabIndex = 1;
-            this.txtid.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtid.CustomButton.UseSelectable = true;
-            this.txtid.CustomButton.Visible = false;
-            this.txtid.Lines = new string[0];
-            this.txtid.Location = new System.Drawing.Point(229, 164);
-            this.txtid.MaxLength = 32767;
-            this.txtid.Name = "txtid";
-            this.txtid.PasswordChar = '\0';
-            this.txtid.PromptText = "Auto Generate";
-            this.txtid.ReadOnly = true;
-            this.txtid.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtid.SelectedText = "";
-            this.txtid.SelectionLength = 0;
-            this.txtid.SelectionStart = 0;
-            this.txtid.ShortcutsEnabled = true;
-            this.txtid.Size = new System.Drawing.Size(232, 30);
-            this.txtid.TabIndex = 59;
-            this.txtid.UseSelectable = true;
-            this.txtid.WaterMark = "Auto Generate";
-            this.txtid.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtid.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel3.Location = new System.Drawing.Point(131, 521);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(63, 25);
-            this.metroLabel3.TabIndex = 58;
-            this.metroLabel3.Text = "Price :";
-            // 
-            // metroLabel8
-            // 
-            this.metroLabel8.AutoSize = true;
-            this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel8.Location = new System.Drawing.Point(99, 470);
-            this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(95, 25);
-            this.metroLabel8.TabIndex = 57;
-            this.metroLabel8.Text = "Bus Type :";
-            // 
-            // metroLabel7
-            // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel7.Location = new System.Drawing.Point(42, 368);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(152, 25);
-            this.metroLabel7.TabIndex = 56;
-            this.metroLabel7.Text = "Departure Time :";
-            // 
-            // metroLabel6
-            // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel6.Location = new System.Drawing.Point(72, 419);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(122, 25);
-            this.metroLabel6.TabIndex = 55;
-            this.metroLabel6.Text = "Arrival Time :";
-            // 
-            // metroLabel5
-            // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel5.Location = new System.Drawing.Point(55, 317);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(139, 25);
-            this.metroLabel5.TabIndex = 54;
-            this.metroLabel5.Text = "Arrival Station :";
-            // 
-            // metroLblun
-            // 
-            this.metroLblun.AutoSize = true;
-            this.metroLblun.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLblun.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLblun.Location = new System.Drawing.Point(25, 266);
-            this.metroLblun.Name = "metroLblun";
-            this.metroLblun.Size = new System.Drawing.Size(169, 25);
-            this.metroLblun.TabIndex = 53;
-            this.metroLblun.Text = "Departure Station :";
-            // 
-            // metroLblName
-            // 
-            this.metroLblName.AutoSize = true;
-            this.metroLblName.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLblName.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLblName.Location = new System.Drawing.Point(38, 215);
-            this.metroLblName.Name = "metroLblName";
-            this.metroLblName.Size = new System.Drawing.Size(156, 25);
-            this.metroLblName.TabIndex = 52;
-            this.metroLblName.Text = "Company Name :";
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(157, 164);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(37, 25);
-            this.metroLabel2.TabIndex = 51;
-            this.metroLabel2.Text = "Id :";
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.metroLabel1.Location = new System.Drawing.Point(212, 105);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(116, 25);
-            this.metroLabel1.TabIndex = 50;
-            this.metroLabel1.Text = "Buss Details";
-            // 
             // ManegerBus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -674,6 +678,7 @@ namespace TripMaker
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ManegerBus";
             this.Text = "ManegerBus";
+            this.Load += new System.EventHandler(this.ManegerBus_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.metroPanel4.ResumeLayout(false);
@@ -703,12 +708,12 @@ namespace TripMaker
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox3;
-        private MetroFramework.Controls.MetroTextBox metroTextBox2;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
-        private MetroFramework.Controls.MetroTextBox txtun;
-        private MetroFramework.Controls.MetroTextBox txtpn;
-        private MetroFramework.Controls.MetroTextBox txtemail;
+        private MetroFramework.Controls.MetroTextBox txtprice;
+        private MetroFramework.Controls.MetroTextBox txtbt;
+        private MetroFramework.Controls.MetroTextBox txtat;
+        private MetroFramework.Controls.MetroTextBox txtds;
+        private MetroFramework.Controls.MetroTextBox txtdt;
+        private MetroFramework.Controls.MetroTextBox txtas;
         private MetroFramework.Controls.MetroTextBox txtName;
         private MetroFramework.Controls.MetroTextBox txtid;
         private MetroFramework.Controls.MetroLabel metroLabel3;

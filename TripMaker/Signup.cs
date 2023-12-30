@@ -91,8 +91,8 @@ namespace TripMaker
             btnopenps.Visible = true;
             btnclosecp.Visible = false;
             btnopencp.Visible = true;
-            txtPass.UseSystemPasswordChar = false;
-            txtCpass.UseSystemPasswordChar = false;
+            txtPass.UseSystemPasswordChar = true;
+            txtCpass.UseSystemPasswordChar = true;
             richTxtAdrs.Text = "";
         }
         private void singup_Click(object sender, EventArgs e)
