@@ -59,11 +59,18 @@ namespace TripMaker
             string error;
 
             DataTable dt = DataAccess.GetData(query, out error);
-
-            for (int i = 0; i < dt.Rows.Count; i++)
+            try
             {
-                cmbDestination.Items.Add(dt.Rows[i]["destination_loc"].ToString());
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    cmbDestination.Items.Add(dt.Rows[i]["destination_loc"].ToString());
+                }
             }
+            catch(Exception ex)
+            {
+
+            }
+            
 
         }
 

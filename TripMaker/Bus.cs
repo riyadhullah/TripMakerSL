@@ -58,11 +58,14 @@ namespace TripMaker
 
             DataTable dt = DataAccess.GetData(query, out error);
 
-            for (int i = 0; i < dt.Rows.Count; i++)
+           /* for (int i = 0; i < dt.Rows.Count; i++)
             {
                 cmbstart.Items.Add(dt.Rows[i]["station_name"].ToString());
                 cmbto.Items.Add(dt.Rows[i]["station_name"].ToString());
-            }
+            
+                cmbstart.Items.Add(dt.Rows[i]["city-name"].ToString());
+                cmbto.Items.Add(dt.Rows[i]["city-name"].ToString());
+            }*/
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
