@@ -174,8 +174,7 @@ namespace TripMaker
 
             }
 
-           // richTxtAdrs.Text = dt.Rows[0]["Address"].ToString();
-            //picturebox.Image = convertByteArrayToImage((byte[])dt.Rows[0]["imagePath"]);
+           
 
             
             
