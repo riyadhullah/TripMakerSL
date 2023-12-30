@@ -122,11 +122,19 @@
     <Compile Include="Hotel1.Designer.cs">
       <DependentUpon>Hotel1.cs</DependentUpon>
     </Compile>
+
     <Compile Include="ManageHotelRooms.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManageHotelRooms.Designer.cs">
       <DependentUpon>ManageHotelRooms.cs</DependentUpon>
+</Compile>
+    <Compile Include="sub_Flight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sub_Flight.Designer.cs">
+      <DependentUpon>sub_Flight.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Sub_HotelBookingInfo.cs">
       <SubType>UserControl</SubType>
@@ -229,8 +237,14 @@
     <EmbeddedResource Include="Hotel1.resx">
       <DependentUpon>Hotel1.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="ManageHotelRooms.resx">
       <DependentUpon>ManageHotelRooms.cs</DependentUpon>
+</EmbeddedResource>
+
+    <EmbeddedResource Include="sub_Flight.resx">
+      <DependentUpon>sub_Flight.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Sub_HotelBookingInfo.resx">
       <DependentUpon>Sub_HotelBookingInfo.cs</DependentUpon>

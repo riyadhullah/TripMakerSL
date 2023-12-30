@@ -30,13 +30,17 @@ namespace TripMaker
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbToAirport = new System.Windows.Forms.ComboBox();
+            this.cbFromAirport = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.DateLbl = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.panel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label4
@@ -49,29 +53,29 @@ namespace TripMaker
             this.label4.TabIndex = 18;
             this.label4.Text = "To";
             // 
-            // comboBox4
+            // cbToAirport
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cbToAirport.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbToAirport.FormattingEnabled = true;
+            this.cbToAirport.Items.AddRange(new object[] {
             "Dhaka",
             "Cumilla"});
-            this.comboBox4.Location = new System.Drawing.Point(338, 130);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(148, 25);
-            this.comboBox4.TabIndex = 17;
+            this.cbToAirport.Location = new System.Drawing.Point(338, 130);
+            this.cbToAirport.Name = "cbToAirport";
+            this.cbToAirport.Size = new System.Drawing.Size(148, 25);
+            this.cbToAirport.TabIndex = 17;
             // 
-            // comboBox1
+            // cbFromAirport
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbFromAirport.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFromAirport.FormattingEnabled = true;
+            this.cbFromAirport.Items.AddRange(new object[] {
             "Dhaka",
             "Cumilla"});
-            this.comboBox1.Location = new System.Drawing.Point(117, 130);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 25);
-            this.comboBox1.TabIndex = 16;
+            this.cbFromAirport.Location = new System.Drawing.Point(117, 130);
+            this.cbFromAirport.Name = "cbFromAirport";
+            this.cbFromAirport.Size = new System.Drawing.Size(148, 25);
+            this.cbFromAirport.TabIndex = 16;
             // 
             // label3
             // 
@@ -116,26 +120,64 @@ namespace TripMaker
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 242);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 275);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(935, 420);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(935, 387);
             this.flowLayoutPanel1.TabIndex = 25;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(761, 180);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(93, 33);
+            this.btnSearch.TabIndex = 26;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.label1);
+            this.panel.Location = new System.Drawing.Point(3, 219);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(932, 48);
+            this.panel.TabIndex = 27;
+            this.panel.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 23);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Available hotels";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Flight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.DateLbl);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbToAirport);
+            this.Controls.Add(this.cbFromAirport);
             this.Controls.Add(this.label3);
             this.Name = "Flight";
             this.Size = new System.Drawing.Size(935, 662);
+            this.Load += new System.EventHandler(this.Flight_Load);
+            this.panel.ResumeLayout(false);
+            this.panel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,12 +186,15 @@ namespace TripMaker
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbToAirport;
+        private System.Windows.Forms.ComboBox cbFromAirport;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label DateLbl;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Panel panel;
+        private System.Windows.Forms.Label label1;
     }
 }
