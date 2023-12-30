@@ -16,7 +16,9 @@ namespace TripMaker
         public ManegerSignup()
         {
             InitializeComponent();
-            
+            txtPass.UseSystemPasswordChar = true;
+            txtCpass.UseSystemPasswordChar = true;
+
         }
     
         private void password_change(object sender, EventArgs e)
@@ -40,20 +42,20 @@ namespace TripMaker
         {
             txtPass.UseSystemPasswordChar = false;
             txtCpass.UseSystemPasswordChar = false;
-            btnCloseps.Visible = true;
+            btncloseps.Visible = true;
             btnopenps.Visible = false;
-            btnClosecps.Visible = true;
-            btnopencps.Visible = false;
+            btncloseCp.Visible = true;
+            btnopencp.Visible = false;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             txtPass.UseSystemPasswordChar = true;
             txtCpass.UseSystemPasswordChar = true;
-            btnCloseps.Visible = false;
+            btncloseps.Visible = false;
             btnopenps.Visible = true;
-            btnClosecps.Visible = false;
-            btnopencps.Visible = true;
+            btncloseCp.Visible = false;
+            btnopencp.Visible = true;
 
 
         }
@@ -225,8 +227,6 @@ namespace TripMaker
             
             txtPass.Text = dt.Rows[0]["Password"].ToString();
             txtCpass.Text = dt.Rows[0]["Password"].ToString();
-            btnopenps.Visible = false;
-            btnopencps.Visible = false;
             txtadrs.Text = dt.Rows[0]["Address"].ToString();
 
            
@@ -242,12 +242,12 @@ namespace TripMaker
             rdbFemale.Checked = false;
             txtPass.Text = "";
             txtCpass.Text = "";
-            btnCloseps.Visible = false;
+            btncloseps.Visible = false;
             btnopenps.Visible = true;
-            btnClosecps.Visible = false;
-            btnopencps.Visible = true;
-            txtPass.UseSystemPasswordChar = false;
-            txtCpass.UseSystemPasswordChar = false;
+            btncloseCp.Visible = false;
+            btnopencp.Visible = true;
+            txtPass.UseSystemPasswordChar = true;
+            txtCpass.UseSystemPasswordChar = true;
             txtadrs.Text = "";
 
             metroGrid.ClearSelection();
