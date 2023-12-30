@@ -50,5 +50,26 @@ namespace TripMaker
             Form1 obj = new Form1();
             obj.Show();
         }
+
+        private void btnBus_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManegerBus obj = new ManegerBus();
+            obj.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManegerSignup obj = new ManegerSignup();
+            obj.Show();
+        }
+
+        private void btnHotels_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManageHotels obj = new ManageHotels();
+            obj.Show();
+        }
     }
 }

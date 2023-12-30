@@ -19,8 +19,8 @@ namespace TripMaker
             //Application.Run(new Form1());
             //Application.Run(new FlightManagerView());
             //Application.Run(new ManegerSignup());
-            //Application.Run(new ManageHotelRooms());
-            Application.Run(new AdminHome());
+            Application.Run(new ManageHotelRooms());
+            //Application.Run(new ManageHotels());
         }
     }
 }

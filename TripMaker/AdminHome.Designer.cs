@@ -39,6 +39,8 @@ namespace TripMaker
             this.label4 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnHotels = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,14 +49,14 @@ namespace TripMaker
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(381, 149);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 28);
+            this.label1.Size = new System.Drawing.Size(188, 28);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Manage Hotel Rooms";
+            this.label1.Text = "Manage Hotels";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(663, 149);
+            this.button1.Location = new System.Drawing.Point(663, 219);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 2;
@@ -65,18 +67,19 @@ namespace TripMaker
             // btnBus
             // 
             this.btnBus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBus.Location = new System.Drawing.Point(663, 224);
+            this.btnBus.Location = new System.Drawing.Point(663, 289);
             this.btnBus.Name = "btnBus";
             this.btnBus.Size = new System.Drawing.Size(75, 32);
             this.btnBus.TabIndex = 4;
             this.btnBus.Text = "Go";
             this.btnBus.UseVisualStyleBackColor = true;
+            this.btnBus.Click += new System.EventHandler(this.btnBus_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(381, 224);
+            this.label2.Location = new System.Drawing.Point(381, 289);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 28);
             this.label2.TabIndex = 3;
@@ -85,18 +88,19 @@ namespace TripMaker
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(663, 292);
+            this.button2.Location = new System.Drawing.Point(663, 357);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 32);
             this.button2.TabIndex = 6;
             this.button2.Text = "Go";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(381, 292);
+            this.label3.Location = new System.Drawing.Point(381, 357);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(196, 28);
             this.label3.TabIndex = 5;
@@ -105,7 +109,7 @@ namespace TripMaker
             // btnFlight
             // 
             this.btnFlight.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFlight.Location = new System.Drawing.Point(663, 360);
+            this.btnFlight.Location = new System.Drawing.Point(663, 425);
             this.btnFlight.Name = "btnFlight";
             this.btnFlight.Size = new System.Drawing.Size(75, 32);
             this.btnFlight.TabIndex = 8;
@@ -117,7 +121,7 @@ namespace TripMaker
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(381, 360);
+            this.label4.Location = new System.Drawing.Point(381, 425);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(179, 28);
             this.label4.TabIndex = 7;
@@ -145,11 +149,34 @@ namespace TripMaker
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(381, 221);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(262, 28);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Manage Hotel Rooms";
+            // 
+            // btnHotels
+            // 
+            this.btnHotels.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHotels.Location = new System.Drawing.Point(663, 149);
+            this.btnHotels.Name = "btnHotels";
+            this.btnHotels.Size = new System.Drawing.Size(75, 32);
+            this.btnHotels.TabIndex = 12;
+            this.btnHotels.Text = "Go";
+            this.btnHotels.UseVisualStyleBackColor = true;
+            this.btnHotels.Click += new System.EventHandler(this.btnHotels_Click);
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.Controls.Add(this.btnHotels);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnFlight);
@@ -179,5 +206,7 @@ namespace TripMaker
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnHotels;
     }
 }

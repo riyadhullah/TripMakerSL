@@ -29,13 +29,19 @@ namespace TripMaker
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManegerSignup));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
+            this.btnopencp = new System.Windows.Forms.Button();
+            this.btnopenps = new System.Windows.Forms.Button();
+            this.btncloseCp = new System.Windows.Forms.Button();
+            this.btncloseps = new System.Windows.Forms.Button();
+            this.txtCpass = new MetroFramework.Controls.MetroTextBox();
+            this.txtPass = new MetroFramework.Controls.MetroTextBox();
             this.txtadrs = new MetroFramework.Controls.MetroTextBox();
             this.txtun = new MetroFramework.Controls.MetroTextBox();
             this.txtpn = new MetroFramework.Controls.MetroTextBox();
@@ -65,12 +71,7 @@ namespace TripMaker
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.txtPass = new MetroFramework.Controls.MetroTextBox();
-            this.txtCpass = new MetroFramework.Controls.MetroTextBox();
-            this.btncloseps = new System.Windows.Forms.Button();
-            this.btncloseCp = new System.Windows.Forms.Button();
-            this.btnopenps = new System.Windows.Forms.Button();
-            this.btnopencp = new System.Windows.Forms.Button();
+            this.btnBack = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.metroPanel4.SuspendLayout();
@@ -152,6 +153,120 @@ namespace TripMaker
             this.metroPanel4.VerticalScrollbarBarColor = true;
             this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel4.VerticalScrollbarSize = 10;
+            // 
+            // btnopencp
+            // 
+            this.btnopencp.BackColor = System.Drawing.SystemColors.Window;
+            this.btnopencp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnopencp.BackgroundImage")));
+            this.btnopencp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnopencp.Location = new System.Drawing.Point(426, 449);
+            this.btnopencp.Name = "btnopencp";
+            this.btnopencp.Size = new System.Drawing.Size(40, 30);
+            this.btnopencp.TabIndex = 60;
+            this.btnopencp.UseVisualStyleBackColor = false;
+            this.btnopencp.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // btnopenps
+            // 
+            this.btnopenps.BackColor = System.Drawing.SystemColors.Window;
+            this.btnopenps.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnopenps.BackgroundImage")));
+            this.btnopenps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnopenps.Location = new System.Drawing.Point(426, 403);
+            this.btnopenps.Name = "btnopenps";
+            this.btnopenps.Size = new System.Drawing.Size(40, 31);
+            this.btnopenps.TabIndex = 59;
+            this.btnopenps.UseVisualStyleBackColor = false;
+            this.btnopenps.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // btncloseCp
+            // 
+            this.btncloseCp.BackColor = System.Drawing.SystemColors.Window;
+            this.btncloseCp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncloseCp.BackgroundImage")));
+            this.btncloseCp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btncloseCp.Location = new System.Drawing.Point(426, 449);
+            this.btncloseCp.Name = "btncloseCp";
+            this.btncloseCp.Size = new System.Drawing.Size(40, 30);
+            this.btncloseCp.TabIndex = 58;
+            this.btncloseCp.UseVisualStyleBackColor = false;
+            this.btncloseCp.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btncloseps
+            // 
+            this.btncloseps.BackColor = System.Drawing.SystemColors.Window;
+            this.btncloseps.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncloseps.BackgroundImage")));
+            this.btncloseps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btncloseps.Location = new System.Drawing.Point(426, 403);
+            this.btncloseps.Name = "btncloseps";
+            this.btncloseps.Size = new System.Drawing.Size(40, 31);
+            this.btncloseps.TabIndex = 57;
+            this.btncloseps.UseVisualStyleBackColor = false;
+            this.btncloseps.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // txtCpass
+            // 
+            // 
+            // 
+            // 
+            this.txtCpass.CustomButton.Image = null;
+            this.txtCpass.CustomButton.Location = new System.Drawing.Point(173, 2);
+            this.txtCpass.CustomButton.Name = "";
+            this.txtCpass.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtCpass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtCpass.CustomButton.TabIndex = 1;
+            this.txtCpass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtCpass.CustomButton.UseSelectable = true;
+            this.txtCpass.CustomButton.Visible = false;
+            this.txtCpass.Lines = new string[0];
+            this.txtCpass.Location = new System.Drawing.Point(234, 449);
+            this.txtCpass.MaxLength = 32767;
+            this.txtCpass.Name = "txtCpass";
+            this.txtCpass.PasswordChar = '\0';
+            this.txtCpass.PromptText = "Enter Confirm Password";
+            this.txtCpass.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtCpass.SelectedText = "";
+            this.txtCpass.SelectionLength = 0;
+            this.txtCpass.SelectionStart = 0;
+            this.txtCpass.ShortcutsEnabled = true;
+            this.txtCpass.Size = new System.Drawing.Size(201, 30);
+            this.txtCpass.TabIndex = 56;
+            this.txtCpass.UseSelectable = true;
+            this.txtCpass.WaterMark = "Enter Confirm Password";
+            this.txtCpass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtCpass.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpass.TextChanged += new System.EventHandler(this.password_change);
+            // 
+            // txtPass
+            // 
+            // 
+            // 
+            // 
+            this.txtPass.CustomButton.Image = null;
+            this.txtPass.CustomButton.Location = new System.Drawing.Point(173, 2);
+            this.txtPass.CustomButton.Name = "";
+            this.txtPass.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtPass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPass.CustomButton.TabIndex = 1;
+            this.txtPass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPass.CustomButton.UseSelectable = true;
+            this.txtPass.CustomButton.Visible = false;
+            this.txtPass.Lines = new string[0];
+            this.txtPass.Location = new System.Drawing.Point(234, 403);
+            this.txtPass.MaxLength = 32767;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '\0';
+            this.txtPass.PromptText = "Enter Password";
+            this.txtPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPass.SelectedText = "";
+            this.txtPass.SelectionLength = 0;
+            this.txtPass.SelectionStart = 0;
+            this.txtPass.ShortcutsEnabled = true;
+            this.txtPass.Size = new System.Drawing.Size(201, 30);
+            this.txtPass.TabIndex = 55;
+            this.txtPass.UseSelectable = true;
+            this.txtPass.WaterMark = "Enter Password";
+            this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPass.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.TextChanged += new System.EventHandler(this.password_change);
             // 
             // txtadrs
             // 
@@ -496,6 +611,7 @@ namespace TripMaker
             // metroPanel3
             // 
             this.metroPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.metroPanel3.Controls.Add(this.btnBack);
             this.metroPanel3.Controls.Add(this.metroButton4);
             this.metroPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroPanel3.HorizontalScrollbarBarColor = true;
@@ -578,23 +694,23 @@ namespace TripMaker
             this.metroGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.metroGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.metroGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroGrid.EnableHeadersVisualStyles = false;
             this.metroGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -603,14 +719,14 @@ namespace TripMaker
             this.metroGrid.Name = "metroGrid";
             this.metroGrid.ReadOnly = true;
             this.metroGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.metroGrid.RowHeadersWidth = 51;
             this.metroGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid.RowTemplate.Height = 24;
@@ -671,119 +787,17 @@ namespace TripMaker
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
-            // txtPass
+            // btnBack
             // 
-            // 
-            // 
-            // 
-            this.txtPass.CustomButton.Image = null;
-            this.txtPass.CustomButton.Location = new System.Drawing.Point(173, 2);
-            this.txtPass.CustomButton.Name = "";
-            this.txtPass.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtPass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtPass.CustomButton.TabIndex = 1;
-            this.txtPass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtPass.CustomButton.UseSelectable = true;
-            this.txtPass.CustomButton.Visible = false;
-            this.txtPass.Lines = new string[0];
-            this.txtPass.Location = new System.Drawing.Point(234, 403);
-            this.txtPass.MaxLength = 32767;
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '\0';
-            this.txtPass.PromptText = "Enter Password";
-            this.txtPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtPass.SelectedText = "";
-            this.txtPass.SelectionLength = 0;
-            this.txtPass.SelectionStart = 0;
-            this.txtPass.ShortcutsEnabled = true;
-            this.txtPass.Size = new System.Drawing.Size(201, 30);
-            this.txtPass.TabIndex = 55;
-            this.txtPass.UseSelectable = true;
-            this.txtPass.WaterMark = "Enter Password";
-            this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtPass.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.TextChanged += new System.EventHandler(this.password_change);
-            // 
-            // txtCpass
-            // 
-            // 
-            // 
-            // 
-            this.txtCpass.CustomButton.Image = null;
-            this.txtCpass.CustomButton.Location = new System.Drawing.Point(173, 2);
-            this.txtCpass.CustomButton.Name = "";
-            this.txtCpass.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtCpass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtCpass.CustomButton.TabIndex = 1;
-            this.txtCpass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtCpass.CustomButton.UseSelectable = true;
-            this.txtCpass.CustomButton.Visible = false;
-            this.txtCpass.Lines = new string[0];
-            this.txtCpass.Location = new System.Drawing.Point(234, 449);
-            this.txtCpass.MaxLength = 32767;
-            this.txtCpass.Name = "txtCpass";
-            this.txtCpass.PasswordChar = '\0';
-            this.txtCpass.PromptText = "Enter Confirm Password";
-            this.txtCpass.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtCpass.SelectedText = "";
-            this.txtCpass.SelectionLength = 0;
-            this.txtCpass.SelectionStart = 0;
-            this.txtCpass.ShortcutsEnabled = true;
-            this.txtCpass.Size = new System.Drawing.Size(201, 30);
-            this.txtCpass.TabIndex = 56;
-            this.txtCpass.UseSelectable = true;
-            this.txtCpass.WaterMark = "Enter Confirm Password";
-            this.txtCpass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtCpass.WaterMarkFont = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpass.TextChanged += new System.EventHandler(this.password_change);
-            // 
-            // btncloseps
-            // 
-            this.btncloseps.BackColor = System.Drawing.SystemColors.Window;
-            this.btncloseps.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncloseps.BackgroundImage")));
-            this.btncloseps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btncloseps.Location = new System.Drawing.Point(426, 403);
-            this.btncloseps.Name = "btncloseps";
-            this.btncloseps.Size = new System.Drawing.Size(40, 31);
-            this.btncloseps.TabIndex = 57;
-            this.btncloseps.UseVisualStyleBackColor = false;
-            this.btncloseps.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btncloseCp
-            // 
-            this.btncloseCp.BackColor = System.Drawing.SystemColors.Window;
-            this.btncloseCp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncloseCp.BackgroundImage")));
-            this.btncloseCp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btncloseCp.Location = new System.Drawing.Point(426, 449);
-            this.btncloseCp.Name = "btncloseCp";
-            this.btncloseCp.Size = new System.Drawing.Size(40, 30);
-            this.btncloseCp.TabIndex = 58;
-            this.btncloseCp.UseVisualStyleBackColor = false;
-            this.btncloseCp.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnopenps
-            // 
-            this.btnopenps.BackColor = System.Drawing.SystemColors.Window;
-            this.btnopenps.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnopenps.BackgroundImage")));
-            this.btnopenps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnopenps.Location = new System.Drawing.Point(426, 403);
-            this.btnopenps.Name = "btnopenps";
-            this.btnopenps.Size = new System.Drawing.Size(40, 31);
-            this.btnopenps.TabIndex = 59;
-            this.btnopenps.UseVisualStyleBackColor = false;
-            this.btnopenps.Click += new System.EventHandler(this.btnOpen_Click);
-            // 
-            // btnopencp
-            // 
-            this.btnopencp.BackColor = System.Drawing.SystemColors.Window;
-            this.btnopencp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnopencp.BackgroundImage")));
-            this.btnopencp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnopencp.Location = new System.Drawing.Point(426, 449);
-            this.btnopencp.Name = "btnopencp";
-            this.btnopencp.Size = new System.Drawing.Size(40, 30);
-            this.btnopencp.TabIndex = 60;
-            this.btnopencp.UseVisualStyleBackColor = false;
-            this.btnopencp.Click += new System.EventHandler(this.btnOpen_Click);
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnBack.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnBack.Location = new System.Drawing.Point(411, 0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 42);
+            this.btnBack.TabIndex = 7;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseSelectable = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // ManegerSignup
             // 
@@ -848,5 +862,6 @@ namespace TripMaker
         private System.Windows.Forms.Button btncloseps;
         private System.Windows.Forms.Button btnopencp;
         private System.Windows.Forms.Button btnopenps;
+        private MetroFramework.Controls.MetroButton btnBack;
     }
 }

@@ -19,7 +19,28 @@ namespace TripMaker
 
         private void ManageHotelRooms_Load(object sender, EventArgs e)
         {
-            load(); 
+            load();
+
+            var query = "select * from hotel_table";
+            string error;
+            var dt = DataAccess.GetData(query, out error);
+
+            if (!string.IsNullOrEmpty(error))
+            {
+                MessageBox.Show(error);
+                return;
+            }
+
+
+            if (dt == null)
+            {
+                return;
+            }
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                cmbHotel.Items.Add(dt.Rows[i]["hotel_name"].ToString());
+            }
         }
 
         private void load()
@@ -101,8 +122,6 @@ namespace TripMaker
             {
                 rbDinnerNo.Select();
             }
-
-
 
         }
 
@@ -281,6 +300,30 @@ namespace TripMaker
             this.Hide();
             AdminHome obj = new AdminHome();
             obj.Show();
+        }
+
+        private void ManageHotelRooms_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            AdminHome obj = new AdminHome();
+            obj.Show();
+        }
+
+        private void cmbHotel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string hotel = cmbHotel.SelectedItem.ToString();
+            var query = "select hotel_id from hotel_table where hotel_name = '" + hotel + "'";
+            string error;
+
+            var dt = DataAccess.GetData(query, out error);
+
+            if (!string.IsNullOrEmpty(error))
+            {
+                MessageBox.Show(error);
+                return;
+            }
+
+            txtHotelid.Text = dt.Rows[0][0].ToString();
         }
     }
 }

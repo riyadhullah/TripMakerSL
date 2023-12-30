@@ -319,5 +319,12 @@ namespace TripMaker
             this.loadgrid();
             this.newdata();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminHome obj = new AdminHome();
+            obj.Show();
+        }
     }
 }
