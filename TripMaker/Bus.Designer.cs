@@ -136,6 +136,7 @@ namespace TripMaker
             // 
             // panel
             // 
+            this.panel.BackColor = System.Drawing.Color.Transparent;
             this.panel.Controls.Add(this.label8);
             this.panel.Controls.Add(this.label7);
             this.panel.Controls.Add(this.label4);
@@ -198,7 +199,7 @@ namespace TripMaker
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 264);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(932, 398);
@@ -208,6 +209,7 @@ namespace TripMaker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.btnSearch);

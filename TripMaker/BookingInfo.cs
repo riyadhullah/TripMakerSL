@@ -73,7 +73,6 @@ namespace TripMaker
 
             if (dt.Rows.Count == 0)
             {
-                panelHotelBook.Visible = true;
                 flowLayoutPanel1.Controls.Clear();
             }
 
@@ -115,13 +114,11 @@ namespace TripMaker
 
         private void btnFlightInfo_Click(object sender, EventArgs e)
         {
-            panelHotelBook.Visible = true;
             flowLayoutPanel1.Controls.Clear();
         }
 
         private void btnBusInfo_Click(object sender, EventArgs e)
         {
-            panelHotelBook.Visible = true;
             flowLayoutPanel1.Controls.Clear();
         }
     }

@@ -34,11 +34,12 @@ namespace TripMaker
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Login.Instance.BringToFront();
+            Form1.Instance.red_panel_changed(false, false, false, false, false, false, false);
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-
+            Form1.Instance.red_panel_changed(false, false, false, false, false, false, false);
             Signup.Instance.BringToFront();
         }
     }

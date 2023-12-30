@@ -44,9 +44,14 @@ namespace TripMaker
             this.pnlHome = new System.Windows.Forms.Panel();
             this.btnBus = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.panel = new System.Windows.Forms.Panel();
             this.panelUp = new System.Windows.Forms.Panel();
+            this.panel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblLogo
@@ -231,23 +236,68 @@ namespace TripMaker
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btn_function);
             // 
+            // panelUp
+            // 
+            this.panelUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.panelUp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUp.Location = new System.Drawing.Point(265, 0);
+            this.panelUp.Name = "panelUp";
+            this.panelUp.Size = new System.Drawing.Size(935, 139);
+            this.panelUp.TabIndex = 9;
+            // 
             // panel
             // 
-            this.panel.BackColor = System.Drawing.Color.LightGray;
+            this.panel.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel.Controls.Add(this.label4);
+            this.panel.Controls.Add(this.label3);
+            this.panel.Controls.Add(this.label2);
+            this.panel.Controls.Add(this.label1);
             this.panel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel.Location = new System.Drawing.Point(265, 137);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(935, 663);
             this.panel.TabIndex = 8;
             // 
-            // panelUp
+            // label1
             // 
-            this.panelUp.BackColor = System.Drawing.Color.Gray;
-            this.panelUp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelUp.Location = new System.Drawing.Point(265, 0);
-            this.panelUp.Name = "panelUp";
-            this.panelUp.Size = new System.Drawing.Size(935, 139);
-            this.panelUp.TabIndex = 9;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(404, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 49);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hello!";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(230, 179);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(276, 49);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Welcome to";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bauhaus 93", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(503, 184);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(202, 45);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "TripMaker";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(311, 453);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(325, 28);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "We Make Your Trips Happy";
             // 
             // Form1
             // 
@@ -265,6 +315,8 @@ namespace TripMaker
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel.ResumeLayout(false);
+            this.panel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -285,8 +337,12 @@ namespace TripMaker
         private System.Windows.Forms.Panel pnlAbout;
         private System.Windows.Forms.Button btnAbout;
         protected System.Windows.Forms.Panel panel1;
-        protected System.Windows.Forms.Panel panel;
         protected System.Windows.Forms.Panel panelUp;
+        protected System.Windows.Forms.Panel panel;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
