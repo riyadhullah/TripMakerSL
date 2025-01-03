@@ -325,5 +325,10 @@ namespace TripMaker
 
             txtHotelid.Text = dt.Rows[0][0].ToString();
         }
+
+        private void dgvManageHotelRooms_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
